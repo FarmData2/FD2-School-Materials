@@ -78,7 +78,7 @@ git push origin <branch-name>
 ### Synchronizing a Branch with the Upstream
   ```
   git switch <branch-name>
-  git pull upstream <branch-name>
+  git pull --ff-only upstream <branch-name>
   git push origin <branch-name>
   ```
   - Notes:

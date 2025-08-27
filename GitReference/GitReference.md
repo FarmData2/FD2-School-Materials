@@ -75,20 +75,25 @@ git push origin <branch-name>
 ### Creating a Pull Request
 - [A Pull Request is created on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) by clicking the popup banner after pushing a branch, or by clicking the "Contribute" button.
 
-### Synchronizing a Branch with the Upstream
+### Synchronizing `development` Branch with the Upstream
   ```
-  git switch <branch-name>
-  git pull --ff-only upstream <branch-name>
-  git push origin <branch-name>
+  git switch development
+  git pull --ff-only upstream development
   ```
   - Notes:
-    - The same effect can be accomplished by switching to the branch to be synchronized in GitHub, clicking the "Synch fork" button, and then using the commands:
+    - The same effect can be accomplished by visiting your origin repository in GitHub, clicking the "Synch fork" button, and then using the commands:
       ```
-      git switch <branch-name>
-      git pull origin <branch-name>
+      git switch development
+      git pull origin development
       ```
 
 ### Other Useful Commands
+
+#### Synchronizing an arbitrary Branch on Origin
+  ```
+  git switch <branch-name>
+  git pull origin <branch-name>
+  ```
 
 #### Displaying Information about Commits
 ```

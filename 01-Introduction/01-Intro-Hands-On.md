@@ -1,4 +1,4 @@
-# 01 - Introduction Hands-On Activities
+# 01 - Introduction - In Class Hands-On Activities
 
 These hands-on activities will guide you through the setup of the FarmData2 Development Environment where you will complete all of the FD2 School Activities. Typically in-class, hands-on activities can be completed in pairs or small groups.  However, because everyone must have a working FarmData2 Development Environment, this first activity must be done individually.
 
@@ -26,9 +26,10 @@ All of your work on the FD2 School activities should be done in the FD2 Developm
      4. Copy your GitHub token to the Clipboard
      5. Paste it into the "_NoVNC Clipboard_" using the tool palate at the left of the window. 
      6. Use "__Ctrl-Shift-V__" to paste the token into the terminal.
-4. After you have completed step 12, practice stopping and then restarting your FD2 Development Environment using the instructions at the bottom of the "Running in GitHub Codespaces" installation page.
+4. Open Firefox in the development environment and bookmark the Course Page so that it is easy to access.
+5. Practice stopping and then restarting your FD2 Development Environment using the instructions at the bottom of the "Running in GitHub Codespaces" installation page.
 
-## Running the FarmData2 Development Environment in VNC
+## (Optional) Running the FarmData2 Development Environment in VNC
 
 Running the development environment in the browser works very well as long as everything you do is within the environment. However, copying and pasting information between your host machine and the development environment in the browser the copy/paste process is cumbersome, as you saw when pasting your PAT earlier.
 

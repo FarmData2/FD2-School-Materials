@@ -7,11 +7,8 @@ For this activity you will complete three tutorials from MDN (Mozilla Developer 
 1. [Restart your FarmData2 Development Environment in Codespaces](https://github.com/FarmData2/FarmData2/blob/development/docs/install/codespaces.md#restarting-a-farmdata2-development-environment-in-codespaces)
 2. Create a new feature branch from the FarmData2 `development` branch for this assignment.
    - Be sure to give your feature branch a descriptive name.
-3. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory for your work. This directory should have the same name as your GitHub username.  
-   - For example, if your GitHub username were "octocat" then the new directory will be `modules/farm_fd2_school/octocat`.
-   - If you are completing this assignment as part of a course and your GitHub username will not clearly identify you to your instructor, communicate your username to them.
-4. Create another new directory inside your directory named `01-HTML-CSS`.
-5. All of the files that you use or create during this assignment should be contained in your `01-HTML-CSS` directory.
+3. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory named `01-HTML-CSS` for your work on this assignment.
+4. All of the files that you use or create during this assignment should be contained in your `01-HTML-CSS` directory.
 
 ## Planning 
 
@@ -22,8 +19,11 @@ For this activity you will complete three tutorials from MDN (Mozilla Developer 
 ## HTML Tutorial
 
 1. Complete the "Creating the content" tutorial under "Tutorials."
-   - The `index.html` file you create an be opened in Firefox by entering `file:///home/fd2dev/FarmData2` into the URL and then navigating to your `index.html` file.
-2. Commit the result to your feature branch for this assignment. 
+   - The `index.html` file you create can be opened in Firefox by entering `file:///home/fd2dev/FarmData2` into the URL and then navigating to your `index.html` file.
+2. Auto format the document.
+   - `Shift-Ctrl-I` is the command to auto format in VSCodium in the FD2 Development Environment.
+   - Use this on every file frequently and always immediately before you commit.
+2. Commit your work to your feature branch. 
    - Be sure to use a descriptive commit message.
    - The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if you don't remember the commands.
 
@@ -59,8 +59,8 @@ For this activity you will complete three tutorials from MDN (Mozilla Developer 
 The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if you don't remember the necessary commands.
 
 1. Be sure all changes have been committed to your feature branch.
-2. Push your feature branch to your team's origin repo.
-3. Go to your team's origin repo on GitHub.
-4. Make a PR to your team's FarmData2-School upstream to merge your feature branch into the `development` branch.
+2. Push your feature branch to your origin repo.
+3. Go to your origin repo on GitHub.
+4. Make a PR to the `development` branch in the upstream repository.
 5. In the body text of the PR include any comments you have on the assignment and an estimate of the amount of time that you spent on it.
-6. Examine the "Files Changed" tab on your PR and ensure that you have only changed things in your own folder.  If necessary, undo any changes to your branch and push it again to update the PR.
+6. Examine the "Files Changed" tab on your PR to ensure that you have made only the necessary changes in your `01-HTML-CSS` directory.  Make any necessary changes, commit them to your feature branch and push it again to update the PR.

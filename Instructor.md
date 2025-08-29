@@ -38,17 +38,33 @@ The figure below illustrates visually how students progress through the introduc
 
 ## Instructor ToDo
 - Form teams.
-- Create an upstream FarmData2-School repo for each team and distribute the URLS
-  - These should contain only the development branch.
-  - using fetchPR to run student code
-  - Commenting on PR's for feedback
+- Create an upstream FarmData2-School repo for the course
+  - Fork the FarmData2-School-Base repo
+  - This will be the upstream for the course
+  - It will contain all starter/soln branches
 
-- Create instructor repo
-  - This will contain all branches
-  - Add remotes for each team's upstream
-    - So can push the solution/starter branches and PR them into their repos.
 
-- Before each class
-  - Merge student Tutorial and Homework PRs
-  - Make PR and Merge Homework solution to each team repo
-  - Make PR and Merge tutorial solution to each team repo
+## Process
+- everyone creates their own fork of upstream repository
+- For each assignment
+  - Before assignment instructor merges starter code to upstream development
+  - Students will 
+    - Synchronize with upstream development to get the starter code
+    - Create feature branch from development
+    - Complete assignment and make PR to upstream development for their feature branch.
+    - After due date instructor will merge branches for solution and starter code for next assignment into the upstream development branch.
+
+- Feedback
+  - use fetchPR to run student code
+  - Do a PR review for feedback
+  - Can have them respond to PR reviews for improved scores.
+
+- All PRs get closed.
+
+
+
+
+
+  
+
+

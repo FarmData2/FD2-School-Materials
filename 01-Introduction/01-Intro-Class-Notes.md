@@ -28,11 +28,11 @@
     - Not in terminal 
     - In terminal
   - Show copy/paste process to/from host
+    - Use browser in environment so you can copy paste.
     - Mention VNC approach
   - Alt + z or Option + z to toggle word wrap in VSCode.
-  - Shift + ctrl + I -> format
-  - Pre commit checks and linting
-  - Commit and push branch to origin at end of every work session to be safe (in case codespace gets corrupted - not common, but it happens).
+  - Demo Shift + ctrl + I -> format
+  - Demo spell check.
 
 - hands-on time...
 

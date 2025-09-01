@@ -4,7 +4,7 @@ These hands-on activities will guide you through the setup of the FarmData2 Deve
 
 ## Preliminaries
 
-1. Visit the upstream FarmData2-School repository that your instructor created for your team.
+1. Visit the upstream FarmData2-School repository that your instructor created for your class.
 2. Skim the content in the `README.md` file displayed.
 3. In the "Help and Communications" section, use the link to the "FarmData2 Zulip Chat" to create an account (or possibly remember that you already have one).
    - Notice that there is a "FarmData2 School" channel specifically for discussion FD2 School activities. 

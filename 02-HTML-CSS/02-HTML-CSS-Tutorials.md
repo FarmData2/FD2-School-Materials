@@ -1,14 +1,14 @@
 # 02 - HTML-CSS - Tutorials
 
-For this activity you will complete three tutorials from MDN (Mozilla Developer Network) that lead to the creation of a basic website containing a heading, an image, and a few paragraphs of text.
+For this activity you will complete three tutorials from MDN (Mozilla Developer Network) that use HTML and CSS to create a basic website containing a heading, an image, a few paragraphs of text, and a link.
 
 ## Preliminaries
 
-1. [Restart your FarmData2 Development Environment in Codespaces](https://github.com/FarmData2/FarmData2/blob/development/docs/install/codespaces.md#restarting-a-farmdata2-development-environment-in-codespaces)
+1. Use the instructions on the [Running the FarmData2 Development Environment](https://github.com/FarmData2/FarmData2/blob/development/docs/install/codespaces.md) to "Restart your FarmData2 Development Environment in Codespaces."
 2. Create a new feature branch from the FarmData2 `development` branch for this assignment.
    - Be sure to give your feature branch a descriptive name.
-3. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory named `01-HTML-CSS` for your work on this assignment.
-4. All of the files that you use or create during this assignment should be contained in your `01-HTML-CSS` directory.
+3. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory named `02-HTML-CSS` for your work on this assignment.
+4. All of the files that you use or create during this assignment should be contained in your `02-HTML-CSS` directory.
 
 ## Planning 
 
@@ -63,4 +63,4 @@ The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if
 3. Go to your origin repo on GitHub.
 4. Make a PR to the `development` branch in the upstream repository.
 5. In the body text of the PR include any comments you have on the assignment and an estimate of the amount of time that you spent on it.
-6. Examine the "Files Changed" tab on your PR to ensure that you have made only the necessary changes in your `01-HTML-CSS` directory.  Make any necessary changes, commit them to your feature branch and push it again to update the PR.
+6. Examine the "Files Changed" tab on your PR to ensure that you have made only the necessary changes in your `02-HTML-CSS` directory.  Make any necessary changes, commit them to your feature branch and push it again to update the PR.

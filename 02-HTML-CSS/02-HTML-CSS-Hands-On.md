@@ -4,7 +4,7 @@ This set of hands-on activities builds on the basic web site that you created in
 
 ## Preliminaries
 
-1. Restart your FarmData2 development environment.
+1. Use the instructions on the [Running the FarmData2 Development Environment](https://github.com/FarmData2/FarmData2/blob/development/docs/install/codespaces.md) to "Restart your FarmData2 Development Environment in Codespaces."
 2. Synchronize the `development` branch in your clone with the upstream `development` branch.
    - See the [Git Command Reference](../GitReference/GitReference.md) if you do not remember the commands to synchronize.
    - After you synchronize a solution to the tutorials will have been added to `development` in the directory `modules/farm_fd2_school/02-HTMl-CSS-Tutorials-Soln`.

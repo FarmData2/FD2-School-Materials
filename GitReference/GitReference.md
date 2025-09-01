@@ -32,7 +32,7 @@ git clone <origin-url>
 ```
 - The `<origin-url>` is copied from the "Code" button of your origin repository on GitHub.
 
-### Creating a new branch
+### Creating a new branch from the active branch
 ```
 git branch <branch-name>
 ```

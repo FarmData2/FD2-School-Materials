@@ -1,5 +1,7 @@
 # 02 - HTML-CSS - Class Notes
 
+** **ROUGH DRAFT** **
+
 - Show HTML / CSS Resources
   - How to use / read them
     - HTML:  
@@ -34,10 +36,17 @@
 
 - Show the final product that is to be built in the homework
   - Show synch and rebuild steps
-  - Show watch?
+  - Show reload page and placeholder text
+  - Show `<template>`, `<script>` and <`style`> sections.
+  - Make branch
+  - Modify text, show it doesn't appear
+    - show rebuild
+    - show watch
+    - make another change.
 
 - Introduction of Vue Stuff in Tutorials
   - Vue is a JavaScript library that helps us add interactivity
   - You'll start to learn it in the tutorials
   - Show what the finished product of the tutorials does.
+  
   

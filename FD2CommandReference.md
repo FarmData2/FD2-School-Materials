@@ -34,10 +34,10 @@ Shortcut        | Action
 
 ### Browser / VSCodium / Etc.
 
-Shortcut        | Action
-----------------|------------------------------------
-`Ctrl-C`        | Copy 
-`Ctrl-V`        | Paste
-`Ctrl-S`        | Save
-`Shift-Ctrl-I`  | Auto format text/code in VSCodium
-
+Shortcut             | Action
+---------------------|------------------------------------
+`Ctrl-C`             | Copy 
+`Ctrl-V`             | Paste
+`Ctrl-S`             | Save
+`Shift-Ctrl-I`       | Auto format text/code in VSCodium
+`Alt-z` or `Cmd-z`   | Toggle word wrap in VSCodium

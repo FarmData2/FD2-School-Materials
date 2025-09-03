@@ -1,4 +1,4 @@
-# Git Command Reference
+# Git/GitHub Command Reference
 
 ## The Workflow
 

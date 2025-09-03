@@ -2,6 +2,11 @@
 
 ** **ROUGH DRAFT** **
 
+- Demo synching to get solution to tutorials
+  - Build from yours
+  - Or use solution
+
+
 - Show HTML / CSS Resources
   - How to use / read them
     - HTML:  
@@ -49,4 +54,4 @@
   - You'll start to learn it in the tutorials
   - Show what the finished product of the tutorials does.
   
-  
+  - Recommend doing the homework and then the tutorial and then the reading.

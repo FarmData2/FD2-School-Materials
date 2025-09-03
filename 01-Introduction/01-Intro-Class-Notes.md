@@ -48,6 +48,7 @@
   - But first I'll show you a little bit about it.
 
 - Starting the DevEnv
+  - __Use the Chrome browser.__
   - You'll fork the FarmData2-School upstream repository for yourself.
     - Show my fork.
   - You'll use that to make a Codespace.

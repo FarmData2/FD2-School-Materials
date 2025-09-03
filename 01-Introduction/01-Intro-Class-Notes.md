@@ -157,6 +157,7 @@
 
 - Time now to get your FarmData2 development environment up and running.
 - Follow the activity in [01-Intro-Hands-On.md](./01-Intro-Hands-On.md)
+  - Be sure to distribute the URL of the FarmData2-School upstream that is to be forked.
 
 ## Regroup 
 

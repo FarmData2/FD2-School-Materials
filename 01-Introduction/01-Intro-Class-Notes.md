@@ -139,17 +139,18 @@
 
 ## Development Environment Copy/Paste Quirks
 
+- In DevEnv not in Terminal
+  - Copy: Ctrl-C
+  - Paste: Ctrl-V
+- In DevEnv Terminal
+  - Copy: Shift-Ctrl-C
+  - Paste: Shift-Ctrl-V
 - From Host to DevEnv
   - Have to paste into the "noVNC Clipboard"
   - Easier in general to just work in the DevEnv.
     - Recommend opening the course page in the browser in the DevEnv.
   - Optional extra install can remove this limitation.
-- In DevEnv Terminal
-  - Copy: Shift-Ctrl-C
-  - Paste: Shift-Ctrl-V
-- In DevEnv not in Terminal
-  - Copy: Ctrl-C
-  - Paste: Ctrl-V
+
 - The [FD2 Command Reference](../FD2CommandReference.md) summarizes this and more.
 
 ## Hands-on Activity
@@ -161,7 +162,7 @@
 
 - What's next...
   - After class you'll work on the Tutorial for the HTML/CSS topic.
-    - [02-HTML-CSS-](../02-HTML-CSS/02-HTML-CSS-Tutorials.md)
+    - [02-HTML-CSS-Tutorials.md](../02-HTML-CSS/02-HTML-CSS-Tutorials.md)
     - It guides you through building a basic website.
     - You'll build the website inside the FarmData2 Development Environment.
 
@@ -197,14 +198,17 @@
   - Create a feature branch.
   - Switch to the feature branch.
   - Make your edits.
-    - Make some valid changes to `README.md` for the demo.
+    - Make a new `demo.md` file in the root director for demo.
+    - Make some valid changes to `demo.md` for the demo.
+      - Add a header, add a line of text.
     - Demo some VSCodium (VSCode) things:
+      - Ctrl+S -> Save
+        - Saving code changes is what keeps the DevEnv active.
+        - If you do not make any changes in 15 minutes it will time out.
+        - Changes will autosave after 30 seconds.
       - Alt + z or Option + z -> to toggle word wrap in VSCode.
       - Demo Shift + ctrl + I -> to auto format code
       - Demo spelling correction.
-      - Saving code changes is what keeps the DevEnv active.
-        - If you do not make any changes in 15 minutes it will time out.
-        - Changes will autosave after 30 seconds.
 
 - Demo a successful commit
   - Stage the changes.

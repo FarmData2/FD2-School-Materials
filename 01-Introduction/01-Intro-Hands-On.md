@@ -19,13 +19,6 @@ All of your work on the FD2 School activities should be done in the FD2 Developm
 2. Follow the instructions for "Running in GitHub Codespaces".
    - In step 11, follow part "i. Open in your Browser".
 3. Be sure that you follow the link in step 12 to finish the setup.
-   - In step 3 you will run the `setup.bash` script. This script takes some time to run. Eventually (after a few minutes) it will ask you to authenticate with GitHub. To do so:
-     1. Choose "__HTTP__" as the preferred protocol git Operations on this host.
-     2. Respond "__Yes__" to authenticating Git with your GitHub credentials.
-     3. Choose "__Paste an authentication token__" when asked how you would like to authenticate GitHub CLI.
-     4. Copy your GitHub token to the Clipboard
-     5. Paste it into the "_NoVNC Clipboard_" using the tool palate at the left of the window. 
-     6. Use "__Ctrl-Shift-V__" to paste the token into the terminal.
 4. Open Firefox in the development environment and bookmark the Course Page so that it is easy to access.
 5. Practice stopping and then restarting your FD2 Development Environment using the instructions at the bottom of the "Running in GitHub Codespaces" installation page.
 

@@ -6,7 +6,6 @@
   - Build from yours
   - Or use solution
 
-
 - Show HTML / CSS Resources
   - How to use / read them
     - HTML:  
@@ -27,7 +26,7 @@
       - Class
       - ID
       - Show Selectors -> Type -> examples section in the MDN docs.
-      - How to know ath properties there are:
+      - How to know what properties there are:
         - Look at Alphabetical list of CSS properties list
         - point out different margins...
 
@@ -41,13 +40,30 @@
 
 - Show the final product that is to be built in the homework
   - Show synch and rebuild steps
+    - npm run build:school
   - Show reload page and placeholder text
   - Show `<template>`, `<script>` and <`style`> sections.
   - Make branch
   - Modify text, show it doesn't appear
     - show rebuild
     - show watch
+    - npm run watch:school
     - make another change.
+    - Shift+reload when page doesn't appear.
+
+- Intro to using CHAT GPT...
+  - ask for examples for specific parts of the page
+  - tweak them with prompts
+  - do a demo
+  - Give it the image and ask for the HTML table...
+    - pretty damn good.
+  - Ask for the whole page...
+    - not so good.
+  - Fair warning...
+    - If you ask it to do more than you know how to do, you very likely won't be able to adapt what it gives you sufficiently.
+    - Also for each homework you'll be restarting from my solution to the previous one!
+
+- Requirement to make incremental commits.
 
 - Introduction of Vue Stuff in Tutorials
   - Vue is a JavaScript library that helps us add interactivity

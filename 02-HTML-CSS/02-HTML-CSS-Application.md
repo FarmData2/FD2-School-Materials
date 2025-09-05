@@ -10,8 +10,8 @@ The following references may be helpful in completing these preliminaries:
 - [FarmData2 Command Reference](../FD2CommandReference.md)
 
 1. Restart your FarmData2 Development Environment.
-2. Synchronize your `development` branch with the upstream to add the starter code for this assignment to your repository.
-3. Rebuild the `fd2_school` module.
+2. Synchronize your `development` branch with the upstream to add the starter code for this assignment to your repository (See the Git/GitHub Command Reference).
+3. Rebuild the `fd2_school` module (See the FarmData2 Command Reference).
 4. Use the "FD2 School" menu to navigate to the "HTML-CSS" page.
    - This page should contain some placeholder text at this point.
    - If you do not see the "HTML-CSS" menu or the page with placeholder text does not appear, check that you have performed steps 2 and 3 correctly and try again.
@@ -19,24 +19,24 @@ The following references may be helpful in completing these preliminaries:
 ## Building a Static Harvest Form
 
 1. Create a new feature branch from `development` for your work on this assignment.
-2. 
+2. Open the FarmData2 folder in VSCodium.
+3. Find the `modules/farm_fd2_school/src/entrypoints/HTML-CSS/App.vue` file and open it.
+4. Remove the placeholder code from the `<template>`.
+5. Add code to the `<template>` and `<style>` sections to create the page shown below. Build the page one element at a time and make a comment to your feature branch for each element. Use the commit message to describe what you have done in each commit.
+   [<img src="images/harvestPrototype.png" width="550"/>](images/harvestPrototype.png)
+   
+## Checklist and Tips:
 
-
-
-- build a static harvest form
-  - give a picture of it.
-
-
-
-## Static Harvest Form Checklist
-
-- The `<template>` block contains
-  - 
-
-- Each element in the `<template>` block has an `id` attribute.
-
-- The `<style>` block contains
-  -
+- The default date should be June 15, 2019.
+- The "Crop" options should be ARUGULA, ASPARAGUS, BEAN, and RADISH.
+  - RADISH should be selected by default.
+- The table should contain the exact content shown.
+  - Note: The table inherits some styling from farmOS which is why it looks differnt than the one you created earlier.
+  - Hint: Ask your favorite AI for an example of an HTML table with a group of radio buttons with no text in the left column then adapt that for this page.
+- The input for the "Quantity" should be of type of `number` with a default value of 1 and minimum value of 1.
+- The options next to the "Quantity" input should be BUNCH, EACH and POUND.
+- The "Comment Box" should be a `<textarea>` element.
+- Use CSS rules to style the page simlar to the image above. The styling does not have to be exact, but the page should look reasonably nice. At a minimum you should demonstrate that you can use both class and id selectors to style some of the elements on the page.
 
 ## Turning In Your Work
 
@@ -47,8 +47,5 @@ The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if
 3. Go to your origin repo on GitHub.
 4. Make a PR to the `development` branch in the upstream repository.
 5. In the body text of the PR include any comments you have on the assignment and an estimate of the amount of time that you spent on it.
-
-
-
-6. Examine the "Files Changed" tab on your PR to ensure that you have made only the necessary changes in the `02-HTML-CSS` directory.  Make any necessary changes, commit them to your feature branch and push it again to update the PR.
+6. Examine the "Files Changed" tab on your PR to ensure that you have only made changes in the `modules/farm_fd2_school/src/entrypoints/HTML-CSS` directory. Make any necessary changes, commit them to your feature branch and push it again to update the PR.
 

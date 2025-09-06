@@ -34,7 +34,8 @@ For this activity you will several tutorials from Vue School that introduce you 
 5. Play the first video "Getting Started with Vue.js 3."
 6. Follow along with the tutorial, making changes to your code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
 7. Be sure that the code you have at the end of of the video matches what was produced in the video.
-8. Commit your work to your feature branch. 
+8. Autoformat your `App.vue` file.
+9. Commit your work to your feature branch. 
    - Be sure to use a descriptive commit message.
    - The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if you don't remember the commands.
 
@@ -69,7 +70,8 @@ For this activity you will several tutorials from Vue School that introduce you 
 2. Follow along with the tutorial, making changes to your code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
 3. Be sure that the code you have at the end of of the video matches what was produced in the video.
    - Note: The address of the Vue CDN in the video has been changed to `https://unpkg.com/vue@next`. However, that does not seem to work. So you should leave it as `https://unpkg.com/vue@3`.
-4. Commit your work to your feature branch. 
+4. Autoformat your `App.vue` file.
+5. Commit your work to your feature branch. 
    - Be sure to use a descriptive commit message.
 
 ### Checklist
@@ -85,7 +87,8 @@ For this activity you will several tutorials from Vue School that introduce you 
 2. Follow along with the tutorial, making changes to your code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
    - Note: The variable they used for the Vue instance in the earlier video was `shoppingList`, but in this video that has changed to `shoppingListApp`. This matters when they show how to add/remove items from the console.
 3. Be sure that the code you have at the end of of the video matches what was produced in the video.
-4. Commit your work to your feature branch. 
+4. Autoformat your `App.vue` file.
+5. Commit your work to your feature branch. 
    - Be sure to use a descriptive commit message.
 
 ### Checklist

@@ -1,4 +1,6 @@
--
+# 02 - Vue1 - Class Notes
+
+**DRAFT**
 
 - Cover JS object syntax:
   ```

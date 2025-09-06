@@ -1,10 +1,12 @@
+# 03 - Vue1 - Class Notes
 
+**DRAFT**
 
 - modify the array using the Vue Devtools
   - remove an item.
   - add an item
     - need to quote the attribute name and values
-    
+
 - split quantity and item in object.
 - Put items into a table.
 

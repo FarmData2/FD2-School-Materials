@@ -68,8 +68,7 @@
 - Introduction of Vue Stuff in Tutorials
   - Vue is a JavaScript library that helps us add interactivity
   - You'll start to learn it in the tutorials
-  - Show what the finished product of the tutorials does.
   
-  - show basic file structure?
+  - show basic file structure and data binding
+    - show result of first tutorial and talk through what Vue does.
   
-  - Recommend doing the homework and then the tutorial and then the reading.

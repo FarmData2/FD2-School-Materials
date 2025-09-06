@@ -19,7 +19,7 @@ For this activity you will complete three tutorials from MDN (Mozilla Developer 
 ## HTML Tutorial
 
 1. Complete the "Creating the content" tutorial under "Tutorials."
-   - The `index.html` file you create can be opened in Firefox by entering `file:///home/fd2dev/FarmData2` into the URL and then navigating to your `index.html` file.
+   - The `index.html` file you create in the tutorial can be opened in Firefox by entering `file:///home/fd2dev/FarmData2` into the URL and then navigating to your `index.html` file.
 2. Auto format the document.
    - `Shift-Ctrl-I` is the command to auto format in VSCodium in the FD2 Development Environment.
    - Use this on every file frequently and always immediately before you commit.

@@ -70,4 +70,6 @@
   - You'll start to learn it in the tutorials
   - Show what the finished product of the tutorials does.
   
+  - show basic file structure?
+  
   - Recommend doing the homework and then the tutorial and then the reading.

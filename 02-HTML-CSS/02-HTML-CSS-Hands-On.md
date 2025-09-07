@@ -8,8 +8,8 @@ This set of hands-on activities builds on the basic web site that you created in
 2. Synchronize the `development` branch in your clone with the upstream `development` branch.
    - See the [Git Command Reference](../GitReference/GitReference.md) if you do not remember the commands to synchronize.
    - After you synchronize a solution to the tutorials will have been added to `development` in the directory `modules/farm_fd2_school/02-HTMl-CSS-Tutorials-Soln`.
-3. Create a new feature branch from for your work on these activities.
-   - Create this feature branch from the branch you created for the assignment to continue from your prior work.
+3. Create a new feature branch for your work on these activities.
+   - Create this feature branch from the branch you created for the tutorials to continue from your prior work.
    - OR create this feature branch from `development` to work from the provided solution.
 
 ## HTML Tables
@@ -77,5 +77,6 @@ Sometimes you want to style a collection or elements or one part of the content 
 
 1. Use the [MDN HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements) to complete the following exercises.
 3. Use a `<span>` element and a CSS rule to place a 3 pixel dotted red border around a few words in one of your paragraphs.
+   - Hint: Put the words in a `<span>` and apply a the CSS rule to that span.
 3. Use a `<div>` element and a CSS rule to place a 3 pixel dotted red border around all of the input elements that you created.
 4. Commit your changes to your feature branch.

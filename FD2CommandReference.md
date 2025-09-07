@@ -39,5 +39,6 @@ Shortcut             | Action
 `Ctrl-C`             | Copy 
 `Ctrl-V`             | Paste
 `Ctrl-S`             | Save
-`Shift-Ctrl-I`       | Auto format text/code in VSCodium
+`Ctrl-Shift-I`       | Auto format text/code in VSCodium
+`Ctrl-Shift-I`       | Open the Developer Tools in Firefox
 `Alt-z` or `Cmd-z`   | Toggle word wrap in VSCodium

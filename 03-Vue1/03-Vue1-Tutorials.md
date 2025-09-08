@@ -107,3 +107,9 @@ The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if
 4. Make a PR to the `development` branch in the upstream repository.
 5. In the body text of the PR include any comments you have on the assignment and an estimate of the amount of time that you spent on it.
 6. Examine the "Files Changed" tab on your PR to ensure that you have made only the necessary changes in your `03-Vue1` directory.  Make any necessary changes, commit them to your feature branch and push it again to update the PR.
+
+---
+
+![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License") All textual materials used in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+![GPL V3 or Later](https://www.gnu.org/graphics/gplv3-or-later-sm.png "GPL V3 or later") All executable code in this repository is licensed under the [GNU General Public License Version 3 or later](https://www.gnu.org/licenses/gpl.txt)

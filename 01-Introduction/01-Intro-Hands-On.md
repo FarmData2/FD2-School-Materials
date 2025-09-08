@@ -30,3 +30,9 @@ If you are happy to work fully within the development environment for these assi
 
 To run the FarmData2 Development Environment in VNC, return to step 11 of the "Running in GitHub Codespaces" document and follow part "ii. Open on your Machine with VNC".
     - Note that this will required you install two pieces of software on your machine.  Reach out on the "Install" channel on Zulip if you have any difficulties with these installs.
+
+    ---
+
+![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License") All textual materials used in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+![GPL V3 or Later](https://www.gnu.org/graphics/gplv3-or-later-sm.png "GPL V3 or later") All executable code in this repository is licensed under the [GNU General Public License Version 3 or later](https://www.gnu.org/licenses/gpl.txt)

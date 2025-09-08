@@ -3,8 +3,9 @@
 ** **ROUGH DRAFT** **
 
 - Demo synching to get solution to tutorials
-  - Build from yours
-  - Or use solution
+  - Show added directory...
+    - Build from your branch for activities
+    - Or branch from development and use the solution
 
 - Show HTML / CSS Resources
   - How to use / read them
@@ -38,6 +39,11 @@
 - Commit and push branch to origin at end of every work session to be safe (in case codespace gets corrupted - not common, but it happens).
 - make commits they are necessary for credit.  Everything in one commit receives a score of 1.
 
+- Show new entry point in FD2 School
+  - Show in FD2
+  - Show directory in code
+  - Show source and placeholder App.vue
+
 - Show the final product that is to be built in the homework
   - Show synch and rebuild steps
     - npm run build:school
@@ -65,6 +71,8 @@
 
 - Requirement to make incremental commits.
 
+- Maybe just big picture stuff about VUE.
+
 - Introduction of Vue Stuff in Tutorials
   - Vue is a JavaScript library that helps us add interactivity
   - You'll start to learn it in the tutorials
@@ -72,3 +80,8 @@
   - show basic file structure and data binding
     - show result of first tutorial and talk through what Vue does.
   
+  ---
+
+![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License") All textual materials used in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+![GPL V3 or Later](https://www.gnu.org/graphics/gplv3-or-later-sm.png "GPL V3 or later") All executable code in this repository is licensed under the [GNU General Public License Version 3 or later](https://www.gnu.org/licenses/gpl.txt)

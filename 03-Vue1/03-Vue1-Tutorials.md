@@ -1,4 +1,4 @@
-# 03 - Vue Data Binding and List Rendering - Tutorials
+# 03 - Vue1 - Tutorials
 
 For this activity you will several tutorials from Vue School that introduce you to Vue.js and guide you through the first steps in creating basic shopping list app using Vue. 
 

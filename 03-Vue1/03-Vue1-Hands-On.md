@@ -64,6 +64,7 @@ You've seen that `v-for` can be used with lists and tables.  It can be used with
    ```
 2. Create a `<select>` element on the page.
 3. Use a `v-for` to create an `<option>` for each action.
+   - The `<select>` should render on the page with the appropriate actions listed, but for now it will not do anything when you select an action. We'll learn how to do that soon!
 
 ---
 

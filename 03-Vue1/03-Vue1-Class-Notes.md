@@ -19,9 +19,9 @@ export default {
   - need to refresh in Vue devtools to see changes made in UI.
 
 - review `v-bind`
-  - we use of `v-bind` instead of `:` shortcut for key.
+  - we use of `v-bind` instead of `:` shortcut for `key` in `v-for`.
 
-- Cover JS object syntax:
+- Cover JS object syntax shown in tutorial...
   ```
     items: [
       {id: 1, label: '10 party hats'},
@@ -29,11 +29,29 @@ export default {
       {id: 3, label: '20 cups'},
     ],
   ```
+  - nothing special about `id` its just a name and a unique identifier.
   - note trailing commas.
     - want's them when object or array is split across multiple lines
     - Prevents you from forgetting to add them later when you add more items to an object or an array.
 
   - use of "" vs '' in HTML (template) vs JS/Vue (script)
+
+
+- Show API that returns JSON...
+  - quotable: https://github.com/lukePeavey/quotable?tab=readme-ov-file
+    - good free api serves quotes.
+    - https://api.quotable.io
+  - mess with it in the browser URL.
+    - query parameters
+      - https://api.quotable.io/quotes/random?limit=5&author="Winston Churchill"
+
+
+
+    - https://jsonplaceholder.typicode.com
+    - users - 10 users
+    - todos - 200 todo items
+
+  - More JSON in tutorial video in hw
 
 ---
 

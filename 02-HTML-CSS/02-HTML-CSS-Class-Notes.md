@@ -11,24 +11,21 @@
 - As we move through the course, I will be merging starter code and solutions to assignments to the upstream `development` branch.
   - So you will frequently need to synchronize your `development` branch with the `upstream` to get the solutions and starter code.
     ![Diagram showing the steps in the forking/branching workflow using Git and GitHub.](../GitReference/GitGitHubWorkFlow.png "The forking/branching workflow.")
-    - Two ways to synchronize with the `upstream` `development` branch.
-      1. `git pull` the `development` branch from `upstream` and `push` to your `origin`.
-      2. Synch `development` on your `origin` and then `git pull` the `development` branch from your `origin`.
-- To synchronize your `development` with the `upstream`.
-  - Use a Codespace from a fork not from the upstream (like they will be doing).
-  - In a terminal in the Codespace
-    ```
-    git switch development
-    git pull --ff-only upstream development
-    git push origin development
-    ```
-  - Show new directories in the FarmData2 repo in VSCodium.
-    - For the in class activities you can:
-      - Build from the branch you made for the tutorials.
-      - Or you can make a new branch from development and use the solution that I posted.
-  - Go to GitHub and synch the `development` branch.
-    - Show the `02-HTML-CSS-Tutorial-Soln` and `02-HTML-CSS-Application-Starter` folders.
-  - Steps for synchronizing are in the [Git/GitHub Reference](../GitReference/GitReference.md).
+  - To synchronize your `development` with the `upstream`.
+    - Use a Codespace from a fork not from the upstream (like they will be doing).
+    - In a terminal in the Codespace
+      ```
+      git switch development
+      git pull --ff-only upstream development
+      git push origin development
+      ```
+    - Show new directories in the FarmData2 repo in VSCodium.
+      - For the in class activities you can:
+        - Build from the branch you made for the tutorials.
+        - Or you can make a new branch from development and use the solution that I posted.
+    - Go to GitHub and synch the `development` branch.
+      - Show the `02-HTML-CSS-Tutorial-Soln` and `02-HTML-CSS-Application-Starter` folders.
+    - Steps for synchronizing are in the [Git/GitHub Reference](../GitReference/GitReference.md).
 
 ## Linting and Pre-Commit Hooks
 

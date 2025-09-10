@@ -76,16 +76,16 @@ git push origin <branch-name>
 - [A Pull Request is created on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) by clicking the popup banner after pushing a branch, or by clicking the "Contribute" button.
 
 ### Synchronizing `development` Branch with the Upstream
-  ```
-  git switch development
-  git pull --ff-only upstream development
-  ```
-  - Notes:
-    - The same effect can be accomplished by visiting your origin repository in GitHub, clicking the "Synch fork" button, and then using the commands:
-      ```
-      git switch development
-      git pull origin development
-      ```
+  1. ```
+     git switch development
+     git pull --ff-only upstream development
+     git push origin development
+     ```
+  - Note: The same effect can be accomplished by visiting your fork in GitHub, clicking the "Synch fork" button, and then using the commands:
+    ```
+    git switch development
+    git pull --ff-only origin development
+    ```
 
 ### Other Useful Commands
 

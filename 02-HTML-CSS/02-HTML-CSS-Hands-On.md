@@ -11,6 +11,7 @@ This set of hands-on activities builds on the basic web site that you created in
 3. Create a new feature branch for your work on these activities.
    - Create this feature branch from the branch you created for the tutorials to continue from your prior work.
    - OR create this feature branch from `development` to work from the provided solution.
+4. Switch to your new feature branch.
 
 ## HTML Tables
 

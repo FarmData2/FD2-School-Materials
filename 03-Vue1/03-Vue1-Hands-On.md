@@ -4,7 +4,7 @@
 
 1. Synchronize the `development` branch in your clone with the upstream `development` branch.
    - After you synchronize a solution to the tutorials will have been added to `development` in the directory `modules/farm_fd2_school/03-Vue1-Tutorials-Soln`.
-2. Create a new feature branch for your work on these activities.
+2. Create and switch to a new feature branch for your work on these activities.
    - Create this feature branch from the branch you created for the tutorials to continue from your prior work.
    - OR create this feature branch from `development` to work from the provided solution.
 

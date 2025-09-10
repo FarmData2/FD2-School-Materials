@@ -58,6 +58,7 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
 - Form teams.
 - Create an upstream FarmData2-School repo for the course
   - Fork the FarmData2-School-Base repo
+    - Set to use squash merges
   - This will be the upstream for the course
   - It will contain all starter/soln branches
   - Create a codespace on this upstream for demos.

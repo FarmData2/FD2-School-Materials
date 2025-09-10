@@ -10,7 +10,7 @@ In this assignment you will refactor the static HTML/CSS harvest form created in
 4. Use the "FD2 School" menu to navigate to the "Vue1" page.
    - This page will contain a working solution to the HTML-CSS Application assignment.
    - If you do not see the "Vue1" menu or a working solution to the HTML-CSS Application assignment, check that you have performed steps 2 and 3 correctly and try again.
-5. Make a branch from `development` for your work on this assignment.
+5. Create and switch to a new feature branch from `development` for your work on this assignment.
 6. Open the FarmData2 folder in VSCodium.
 7. Find the `modules/farm_fd2_school/src/entrypoints/Vue1/App.vue` file and open it.
    - You will modify the code in this file `App.vue` file to complete this assignment.

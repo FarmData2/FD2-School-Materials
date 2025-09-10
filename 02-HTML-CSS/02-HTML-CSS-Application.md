@@ -19,10 +19,11 @@ The following references may be helpful in completing these preliminaries:
 ## Building a Static Harvest Form
 
 1. Create a new feature branch from `development` for your work on this assignment.
-2. Open the FarmData2 folder in VSCodium.
-3. Find the `modules/farm_fd2_school/src/entrypoints/HTML-CSS/App.vue` file and open it.
-4. Remove the placeholder code from the `<template>`.
-5. Add code to the `<template>` and `<style>` sections to create the page shown below. 
+2. Switch to your new feature branch..
+3. Open the FarmData2 folder in VSCodium.
+4. Find the `modules/farm_fd2_school/src/entrypoints/HTML-CSS/App.vue` file and open it.
+5. Remove the placeholder code from the `<template>`.
+6. Add code to the `<template>` and `<style>` sections to create the page shown below. 
    - Build the page one element at a time and make a commit to your feature branch for each element. Use the commit message to describe what you have done in each commit.
    - Be sure to rebuild the `fd2_school` module each time you make changes. Alternatively you can run a "watcher" that will automatically rebuild the moduel each time you make changes. (See the FarmData2 Command Reference).
      - If new content that you add does not appear when you reload the page, hold down "SHIFT" while clicking the reload icon.

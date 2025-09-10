@@ -7,8 +7,9 @@ For this activity you will complete three tutorials from MDN (Mozilla Developer 
 1. Use the instructions on the [Running the FarmData2 Development Environment](https://github.com/FarmData2/FarmData2/blob/development/docs/install/codespaces.md) to "Restart your FarmData2 Development Environment in Codespaces."
 2. Create a new feature branch from the FarmData2 `development` branch for this assignment.
    - Be sure to give your feature branch a descriptive name.
-3. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory named `02-HTML-CSS` for your work on this assignment.
-4. All of the files that you use or create during this assignment should be contained in your `02-HTML-CSS` directory.
+3. Switch to your new feature branch.
+4. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory named `02-HTML-CSS` for your work on this assignment.
+5. All of the files that you use or create during this assignment should be contained in your `02-HTML-CSS` directory.
 
 ## Planning 
 

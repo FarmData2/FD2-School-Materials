@@ -19,12 +19,11 @@
       git pull --ff-only upstream development
       git push origin development
       ```
-    - Show new directories in the FarmData2 repo in VSCodium.
+    - Show new directory in the FarmData2 repo in VSCodium.
+      - `02-HTML-CSS-Tutorials-Soln`
       - For the in class activities you can:
-        - Build from the branch you made for the tutorials.
+        - Start from the branch you made for the tutorials.
         - Or you can make a new branch from development and use the solution that I posted.
-    - Go to GitHub and synch the `development` branch.
-      - Show the `02-HTML-CSS-Tutorial-Soln` and `02-HTML-CSS-Application-Starter` folders.
     - Steps for synchronizing are in the [Git/GitHub Reference](../GitReference/GitReference.md).
 
 ## Linting and Pre-Commit Hooks
@@ -112,7 +111,9 @@
     - Just some placeholder text to get going.
   - Show the code in VSCodium.
     - Open the `modules/farm_fd2_school/src/entrypoints/` directory
-    - Open the `App.vue` file.
+    - Show the `HTML-CSS` directory
+      - Created when we synched with the upstream earlier.
+    - Open the `HTML-CSS/App.vue` file.
       - This is a Vue App which we'll learn more about soon. 
       - For now notice the `<template>`, `<script>` and <`style`> sections.
         - `<template>` is like the `<body>` of your `index.html` page.
@@ -125,6 +126,11 @@
 ### Making and Seeing Changes
 
 - For the homework you'll be editing the `<template>` and `<style>` sections of the `App.vue` file to create a prototype Harvest feature.
+  - You'll make and switch to a feature branch.
+    ```
+    git branch class-demo
+    git switch class-demo
+    ```
 - When you make changes to an `App.vue` page in FarmData2 you won't see the changes immediately.
   - Make a change to the placeholder text in `App.vue`.
   - Show that there is no change to the page in farmOS/FarmData2.

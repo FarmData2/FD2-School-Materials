@@ -43,6 +43,15 @@ Shortcut             | Action
 `Ctrl-Shift-I`       | Open the Developer Tools in Firefox
 `Alt-z` or `Cmd-z`   | Toggle word wrap in VSCodium
 
+## Linux Terminal Commands
+
+Command              | Action
+---------------------|------------------------------------
+`ls`                 | List current directory contents
+`cd <dir>`           | Change into `<dir>`
+`mkdir <dir>`        | Create new directory `<dir>` in the current directory
+`rm <file>`          | Delete file `<file>`
+`rmdir <dir>`        | Delete directory `<dir>` - must be empty
 
 ---
 

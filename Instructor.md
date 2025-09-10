@@ -60,7 +60,9 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
   - Fork the FarmData2-School-Base repo
   - This will be the upstream for the course
   - It will contain all starter/soln branches
-
+  - Create a codespace on this upstream for demos.
+- Create your own fork from that upstream
+  - Create a codespace on your fork to use for demos.
 
 ## Process
 - everyone creates their own fork of upstream repository
@@ -77,7 +79,8 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
   - Do a PR review for feedback
   - Can have them respond to PR reviews for improved scores.
 
-- All PRs get closed.
+- No student PRs get merged.
+- All student PRs get closed.
 
 
 

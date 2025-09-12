@@ -21,8 +21,11 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
 1. 01-Introduction
 2. 02-HTML/CSS
    - `02-HTML-CSS-Tutorials-Soln` (just before topic 02 class)
+     - Adds `modules/farm_fd2_school/02-HTML-CSS-Tutorials-Soln`
    - `02-HTML-CSS-Activity-Soln`  (just after topic 02 class)
+     - Adds `modules/farm_fd2_school/02-HTML-CSS-Activity-Soln`
    - `02-HTML-CSS-Application-Starter` (just after topic 02 class)
+     - Adds `modules/farm_fd2_school/src/entrypoints/HTML-CSS` with placeholder.
 3. 03-Vue1: Vue Data Binding and List Rendering
    - `03-Vue1-Tutorials-Soln` (just before topic 03 class)
    - `03-Vue1-Activity-Soln` (just after topic 03 class)
@@ -36,7 +39,7 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
 ?. Vue LifeCycle Hooks Promises / Retrieving Data in FarmData2
    - `0?-FD2-Data1-Tutorials-Soln` (just before topic 0? class)
    - `0?-FD2-Data1-Activity-Soln` (just after topic 0? class)
-   - `0>-FD2-Data1-Application-Starter` (just after topic 0? class)
+   - `0?-FD2-Data1-Application-Starter` (just after topic 0? class)
      - This is the instructor solution to the 03-Vue1-Application assignment.
 5. Vue Inputs / Events / Methods
 6. Vue Components / FarmData2 Components

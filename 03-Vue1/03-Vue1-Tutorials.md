@@ -4,11 +4,12 @@ For this activity you will several tutorials from Vue School that introduce you 
 
 ## Preliminaries
 
-1. Use the instructions on the [Running the FarmData2 Development Environment](https://github.com/FarmData2/FarmData2/blob/development/docs/install/codespaces.md) to "Restart your FarmData2 Development Environment in Codespaces."
-2. Create and switch to a new feature branch from the FarmData2 `development` branch for this assignment.
+1. Restart your FarmData2 Development Environment in Codespaces.
+2. Synchronize your `development` branch with the upstream `development` branch.
+3. Create and switch to a new feature branch from the FarmData2 `development` branch for this assignment.
    - Be sure to give your feature branch a descriptive name.
-3. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory named `03-Vue1` for your work on this assignment.
-4. All of the files that you use or create during this assignment should be contained in your `03-Vue1` directory.
+4. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory named `03-Vue1` for your work on this assignment.
+5. All of the files that you use or create during this assignment should be contained in your `03-Vue1` directory.
 
 ## Getting Started with Vue.js 3
 
@@ -34,7 +35,7 @@ For this activity you will several tutorials from Vue School that introduce you 
 5. Play the first video "Getting Started with Vue.js 3."
 6. Follow along with the tutorial, making changes to your code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
 7. Be sure that the code you have at the end of of the video matches what was produced in the video.
-8. Autoformat your `App.vue` file.
+8. Autoformat your `index.html` file.
 9. Commit your work to your feature branch. 
    - Be sure to use a descriptive commit message.
    - The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if you don't remember the commands.
@@ -70,7 +71,7 @@ For this activity you will several tutorials from Vue School that introduce you 
 2. Follow along with the tutorial, making changes to your code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
 3. Be sure that the code you have at the end of of the video matches what was produced in the video.
    - Note: The address of the Vue CDN in the video has been changed to `https://unpkg.com/vue@next`. However, that does not seem to work. So you should leave it as `https://unpkg.com/vue@3`.
-4. Autoformat your `App.vue` file.
+4. Autoformat your `index.html` file.
 5. Commit your work to your feature branch. 
    - Be sure to use a descriptive commit message.
 
@@ -87,7 +88,7 @@ For this activity you will several tutorials from Vue School that introduce you 
 2. Follow along with the tutorial, making changes to your code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
    - Note: The variable they used for the Vue instance in the earlier video was `shoppingList`, but in this video that has changed to `shoppingListApp`. This matters when they show how to add/remove items from the console.
 3. Be sure that the code you have at the end of of the video matches what was produced in the video.
-4. Autoformat your `App.vue` file.
+4. Autoformat your `index.html` file.
 5. Commit your work to your feature branch. 
    - Be sure to use a descriptive commit message.
 

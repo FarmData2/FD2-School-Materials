@@ -1,4 +1,4 @@
-# 02 - Vue1 - Application
+# 03 - Vue1 - Application
 
 In this assignment you will refactor the static HTML/CSS harvest form created in the previous assignment to use Vue's _data binding_ and _list rendering_ features. You (mostly) won't be changing the appearance or functionality of the page in this assignment, just how it is implemented behind the scenes in the `App.vue` file.
 
@@ -10,7 +10,7 @@ In this assignment you will refactor the static HTML/CSS harvest form created in
 4. Use the "FD2 School" menu to navigate to the "Vue1" page.
    - This page will contain a working solution to the HTML-CSS Application assignment.
    - If you do not see the "Vue1" menu or a working solution to the HTML-CSS Application assignment, check that you have performed steps 2 and 3 correctly and try again.
-5. Create and switch to a new feature branch from `development` for your work on this assignment.
+5. Create a new feature branch from `development` and switch to it for your work on this assignment.
 6. Open the FarmData2 folder in VSCodium.
 7. Find the `modules/farm_fd2_school/src/entrypoints/Vue1/App.vue` file and open it.
    - You will modify the code in this file `App.vue` file to complete this assignment.

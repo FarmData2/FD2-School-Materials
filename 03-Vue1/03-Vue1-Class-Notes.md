@@ -1,4 +1,4 @@
-# 02 - Vue1 - Class Notes
+# 03 - Vue1 - Class Notes
 
 **DRAFT**
 

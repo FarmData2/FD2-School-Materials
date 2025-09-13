@@ -41,8 +41,8 @@ The first tutorial showed that the value of an `<input>` element can be bound to
 ## Binding the Radio Buttons
 
 1. Bind the radio buttons in the table to a new property in the Vue `data` such that the value of the new property gives the index of the associated plant in the `plantList` array.  For example, if the radio button in the first row is selected the value of the new `data` property should be `0` because the information for that row is in index 0 of the `plantList` array.
-   - Hint 1: Add an `index` to the `v-for` that renders the table. Then use `v-bind` set the value of each of the radio buttons to be the `index`. Then use `v-model`.
-   - Hint 2: Try asking your favorite AI how to bind the index of a radio button to a data property in Vue.
+   - Hint 1: Add an `index` to the `v-for` that renders the table. Then use `v-bind` set the `value` of each of the radio buttons to be the `index`. Then use `v-model`.
+   - Hint 2: Try asking your favorite AI how to bind the index of a radio button to a data property in Vue and see if you can adapt the response that it gives you. Note that `:` is often used as a shorthand for `v-bind` in Vue and the AI may use that shorthand.
 2. Be sure to use the Vue Devtools to ensure that the binding is working correctly.
 3. Commit the changes to your feature branch with a meaningful commit message.
 

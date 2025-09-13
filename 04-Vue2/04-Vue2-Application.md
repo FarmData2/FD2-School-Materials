@@ -15,45 +15,35 @@ In this assignment you will
 7. Find the `modules/farm_fd2_school/src/entrypoints/Vue2/App.vue` file and open it.
    - You will modify the code in this file `App.vue` file to complete this assignment.
 
-
-
-
 ## Binding `<input>` values with `v-model`
 
 The first tutorial showed that the value of an `<input>` element can be bound to the value of an attribute in the `data` using Vue's `v-model` directive. When this is done, the value in the input and the value in the `data` stay in synch. If the input is changes, the data changes and vice versa.
 
-SHOULD NOT HAVE TO EXPLAIN AS MUCH HERE SINCE IT IS IN THE TUTORIALS.
-
-Use `v-model` to bind the `<input>` elements to attributes in the Vue `data` as follows:
-1. For the `date` input:
+1. Use `v-model` to bind the `date` `<input>` element to a new property in the Vue `data` as follows:
    1. Remove the `value` attribute from the `date` input in the `<template>`.
-   2. Add a `date` attribute to the Vue data in the `<script>` (e.g. `date: '2019-06-15'`)
-   3. Use `v-model` to bind the value of the date input in the `<template>` to the value of the `date` attribute in the Vue `data` in the `<script>`.
+   2. Add a `date` property to the Vue data in the `<script>` (e.g. `date: '2019-06-15'`)
+   3. Use `v-model` to bind the value of the date input in the `<template>` to the value of the `date` property in the Vue `data` in the `<script>`.
    4. Use the Vue Devtools to confirm that:
-      - Changing the value of the `date` attribute in the Vue `data` changes the date in the `date` input in the user interface.
-      - Changing the date in the user interface changes the value of the `date` attribute in the Vue `data.`
-        - Note: You may need to click the refresh icon in the upper right corner of the Vue Devtools to see changes in the `date` attribute after changing the input in the user interface.
-2. Use a similar approach to bind the value of the following inputs to new attributes in the `Vue` data.
-   - The `<select>` for the "Crop".
-     - Ensure that "RADISH" is initially selected as it was before.
-   - The `<input>` for the "Quantity".
-     - Ensure that the quantity is initially set to 1 as it was before.
-   - The `<select>` for the "Units" for the "Quantity".
-     - Ensure that the "BUNCH" is initially selected as it was before.
-   - The `<textarea>` for the "Comment box".
-     - Ensure that the "Comment" is initially empty (i.e. displays the placeholder) as it did before.
-3. Be sure to use the Vue Devtools to ensure that each binding is working correctly.
-4. Commit the changes to your feature branch with a meaningful commit message.
-
+      - Changing the value of the `date` property in the Vue `data` changes the date in the `date` input in the user interface.
+      - Changing the date in the user interface changes the value of the `date` property in the Vue `data.`
+        - Note: You may need to click the refresh icon in the upper right corner of the Vue Devtools to see changes in the `date` property after changing the input in the user interface.
+2. Bind the `<select>` input for the "Crop" to a new property in the Vue `data`.
+   - Ensure that "RADISH" is initially selected as it was before.
+3. Bind the "Quantity" `<input>` to a new property in the Vue `data`.
+   - Ensure that the quantity is initially set to 1 as it was before.
+4. Bind the `<select>` input for the "Units" of harvest to a new property in the Vue `data`.
+   - Ensure that the "BUNCH" is initially selected as it was before.
+5. Bind the "Comment box" `<textarea>` to a new property in the Vue `data`.
+   - Ensure that the "Comment" is initially empty (i.e. displays the placeholder) as it did before.
+6. Be sure to use the Vue Devtools to ensure that each binding is working correctly.
+7. Commit the changes to your feature branch with a meaningful commit message.
 
 ## Binding the Radio Buttons
 
-WE MAY NOT HAVE WHAT WE NEED HERE? CHECK THE VIDEO AGAIN
-
-1. Bind the index of the selected radio button in the plant table to a new attribute in the Vue `data`.
-   - For example if the plant in "D" is selected then the value of the new data attribute should be 0. Similarly, if the plant in "GHANA-2" is selected then the value of the data attribute should be 1.
-   - Hint: Try asking your favorite AI how to bind the index of the selected radio button in a group to a data value in Vue.
-2. Use the Vue Devtools to confirm that your binding works when you change the selection in the UI and when you change the index in the `data`.
+1. Bind the radio buttons in the table to a new property in the Vue `data` such that the value of the new property gives the index of the associated plant in the `plantList` array.  For example, if the radio button in the first row is selected the value of the new `data` property should be `0` because the information for that row is in index 0 of the `plantList` array.
+   - Hint 1: Add an `index` to the `v-for` that renders the table. Then use `v-bind` set the value of each of the radio buttons to be the `index`. Then use `v-model`.
+   - Hint 2: Try asking your favorite AI how to bind the index of a radio button to a data property in Vue.
+2. Be sure to use the Vue Devtools to ensure that the binding is working correctly.
 3. Commit the changes to your feature branch with a meaningful commit message.
 
 ---

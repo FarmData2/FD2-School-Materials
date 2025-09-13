@@ -11,7 +11,7 @@ For this activity you will several tutorials from Vue School that introduce you 
 4. Create a new directory in the `FarmData2/modules/farm_fd2_school` directory named `03-Vue1` for your work on this assignment.
 5. All of the files that you use or create during this assignment should be contained in your `03-Vue1` directory.
 
-## Getting Started with Vue.js 3
+## Setting Up for the Tutorials
 
 1. Create a file named `index.html` inside of your `03-Vue1` directory and paste in the following content that is identical to what is shown at the start of the tutorial linked below.
    ```
@@ -28,15 +28,20 @@ For this activity you will several tutorials from Vue School that introduce you 
      </body>
    </html>
    ```
-2. Open the `index.html` file you just created in Firefox by entering `file:///home/fd2dev/FarmData2` into the URL and then navigating to your `03-Vue1/index.html` file.
-3. Log into [Vue School](https://vueschool.io/).  You can create an account or login with using GitHub or Google.
-3. Go to the [Vue.js 3 Fundamentals with the Options API](https://vueschool.io/courses/vuejs-3-fundamentals) course.
-4. Scroll down to find the list of lessons.
-5. Play the first video "Getting Started with Vue.js 3."
-6. Follow along with the tutorial, making changes to your code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
-7. Be sure that the code you have at the end of of the video matches what was produced in the video.
-8. Autoformat your `index.html` file.
-9. Commit your work to your feature branch. 
+2. Download the [`main.css` file](https://raw.githubusercontent.com/vueschool/vuejs-3-fundamentals/a3d2b0b43f9e0bd5bc0ea00e238270215efbe40b/main.css) file and place it into your `03-vue` directory.
+   - They use this file in the tutorial but do not show it to you in the videos.
+3. Open the `index.html` file you just created in Firefox by entering `file:///home/fd2dev/FarmData2` into the URL and then navigating to your `03-Vue1/index.html` file.
+
+## Getting Started with Vue.js 3
+
+1. Log into [Vue School](https://vueschool.io/).  You can create an account or login with using GitHub or Google.
+2. Go to the [Vue.js 3 Fundamentals with the Options API](https://vueschool.io/courses/vuejs-3-fundamentals) course.
+3. Scroll down to find the list of lessons.
+4. Play the first video "Getting Started with Vue.js 3."
+5. Follow along with the tutorial, making changes to your code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
+6. Be sure that the code you have at the end of of the video matches what was produced in the video.
+7. Autoformat your `index.html` file.
+8. Commit your work to your feature branch. 
    - Be sure to use a descriptive commit message.
    - The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if you don't remember the commands.
 

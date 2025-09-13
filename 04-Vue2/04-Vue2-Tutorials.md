@@ -1,6 +1,6 @@
 # 04 - Vue2 - Tutorials
 
-For this activity you will complete several more tutorials from Vue School that build on your Vue knowledge from the last topic. In these tutorials you'll learn how to handle user inputs and events in Vue. In doing so, you'll extend the shopping list app to have user interface elements that allow a user to add items to the list.
+For this activity you will complete several more tutorials from Vue School that build on your Vue knowledge from the last topic. In these tutorials you'll learn how to handle user inputs and events in Vue. In doing so, you'll extend the shopping list app to include user interface elements that allow a user to add items to the list.
 
 ## Preliminaries
 
@@ -33,8 +33,8 @@ For this activity you will complete several more tutorials from Vue School that 
 
 ### Checklist
 
-- blah
-
+- `<input>` of type `text` bound to `newItem` property in the `data` with `v-model`.
+- `<input>` of type `checkbox` bound to `newItemHighPriority` in the `data` with `v-model`.
 
 ## User Events in Vue 3
 
@@ -48,8 +48,7 @@ For this activity you will complete several more tutorials from Vue School that 
 
 ### Checklist
 
-- blah
-
+- `<form>` element added with `v-on:submit.prevent` to add `newitem` to the `items` array.
 
 ## Turning In Your Work
 

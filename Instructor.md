@@ -36,6 +36,13 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
    - `04-Vue2-Activity-Soln`
    - `04-Vue1-Application-Starter`
 
+SHOULD WE DO DATA LOADING HERE????
+   
+5. 05-Vue3: Vue Methods and Conditional Rendering
+   - `04-Vue2-Tutorials-Soln`
+   - `04-Vue2-Activity-Soln`
+   - `04-Vue1-Application-Starter`
+
 ?. Vue LifeCycle Hooks Promises / Retrieving Data in FarmData2
    - `0?-FD2-Data1-Tutorials-Soln` (just before topic 0? class)
    - `0?-FD2-Data1-Activity-Soln` (just after topic 0? class)

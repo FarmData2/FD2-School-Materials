@@ -2,6 +2,19 @@
 
 **DRAFT**
 
+## Instructor ToDo Before Class
+
+- Merge...
+
+## Stuff 
+
+- Big picture...
+  - What they've built so far.
+  - What they are doing next.
+
+- Note the `num run watch:school` command here.
+  - Especially if it didn't come up in class two
+
 - script in `<script>`
 - don't need to import the CDN, done by the build.
 ```
@@ -35,9 +48,20 @@ export default {
     - Prevents you from forgetting to add them later when you add more items to an object or an array.
 
   - use of "" vs '' in HTML (template) vs JS/Vue (script)
+    - nesting of "'...'" and '"..."'
 
   - Might have noticed that commit also auto formats if you didn't!
   
+- Show Vue Devtools.
+  - Show refresh button
+  - Close and reopen Devtools if Vue content doesn't show.
+
+- Show rebuild
+  - Show SHIFT+reload in browser to see changes.
+
+## Instructor ToDo After Class
+
+- Merge blah blah.
 
 ---
 

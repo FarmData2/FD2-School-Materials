@@ -34,28 +34,26 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
 4. 04-Vue2: Vue Inputs and User Events
    - `04-Vue2-Tutorials-Soln`
    - `04-Vue2-Activity-Soln`
-   - `04-Vue1-Application-Starter`
-
-SHOULD WE DO DATA LOADING HERE????
-   
+   - `04-Vue2-Application-Starter`
 5. 05-Vue3: Vue Methods and Conditional Rendering
-   - `04-Vue2-Tutorials-Soln`
-   - `04-Vue2-Activity-Soln`
-   - `04-Vue1-Application-Starter`
+   - `05-Vue3-Tutorials-Soln`
+   - `05-Vue3-Activity-Soln`
+   - `05-Vue3-Application-Starter`
+6. Attribute Binding / Computed Properties
 
-?. Vue LifeCycle Hooks Promises / Retrieving Data in FarmData2
-   - `0?-FD2-Data1-Tutorials-Soln` (just before topic 0? class)
-   - `0?-FD2-Data1-Activity-Soln` (just after topic 0? class)
-   - `0?-FD2-Data1-Application-Starter` (just after topic 0? class)
-     - This is the instructor solution to the 03-Vue1-Application assignment.
-5. Vue Inputs / Events / Methods
-6. Vue Components / FarmData2 Components
-7. Vue Conditional Rendering / Attribute Binding / Computed Properties
-8. End-to-End Testing
-9. Writing Data in FarmData2 / Unit Testing
-10. FarmData2 Idioms & Practices
+7. End-to-End Testing
 
+8. Reading Data in FarmData2 (APIs / async / then / Vue LifeCycle Hooks / fixing tests...)
+   - `0?-FD2-Data1-Tutorials-Soln`
+   - `0?-FD2-Data1-Activity-Soln`
+   - `0?-FD2-Data1-Application-Starter`
 
+9. Writing Data in FarmData2 / Unit Testing??
+
+10. Vue Components / FarmData2 Components
+
+11. FarmData2 Idioms & Practices?? 
+    - Roll into project work?
 
 ## Assignment Submission Logistics
 

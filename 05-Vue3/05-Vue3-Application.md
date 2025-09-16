@@ -19,6 +19,14 @@ In this assignment you will modify the prototype Harvest module to ...
 
 The "Methods in Vue 3" tutorial showed ...
 
+- Method for resetting the form.
+- hide table quantity etc if no plants
+
+- maybe?
+  - Move array/object stuff to methods to simulate getting it from DB for now.
+  - use if to only return plants for "ASPARAGUS" crop
+
+
 1. 
 7. Commit the changes to your feature branch with a meaningful commit message.
 

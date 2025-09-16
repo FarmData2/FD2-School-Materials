@@ -11,7 +11,12 @@
 
 ## BLAH....
    
-   
+   - move items definition to a method
+
+   - Make the form become hidden when new item is added.
+
+
+
 ## Blah...
 
 

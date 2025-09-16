@@ -87,7 +87,7 @@ This type of output can be useful during the initial stages of development and i
 3. Go to your origin repo on GitHub.
 4. Make a PR to the `development` branch in the upstream repository.
 5. In the body text of the PR include any comments you have on the assignment and an estimate of the amount of time that you spent on it.
-6. Examine the "Files Changed" tab on your PR to ensure that you have only made changes in the `modules/farm_fd2_school/src/entrypoints/Vue3` directory. Make any necessary changes, commit them to your feature branch and push it again to update the PR.
+6. Examine the "Files Changed" tab on your PR to ensure that you have only made changes in the `modules/farm_fd2_school/src/entrypoints/Vue2` directory. Make any necessary changes, commit them to your feature branch and push it again to update the PR.
 
 ---
 

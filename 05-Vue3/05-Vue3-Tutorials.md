@@ -33,7 +33,9 @@ For this activity you will complete several more tutorials from Vue School that 
 
 ### Checklist
 
-- blah...
+- The `saveItem` method is added to the Vue `methods`.
+- The `v-on` handlers for the `text` input and `button` have been updated to call `saveItem`.
+- The `saveItem` method has been extended to clear the `text` input when a new item is saved.
 
 ## Conditional Rendering in Vue 3
 
@@ -47,7 +49,10 @@ For this activity you will complete several more tutorials from Vue School that 
 
 ### Checklist
 
-- 
+- The list of items is initially empty.
+- The "Nice job! You've bought all your items!" message appears when the list is empty and is hidden when an item is added.
+- The "Add Item" and "Cancel" buttons show and hide the form for adding a new item.
+- The text field is cleared if "Cancel" is clicked.
 
 ## Turning In Your Work
 

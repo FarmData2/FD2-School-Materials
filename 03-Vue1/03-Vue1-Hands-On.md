@@ -37,6 +37,18 @@ It might be reasonable to want to operate on the quantity of an item and the des
    ```
 2. Adjust the data bindings in the `<template>` to that the items still render correctly.
 
+## Binding `<option>`s in a `<select>`
+
+You've seen that `v-for` can be used with lists and tables.  It can be used with any element that contains multiple other elements. 
+
+1. Add an array named `actions` to the `data` that holds a list of actions we might take on the elements. For example:
+   ```
+   actions: ["Increase", "Decrease", "Delete"],
+   ```
+2. Create a `<select>` element on the page.
+3. Use a `v-for` to create an `<option>` for each action.
+   - The `<select>` should render on the page with the appropriate actions listed, but for now it will not do anything when you select an action. We'll learn how to do that soon!
+   
 ## Render `items` in an HTML Table
 
 Now that the quantity and description of the items have been separated, it might make more sense to render the items in a table instead of a list.
@@ -54,18 +66,6 @@ Let's now number the items in the list to make it easier to find an item when we
 1. Add an `index` variable to the `v-for` and use it to number the items in the table. For example:
 
    ![Numbered shopping list items displayed in an HTML table.](./images/itemsTableWithIndex.png "A table of numbered shopping list items.")
-
-## Binding `<option>`s in a `<select>`
-
-You've seen that `v-for` can be used with lists and tables.  It can be used with any element that contains multiple other elements. 
-
-1. Add an array named `actions` to the `data` that holds a list of actions we might take on the elements. For example:
-   ```
-   actions: ["Increase", "Decrease", "Delete"],
-   ```
-2. Create a `<select>` element on the page.
-3. Use a `v-for` to create an `<option>` for each action.
-   - The `<select>` should render on the page with the appropriate actions listed, but for now it will not do anything when you select an action. We'll learn how to do that soon!
 
 ---
 

@@ -1,16 +1,152 @@
 # 03 - Vue1 - Class Notes
 
-**DRAFT**
-
 ## Instructor ToDo Before Class
 
-- Merge...
+- Merge 
+  - `03-Vue1-Tutorial-Soln`
+  - `03-Vue-Activity-Soln`
+  - `03-Vue1-Application-Starter`
 
-## Stuff 
+## Synchronize with `upstream` `development`
 
-- Big picture...
-  - What they've built so far.
-  - What they are doing next.
+- Open dev environment (from a fork as a student)
+- `cd FarmData2`
+- Synch with `upstream.
+  - `git switch development`
+  - `git pull upstream development`
+
+## Review 02-HTML-CSS-Application
+
+- Application for today was to build a static HTML prototype for the harvest feature.
+  ![Static HTML Harvest Prototype](../02-HTML-CSS/images/harvestPrototype.png)
+  - Show two directories in VSCode:
+    - `modules/farm_fd2_school/src/entrypoints/HTML-CSS/App.vue`
+      - What you were given to start 02-HTML-CSS-Application.
+    - `modules/farm_fd2-school/src/entrypoints/Vue1/App.vue`
+      - My solution to 02-HTML-CSS-Application
+      - Where you will start 03-Vue1-Application
+  - Build the school module: `npm run build:school`
+    - Visit FD2 School -> HTML-CSS
+      - This was the starter code you were given for the Homework.
+    - Visit FD2 School -> Vue1
+      - This is my solution to 02-HTML-CSS-Application.
+      - It is also the code you are being given to start 03-Vue1-Application.
+  - The solution:
+    - Show the Vue1 page side by side with the code.
+    - Filled in the HTML in the `<template>` to create the elements.
+    - Added CSS rules to `<style>` to format the page.
+      - Date:
+        - `value` sets the date. Note ordering `yyyy-mm-dd`
+        - `id` all html elements should have an id.
+          - Good habit to get into.
+          - Allows them to be targeted by CSS id selectors.
+            - See: `<style>` for `#harvest-date`
+              - Adds 10 pixel margin below to create space between Date and Crop.
+      - Crop: 
+        - `<label>` and `<select>` with `<option>`s for each choice.
+        - The `selected` attribute marks the option as the default option.
+        - Styling: 
+          - `class="label-margin"` applies the `.label-margin` style.
+            - See: `<style>` for `.label-margin`
+              - Adds 10 pixels of space between "Date:" and the input.
+      - Questions?
+        - Other parts of the page you'd like me to show?
+        - Questions you had about any of the other elements?
+    - 03-Vue1-Application will ask you to apply the content from the 03-Vue1-Tutorials to this page.
+
+## Review 03-Vue1-Tutorial-Soln
+
+- Solution is in `modules/farm_fd2_school/03-Vue1-Tutorials-Soln`
+  - `index.html` - where you write the code.
+    - Given the code that they start with at the beginning of the video.
+  - `main.css` - a provided CSS style sheet.
+  - load it from: `file:///home/fd2dev/FarmData2/modules/farm_fd2_school/03-Vue1-Tutorials-Soln/index.html`
+- Main points:
+  - `<script src="https://unpkg.com/vue@3"></script>`
+    - Loads the Vue library.
+      - Like an `import` (Java/Python) or `include` (C/C++).
+  - `<script>` 
+    - Contains a "Vue App"
+    - `data()` contains the information used by the App.
+      - E.g. `header`, `items`
+      - Values in the `data` can be included in the page using "Vue's Data Binding".
+        - `header`
+          - Bound into the `<h1>` using the double moustache `{{ }}`
+            - Ignore the `|| 'Welcome'` for now.
+          - Causes the value of `header` to appear in the page.
+          - Change the `header` it changes the page.
+          - The `header || 'Welcome'` is a Javascript shorthand for:
+            - If `header` has a non-empty value, show it, otherwise show `'Welcome`'
+              - Demo by making `header` an empty string.
+              - Then reset it to "Shopping List App".
+        - `items`
+          - An array of objects in Javascript.
+            - `[ ... ]` indicates an array.
+              - array entries are separated by `,`
+            - `{ ... }` indicates an object.
+              - each property (i.e. attribute or field) in the object has a name and a value.
+                - `name: value`
+                - e.g. `id: 1`, `label: '20 cups'`
+          - So `items` is an array of three objects, and each object has two properties `id` with a numeric value and `label` with a string value.
+            - Note: There is nothing special about `id` it is just the name of a property.  Could have called it anything, `id` just makes semantic sense.
+          - Bound into the page using "Vue's List Rendering"
+            - In the `<ul>` we generate one `<li>` for each element of `items`:
+              - `<li v-for="item in items" ...>`
+              - Then use `{{ item.label }}` as the content of the `<li>` to to render the value of the `label` property in the list.
+          - The `v-bind:key=item.id` is some Vue detail
+            - `v-for` needs a unique identifier (i.e. a `key`) for each element.
+            - Here we use `item.id` because every `item` has a unique `id`.
+            - Could also have used `item.label` because they are are all different too.  But `item.id` makes more sense semantically.
+    - Vue DevTools
+      - Open from "Hamburger Menu" -> "More tools" -> "Web Developer Tools"
+        - Shortcut key: `Ctrl-Shift-I` in Firefox.
+      - Show `data` 
+        - `header` and `items`
+        - Can open item and see `id` and `label`
+        - Great for seeing what is happening in your app and debugging.
+      - Can also test code by changing values
+        - Change the `header` to check reactivity.
+        - Change a `label`
+        - Add an `item`
+          - `{ "id": 4, "label": "1 cake" }`
+            - A few quirks...
+              - Need to quote the `id` and `label` here.
+              - Also need to use double quotes.
+  - Some other little quirks:
+    - Objects and arrays will have trailing commas when split across multiple lines.
+      - E.g. after each object in `items` array.
+      - But not after `labels`
+        - Unless they are long and split the line.
+        - Demo by changing a label to be longer and reformat.
+          - Reformat `Shift-Ctrl-I` in VSCodium.
+      - This is just intended to help prevent you from forgetting to add them later if you add more items to an object or an array.
+    - Quotes for string values:
+      - In the `<template>` 
+        - HTML strings are in `" "` (double quotes).
+      - In the `<script>` strings are in `' '` (single quotes).
+        - We can nest quotes.
+        - Change a label to quote a word with double quotes.
+      - This is just a convention. Other projects may do it differently.
+      - If you mix it up, auto-format will usually fix it.
+        - Change an HTML attribute to use `' '` and reformat.
+        - Change a `label` to use `" "` and reformat.
+
+## Extending the Tutorial
+
+- Work on the Hands-on activity.
+- Solution is in: `modules/farm_fd2_school/03-Vue1-Activity-Soln`
+
+
+
+
+- Show rebuild
+  - Show SHIFT+reload in browser to see changes.
+  - Note the `num run watch:school` command here.
+    - Especially if it didn't come up in class two
+
+## Setup for 03-Vue1-Homework
+
+- You will work in `modules/farm_fd2_school/src/entrypoints/Vue1/App.vue`
 
 - script in `<script>`
 - don't need to import the CDN, done by the build.
@@ -24,44 +160,20 @@ export default {
 </script>
 ```
 
-- review `v-model` 
-  - show binding a field to data value
-  - need to refresh in Vue devtools to see changes made in UI.
-
-- review `v-bind`
-  - we use of `v-bind` instead of `:` shortcut for `key` in `v-for`.
-
-- Cover JS object syntax shown in tutorial...
-  ```
-    items: [
-      {id: 1, label: '10 party hats'},
-      {id: 2, label: '2 board games'},
-      {id: 3, label: '20 cups'},
-    ],
-  ```
-  - nothing special about `id` its just a name and a unique identifier.
-  - note trailing commas.
-    - want's them when object or array is split across multiple lines
-    - Prevents you from forgetting to add them later when you add more items to an object or an array.
-
-  - Might have noticed that commit also auto formats if you didn't!
-
-  - use of "" vs '' in HTML (template) vs JS/Vue (script)
-    - nesting of "'...'" and '"..."'
-
-- Show Vue Devtools.
-  - Show refresh button
-  - Close and reopen Devtools if Vue content doesn't show.
-
-- Show rebuild
-  - Show SHIFT+reload in browser to see changes.
-  - Note the `num run watch:school` command here.
-    - Especially if it didn't come up in class two
 
 
-## Instructor ToDo After Class
+- Big picture...
+  - What they've built so far.
+  - What they are doing next.
 
-- Merge blah blah.
+- What to do...
+  - Watch and study the T03 videos 
+  - Do H03 - from starter code
+  - T04 - from T03 soln
+  - Don't have to be perfect... don't have to be complete...
+    - but do have to be submitted.
+
+
 
 ---
 

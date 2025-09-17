@@ -15,6 +15,19 @@ In this assignment you will refactor the static HTML/CSS harvest form created in
 7. Find the `modules/farm_fd2_school/src/entrypoints/Vue1/App.vue` file and open it.
    - You will modify the code in this file `App.vue` file to complete this assignment.
 
+## Adding a Vue Instance to `<script>`
+
+The way you add a Vue instance in a FarmData2 module is slightly different than what what you did in the tutorials.  Paste the following code into the `<script>` tag to create your Vue instance:
+```
+export default {
+   data() {
+
+   },
+};
+```
+
+The `data` here can now be used exactly like it was in the tutorials.
+
 ## Generating the Crops from `data`
 
 Eventually we will want to read the list of crops that appear in the "Crop" select element from the FarmData2 database.  This will be much easer, if the options in that element are generated dynamically from data using Vue's data binding (i.e. `{{ }}`) and list rendering capabilities (i.e. `v-for`)

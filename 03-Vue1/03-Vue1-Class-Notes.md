@@ -147,7 +147,10 @@
     - When you are done, the page will look and act pretty much exactly the same. It will just be using Vue `data` and `v-for` instead of using static HTML.
       - This is moving us toward a page that will respond to user actions.
   - Show the `App.vue` 
-    - Your Vue code will go in the `<script>` tag.
+    - The `<template>` has the 02-HTML-CSS-Application solution code we saw earlier.
+    - You will:
+      - Add Vue code in the `<script>` tag.
+      - Modify the `<template>` to use the Vue data.
 
 ## What to Do
   - Do the 03-Vue1-Application assignment.

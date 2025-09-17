@@ -30,7 +30,7 @@ export default {
 };
 ```
 
-The `data` here can now be used exactly like it was in the tutorials.
+You can now use `data` here exactly like it was in the tutorials.
 
 ## Generating the Crops from `data`
 

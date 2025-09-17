@@ -134,46 +134,32 @@
 ## Extending the Tutorial
 
 - Work on the Hands-on activity.
-- Solution is in: `modules/farm_fd2_school/03-Vue1-Activity-Soln`
-
-
-
-
-- Show rebuild
-  - Show SHIFT+reload in browser to see changes.
-  - Note the `num run watch:school` command here.
-    - Especially if it didn't come up in class two
+  - Solution is in: `modules/farm_fd2_school/03-Vue1-Activity-Soln`
 
 ## Setup for 03-Vue1-Homework
 
 - You will work in `modules/farm_fd2_school/src/entrypoints/Vue1/App.vue`
+  - Visit FD2 School -> Vue1
+    - The goal will be to render the elements from Vue data using `v-for`
+      - The options for the "Crop"
+      - The rows of the table.
+      - The options for the "Units"
+    - When you are done, the page will look and act pretty much exactly the same. It will just be using Vue `data` and `v-for` instead of using static HTML.
+      - This is moving us toward a page that will respond to user actions.
+  - Show the `App.vue` 
+    - Your Vue code will go in the `<script>` tag.
 
-- script in `<script>`
-- don't need to import the CDN, done by the build.
-```
-<script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
-```
-
-
-
-- Big picture...
-  - What they've built so far.
-  - What they are doing next.
-
-- What to do...
-  - Watch and study the T03 videos 
-  - Do H03 - from starter code
-  - T04 - from T03 soln
-  - Don't have to be perfect... don't have to be complete...
-    - but do have to be submitted.
-
-
+## What to Do
+  - Do the 03-Vue1-Application assignment.
+    - Review and study the 03-Vue1-Tutorials as necessary.
+  - Do the 04-Vue2-Tutorials assignment.
+  - These don't have to be perfect... 
+    - They don't have to be complete...
+    - But they do have to be submitted.
+    - Recommend that you time box them... 
+      - Work for 1-2 hours then make a PR for what you have.
+      - Then if you have more time continue working.
+    - Each week you'll get solutions to the prior week so you can start those assignments in a working state and keep moving forward.
 
 ---
 

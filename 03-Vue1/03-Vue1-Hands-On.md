@@ -19,7 +19,7 @@ In the last video you followed you modified the contents of the `items` array us
    1. remove an item from the `items` array.
       - Hint: Point at the `items` array in the Vue Devtools and look at the icons that appear.
    2. add an item to the `items` array.
-      - Note: you will need to use quotes around both the attribute name (e.g. "id") and the value (e.g. "3") when editing objects in the VueDevtools.
+      - Note: you will need to use double quotes around both the attribute name (e.g. "id") and the value (e.g. "3") when editing objects in the VueDevtools.
 
 The Vue Devtools will be an invaluable debugging tool as you continue through the course.  Always keep them in mind!
 
@@ -35,7 +35,7 @@ It might be reasonable to want to operate on the quantity of an item and the des
      { id: 3, quantity: 20, label: 'cups' },
    ],
    ```
-2. Adjust the data bindings in the `<template>` to that the items still render correctly.
+2. Adjust the data bindings in the `<template>` so that the items still render correctly.
 
 ## Binding `<option>`s in a `<select>`
 
@@ -48,7 +48,7 @@ You've seen that `v-for` can be used with lists and tables.  It can be used with
 2. Create a `<select>` element on the page.
 3. Use a `v-for` to create an `<option>` for each action.
    - The `<select>` should render on the page with the appropriate actions listed, but for now it will not do anything when you select an action. We'll learn how to do that soon!
-   
+
 ## Render `items` in an HTML Table
 
 Now that the quantity and description of the items have been separated, it might make more sense to render the items in a table instead of a list.

@@ -17,7 +17,11 @@ In this assignment you will refactor the static HTML/CSS harvest form created in
 
 ## Adding a Vue Instance to `<script>`
 
-The way you add a Vue instance in a FarmData2 module is slightly different than what what you did in the tutorials.  Paste the following code into the `<script>` tag to create your Vue instance:
+The way you add a Vue instance in a FarmData2 module is slightly different than what what you did in the tutorials.  In the tutorials you were building a static HTML page and used a `<script>` tag to import the Vue library from its CDN. 
+
+Here you are working inside of a FarmData2 module. The Vue library is automatically imported when you build the module using the `npm run build:school` command. Thus, we do not need to explicitly import Vue from its CDN as we did in the tutorials.
+
+You can then create the Vue instance by pasting the following code into the `<script>` tag in the `App.vue` file:
 ```
 export default {
    data() {
@@ -35,7 +39,8 @@ Eventually we will want to read the list of crops that appear in the "Crop" sele
 1. Change the page so that the list of crops in the "Crop" select element is generated from an array of strings in the Vue instance `data` instead of being hard coded in the `<template>`.
    - The list of crops should be the same as they were before. But it is not necessary that "RADISH" is selected by default.
    - Hint: You'll need to set a `key` in your `v-for`. Because the crop names are unique, you can use it as the `key`.
-2. Commit the changes to your feature branch with a meaningful commit message.
+2. Rebuild the module, reload the page (`Shift+reload`), and check that it still renders the "Crop" select element correctly.
+3. Commit the changes to your feature branch with a meaningful commit message.
 
 ## Generating the Plant table from `data`
 
@@ -45,12 +50,14 @@ Similar to the list of crops that can be harvested, the data in the table showin
    - The plant objects should include attributes and values for:
      - `id`, `date`, `location`, `bed`.
    - You should omit the `id` and `value` attributes from the radio button for now. You'll add those back in later.
-2. Commit the changes to your feature branch with a meaningful commit message.
+2. Rebuild the module, reload the page (`Shift+reload`), and check that it still renders the table correctly.
+3. Commit the changes to your feature branch with a meaningful commit message.
 
 ## Generating the Units from `data`
 
 1. Change the page so that the list of units in the "Units" select element to the right of "Quantity" is generated from an array of strings in the Vue instance `data` instead of being hard coded in the `<template>`.
-2. Commit the changes to your feature branch with a meaningful commit message.
+2. Rebuild the module, reload the page (`Shift+reload`), and check that it still renders the "Units" select element correctly.
+3. Commit the changes to your feature branch with a meaningful commit message.
 
 ## Checklist
 

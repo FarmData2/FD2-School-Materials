@@ -25,7 +25,7 @@ The following references may be helpful in completing these preliminaries:
 5. Remove the placeholder code from the `<template>`.
 6. Add code to the `<template>` and `<style>` sections to create the page shown below. 
    - Build the page one element at a time and make a commit to your feature branch for each element. Use the commit message to describe what you have done in each commit.
-   - Be sure to rebuild the `fd2_school` module each time you make changes. Alternatively you can run a "watcher" that will automatically rebuild the moduel each time you make changes. (See the FarmData2 Command Reference).
+   - Be sure to rebuild the `fd2_school` module each time you make changes. Alternatively you can run a "watcher" that will automatically rebuild the module each time you make changes. (See the FarmData2 Command Reference).
      - If new content that you add does not appear when you reload the page, hold down "SHIFT" while clicking the reload icon.
    [<img src="images/harvestPrototype.png" width="550"/>](images/harvestPrototype.png)
    
@@ -35,12 +35,12 @@ The following references may be helpful in completing these preliminaries:
 - The "Crop" options should be ARUGULA, ASPARAGUS, BEAN, and RADISH.
   - RADISH should be selected by default.
 - The table should contain the exact content shown.
-  - Note: The table inherits some styling from farmOS which is why it looks differnt than the one you created earlier.
+  - Note: The table inherits some styling from farmOS which is why it looks different than the one you created earlier.
   - Hint: Ask your favorite AI for an example of an HTML table with a group of radio buttons with no text in the left column then adapt that for this page.
 - The input for the "Quantity" should be of type of `number` with a default value of 1 and minimum value of 1.
 - The options next to the "Quantity" input should be BUNCH, EACH and POUND.
 - The "Comment Box" should be a `<textarea>` element.
-- Use CSS rules to style the page simlar to the image above. The styling does not have to be exact, but the page should look reasonably nice. At a minimum you should demonstrate that you can use both class and id selectors to style some of the elements on the page.
+- Use CSS rules to style the page similar to the image above. The styling does not have to be exact, but the page should look reasonably nice. At a minimum you should demonstrate that you can use both class and id selectors to style some of the elements on the page.
 
 ## Turning In Your Work
 

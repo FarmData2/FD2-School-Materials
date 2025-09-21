@@ -22,15 +22,16 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
 2. 02-HTML/CSS
    - `02-HTML-CSS-Tutorials-Soln` (just before topic 02 class)
      - Adds `modules/farm_fd2_school/02-HTML-CSS-Tutorials-Soln`
+   - `02-HTML-CSS-Application-Starter` (just before topic 02 class)
+     - Adds `modules/farm_fd2_school/src/entrypoints/HTML-CSS` with placeholder.
    - `02-HTML-CSS-Activity-Soln`  (just after topic 02 class)
      - Adds `modules/farm_fd2_school/02-HTML-CSS-Activity-Soln`
-   - `02-HTML-CSS-Application-Starter` (just after topic 02 class)
-     - Adds `modules/farm_fd2_school/src/entrypoints/HTML-CSS` with placeholder.
 3. 03-Vue1: Vue Data Binding and List Rendering
    - `03-Vue1-Tutorials-Soln` (just before topic 03 class)
-   - `03-Vue1-Activity-Soln` (just after topic 03 class)
-   - `03-Vue1-Application-Starter` (just after topic 03 class)
+   - `03-Vue1-Application-Starter` (just before topic 03 class)
      - This is the instructor solution to the 02-HTML-CSS-Application assignment.
+   - `03-Vue1-Activity-Soln` (just after topic 03 class)
+
 4. 04-Vue2: Vue Inputs and User Events
    - `04-Vue2-Tutorials-Soln`
    - `04-Vue2-Activity-Soln`

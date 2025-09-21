@@ -27,9 +27,7 @@ For this activity you will complete several more tutorials from Vue School that 
 6. Follow along with the tutorial, making changes to the code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
 7. Be sure that the code you have at the end of of the video matches what was produced in the video.
 8. Autoformat your `index.html` file.
-9. Commit your work to your feature branch. 
-   - Be sure to use a descriptive commit message.
-   - The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if you don't remember the commands.
+9. Commit the changes to your feature branch with a meaningful commit message.
 
 ### Checklist
 
@@ -42,9 +40,7 @@ For this activity you will complete several more tutorials from Vue School that 
 2. Follow along with the tutorial, making changes to the code and doing what they do in the videos. Pause and rewind frequently so that you can keep up.
 3. Be sure that the code you have at the end of of the video matches what was produced in the video.
 4. Autoformat your `index.html` file.
-5. Commit your work to your feature branch. 
-   - Be sure to use a descriptive commit message.
-   - The [Git/GitHub Reference](../GitReference/GitReference.md) may be handy here if you don't remember the commands.
+5. Commit the changes to your feature branch with a meaningful commit message.
 
 ### Checklist
 

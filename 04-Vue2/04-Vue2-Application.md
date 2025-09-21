@@ -60,12 +60,13 @@ console.log('This is a test, this is only a test.')
 This type of output can be useful during the initial stages of development and in debugging.  We'll use it here to check that we can handle events from our "Submit" and "Reset" buttons. Then in the next topic we'll do more with these events.
 
 1. Add a `v-on` handler to the "Submit" button that displays the message "Submit was clicked." in the console.
-2. Verify that your message is displayed when the "Submit" button is clicked. To do so:
+2. Verify that your message is displayed in the console when the "Submit" button is clicked. To do so:
    - Rebuild the "school" entry point
    - Reload the page in the browser (Use SHIFT+reload)
    - Open the Devtools
    - Go to the "Console" tab
    - Click the "Submit" button
+   - You should see the message displayed in the console.
 2. Add a `v-on` handler to the "Reset" button that displays the message "Reset was clicked" in the console. 
 4. Verify that your message is displayed when the "Reset" button is clicked.
 

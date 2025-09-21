@@ -9,16 +9,31 @@
    - Create this feature branch from the branch you created for the tutorials to continue from your prior work.
    - OR create this feature branch from `development` to work from the provided solution.
 
-## BLAH....
+## Hide Form on Save
    
-   - move items definition to a method
+Currently when a new item is added to the list, the form for adding items remains visible.  But it might be preferable to have the form hidden after a new item is saved.
 
-   - Make the form become hidden when new item is added.
+1. Change the code so that the form is automatically hidden after a new item is saved.
+  - Hint: Make a change to the `saveItem` method.
 
+## Populate the Shopping List
 
+Currently the shopping list is initially empty.  However, there are some things that any good party will need.  So it might be useful to have a way to quickly add these essential items to the list.
 
-## Blah...
+1. Add a button to the page that when clicked will populate the shopping list with the items that were in the original tutorial:
+   ```
+   10 party hats
+   2 board games
+   20 cups
+   ```
+   - Hint: Add a new method that will `push` these things to the `items` array in the Vue data.
 
+## Deleting Items (More Challenging)
+
+1. Add button beside each item that will delete it from the list when the button is clicked.
+   - Hint: Use an `index` with the `v-for` to pass the index of the item to delete to a new method that removes it from the `items` array in the Vue data.
+     - Caution: Don't name the new method `delete` because that is a reserved word in JavaScript and thus cannot be used as a method name.
+   - Hint: Look up or ask your favorite AI how to delete an item from an array in JavaScript.
 
 ---
 

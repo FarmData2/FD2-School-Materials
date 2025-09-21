@@ -1,6 +1,6 @@
 # 05 - Vue3 - Application
 
-In this assignment you will modify the prototype Harvest module to ...
+In this assignment you will modify the prototype Harvest form so that it's content can be reset and so that unnecessary user interface elements are hidden when they are not needed.
 
 ## Preliminaries
 
@@ -15,30 +15,43 @@ In this assignment you will modify the prototype Harvest module to ...
 7. Find the `modules/farm_fd2_school/src/entrypoints/Vue3/App.vue` file and open it.
    - You will modify the code in this file `App.vue` file to complete this assignment.
 
-## BLAH...
+## Resetting the Form
 
-The "Methods in Vue 3" tutorial showed ...
+In the previous Application you assigned an event handler to the "Reset" button that printed a message in the console when the button was clicked. Now that you have learned how to create methods, you can have the "Reset" button actually reset the values in the form.
 
-- Method for resetting the form.
-- hide table quantity etc if no plants
+1. Update the Harvest form so that when the "Reset" button is clicked the the values in the inputs are reset as follows:
+   - The "Date" is reset to June 15, 2019.
+   - No "Crop" is selected.
+     - Hint: Ask your favorite AI how to ensure that no option is selected in an HTML select when using Vue.
+   - No plants in the table are selected (i.e. no radio button is selected).
+   - The "Quantity" to be harvested is 1.
+   - No "Unit" is selected for the harvest.
+   - The "Comment" is blank (i.e. shows the placeholder text).
+2. Test your implementation to be sure it resets all of the inputs as required when the "Reset" button is clicked.
+3. Commit the changes to your feature branch with a meaningful commit message.
 
-- maybe?
-  - Move array/object stuff to methods to simulate getting it from DB for now.
-  - use if to only return plants for "ASPARAGUS" crop
+## Select no Crop or Unit by Default
 
+Currently when a user first visits the Harvest form there are default values for the crop being harvested ("RADISH") and the harvest unit ("BUNCH"). Setting those was good practice and helped us learn a little more about Vue. But it probably makes more sense to have the user select the crop and harvest unit rather than having these defaults set.
 
-1. 
-7. Commit the changes to your feature branch with a meaningful commit message.
+1. Change the Vue data so that no harvest "Crop" is selected when the page is initially loaded. 
+   - Hint: Setting the data value bound to a `select` input to an empty string `''` or to `null` causes no item to be selected.
+2. Rebuild the school module and reload the page to ensure that no crop is selected by default.
+3. Change the Vue data so that no harvest "Unit" is selected when the page is initially loaded.
+4. Rebuild the school module and reload the page to ensure that no unit is selected.
+5. Commit the changes to your feature branch with a meaningful commit message.
 
-## BLAH Blah...
+## Hide Page Elements when no Crop is Selected
 
-1. blah...
-4. Commit the changes to your feature branch with a meaningful commit message.
+Now when the Harvest form is loaded or reset no crop will be selected. However, the table of plants, the harvest "Quantity" input, the "Unit" select and the "Comment" textarea are still visible in the page. But these elements are not useful when no crop has been selected for harvest. So let's hide them unless a crop is selected. Note that it might also be sensible to hide the "Submit" and "Reset" buttons in this situation, but we'll be doing something different with them in a later topic, so they should remain visible.
 
+1. Modify the Harvest form so that the table of plants, the "Quantity" input the "Unit" select and the "Comment" text area are not visible when no crop is selected (i.e. after a reset).
+2. Test your implementation to be sure the "Quantity" input the "Unit" select and the "Comment" text area are only visible when a crop is selected.
+3. Commit the changes to your feature branch with a meaningful commit message.
 
 ## Checklist
 
-- Blah...
+- 
 
 ## Turning In Your Work
 

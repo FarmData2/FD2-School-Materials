@@ -42,6 +42,7 @@ Shortcut             | Action
 `Ctrl-Shift-I`       | Auto format text/code in VSCodium
 `Ctrl-Shift-I`       | Open the Developer Tools in Firefox
 `Alt-z` or `Cmd-z`   | Toggle word wrap in VSCodium
+`Ctrl-/`             | Toggle comment for current/selected lines in VSCodium
 
 ## Linux Terminal Commands
 

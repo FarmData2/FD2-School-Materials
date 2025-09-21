@@ -23,11 +23,11 @@ In the last video you followed you modified the contents of the `items` array us
 
 The Vue Devtools will be an invaluable debugging tool as you continue through the course.  Always keep them in mind!
 
-## Add a `quantity` Attribute to `items`
+## Add a `quantity` Property to `items`
 
 It might be reasonable to want to operate on the quantity of an item and the description of the item separately. For example, we might want to increase or decrease the number of an item that we have on our list.
 
-1. Change the objects in the `items` array so that they have separate attributes for the quantity of an item and the name of the item.  For example: 
+1. Change the objects in the `items` array so that they have separate properties for the quantity of an item and the name of the item.  For example: 
    ```
    items: [
      { id: 1, quantity: 10, label: 'party hats' },

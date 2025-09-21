@@ -18,7 +18,6 @@
 ## Review 02-HTML-CSS-Application
 
 - Application for today was to build a static HTML prototype for the harvest feature.
-  ![Static HTML Harvest Prototype](../02-HTML-CSS/images/harvestPrototype.png)
   - Show two directories in VSCode:
     - `modules/farm_fd2_school/src/entrypoints/HTML-CSS/App.vue`
       - What you were given to start 02-HTML-CSS-Application.
@@ -31,6 +30,7 @@
     - Visit FD2 School -> Vue1
       - This is my solution to 02-HTML-CSS-Application.
       - It is also the code you are being given to start 03-Vue1-Application.
+        ![Static HTML Harvest Prototype](../02-HTML-CSS/images/harvestPrototype.png)
   - The solution:
     - Show the Vue1 page side by side with the code.
     - Filled in the HTML in the `<template>` to create the elements.
@@ -67,7 +67,7 @@
       - Like an `import` (Java/Python) or `include` (C/C++).
   - `<script>` 
     - Contains a "Vue App"
-    - `data()` contains the information used by the App.
+    - `data()` returns an object that contains the information used by the Vue App.
       - E.g. `header`, `items`
       - Values in the `data` can be included in the page using "Vue's Data Binding".
         - `header`
@@ -82,21 +82,22 @@
         - `items`
           - An array of objects in Javascript.
             - `[ ... ]` indicates an array.
-              - array entries are separated by `,`
+              - Array entries are separated by `,`
             - `{ ... }` indicates an object.
-              - each property (i.e. attribute or field) in the object has a name and a value.
+              - Each property (i.e. attribute or field) in the object has a name and a value separated by a `:`.
                 - `name: value`
                 - e.g. `id: 1`, `label: '20 cups'`
+              - Object properties are separated by `,`
           - So `items` is an array of three objects, and each object has two properties `id` with a numeric value and `label` with a string value.
             - Note: There is nothing special about `id` it is just the name of a property.  Could have called it anything, `id` just makes semantic sense.
           - Bound into the page using "Vue's List Rendering"
             - In the `<ul>` we generate one `<li>` for each element of `items`:
               - `<li v-for="item in items" ...>`
               - Then use `{{ item.label }}` as the content of the `<li>` to to render the value of the `label` property in the list.
-          - The `v-bind:key=item.id` is some Vue detail
+          - The `v-bind:key=item.id` is some stuff for Vue
             - `v-for` needs a unique identifier (i.e. a `key`) for each element.
-            - Here we use `item.id` because every `item` has a unique `id`.
-            - Could also have used `item.label` because they are are all different too.  But `item.id` makes more sense semantically.
+            - Here `v-bind:key=item.id` tells Vue to use the value of the `id` property as the key because every `item` has a unique `id`.
+            - Could also have used `item.label` because they are are all unique as well.  But `item.id` makes more sense semantically.
     - Vue DevTools
       - Open from "Hamburger Menu" -> "More tools" -> "Web Developer Tools"
         - Shortcut key: `Ctrl-Shift-I` in Firefox.

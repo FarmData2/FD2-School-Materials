@@ -32,14 +32,14 @@ The following references may be helpful in completing these preliminaries:
 ## Checklist and Tips:
 
 - The default date should be June 15, 2019.
-- The "Crop" options should be ARUGULA, ASPARAGUS, BEAN, and RADISH.
+- The "Crop" options should be ARUGULA, ASPARAGUS, BEAN, and RADISH, in order.
   - RADISH should be selected by default.
 - The table should contain the exact content shown.
   - Note: The table inherits some styling from farmOS which is why it looks different than the one you created earlier.
   - Hint: Ask your favorite AI for an example of an HTML table with a group of radio buttons with no text in the left column then adapt that for this page.
 - The input for the "Quantity" should be of type of `number` with a default value of 1 and minimum value of 1.
 - The options next to the "Quantity" input should be BUNCH, EACH and POUND.
-- The "Comment Box" should be a `<textarea>` element.
+- The "Comment Box" should be a `<textarea>` element with "Enter a comment..." as the placeholder text.
 - Use CSS rules to style the page similar to the image above. The styling does not have to be exact, but the page should look reasonably nice. At a minimum you should demonstrate that you can use both class and id selectors to style some of the elements on the page.
 
 ## Turning In Your Work

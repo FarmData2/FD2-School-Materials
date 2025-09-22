@@ -38,7 +38,7 @@ Currently when a user first visits the Harvest form there are default values for
    - Hint: Setting the data value bound to a `select` input to an empty string `''` or to `null` causes no item to be selected.
 2. Rebuild the school module and reload the page to ensure that no crop is selected by default.
 3. Change the Vue data so that no harvest "Unit" is selected when the page is initially loaded.
-4. Rebuild the school module and reload the page to ensure that no unit is selected.
+4. Rebuild the school module and reload the page to ensure that no unit is selected by default.
 5. Commit the changes to your feature branch with a meaningful commit message.
 
 ## Hide Page Elements when no Crop is Selected
@@ -51,7 +51,22 @@ Now when the Harvest form is loaded or reset no crop will be selected. However, 
 
 ## Checklist
 
-- 
+- When the page is reloaded:
+  - No "Crop" is selected.
+  - The table, quantity, units and comment are hidden.
+- Selecting a "Crop" reveals the:
+  - "Plants" table with no row selected.
+  - "Quantity" input with value 1.
+  - "Unit" select with no unit selected.
+  - "Comment" box with the placeholder text.
+- Clicking "Reset":
+  - Sets the "Date" to June 15, 2019.
+  - Clears any selected "Crop".
+  - Clears any selected row in the "Plants" table.
+  - Sets the "Quantity" to 1.
+  - Clears any selected "Unit".
+  - Clears any entered "Comment"
+  - Hides the "Plants" table, "Quantity" input, "Unit" select and "Comment" box.
 
 ## Turning In Your Work
 

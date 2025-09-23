@@ -14,6 +14,7 @@
 In the "HTML Attribute Binding in Vue 3" tutorial you used `v-bind` to disable the "Save" button when the input contained less than 5 characters.
 
 1. Disable the "High Priority" checkbox under the same condition that the "Save" button is disabled.
+2. Reload the page and test this functionality.
 
 ## Factoring Out Repeated Code using a Computed Property
 
@@ -23,15 +24,16 @@ Here after disabling the "High Priority" checkbox above your page contains the s
 2. Use the Vue Devtools to check that the `newItemValid` computed property is working properly.
 3. Change the `v-bind` that disables the "Save" button to use the `newItemValid` computed property instead of an explicit condition.
 4. Use the `newItemValid` computed property to also disable the "High Priority" checkbox.
-5. Test the page to ensure that both the "Save" button and the "High Priority" checkbox are enabled and disabled as appropriate.
+5. Reload the page and test to ensure that both the "Save" button and the "High Priority" checkbox are enabled and disabled as appropriate.
 
-## Display `items` in Sorted Order
+## Display `items` in Sorted Order (More Challenging)
 
 1. Add a new computed property `sortedItems` that returns a new array with the `items` sorted by the number of the items that are needed. For example, "2 board games" would come before "10 party hats", which would come before "20 cups".
-   - Hint: Try asking your favorite AI "How can I sort an array of objects with this format { id: 1, label: '10 party hats' } in JavaScript."
-   - Hint 2: Remember, computed properties must not change the Vue `data`. So be sure to use the "spread operator" to copy the `items` array as was done in the `reverseItems` property.
+   - Hint: Try asking your favorite AI "How can I sort an array of objects with this format { id: 1, label: '10 party hats' } by their label in JavaScript."
+   - Hint 2: Remember, computed properties must not change the Vue `data`. So be sure to use the "spread operator" or another technique to copy the `items` array as was done in the `reverseItems` property.
 2. Use the Vue Devtools to check that your `sortedItems` computed property is working correctly.
 3. Change the page so that the items in the shopping list are now displayed in sorted order.
+4. Reload the page and test to be sure items appear in sorted order regardless of the order in which they are added.
 
 ---
 

@@ -57,13 +57,18 @@ Make this a question for them?
   - state what it is not what it does.
   - reversedItems
   - newItemValid (implies true/false)
-  
+
 - Vue Reactivity as a concept...
   - Computed properties recompute
   - Updates to {{ }} content
 
+- Why is the computed property nice?
+  - Can just change the data and know the view is going to be right.
 
-
+- Mention JS logical, relational and arithmetic operators are largely the same as what they are in Java/C/C++
+  - `&&`, `||`, `!`
+  - `>`, `>=`, `<`, `<=`, `!=`, `==`, `===`
+  - `+`, `-`, `*`, `/`, `%`
 
 
   - I think watches are too much to throw in here...
@@ -72,3 +77,10 @@ Make this a question for them?
       - Lots of tutorial pages discuss when to `watch` vs when to use `computed` property... so maybe it makes good sense to add it here?
       - Use `watch` for `crop` change to update `plantList` with if/else?
     - Watch can change data...
+
+
+---
+
+![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License") All textual materials used in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+![GPL V3 or Later](https://www.gnu.org/graphics/gplv3-or-later-sm.png "GPL V3 or later") All executable code in this repository is licensed under the [GNU General Public License Version 3 or later](https://www.gnu.org/licenses/gpl.txt)

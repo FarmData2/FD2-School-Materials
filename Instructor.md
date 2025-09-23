@@ -40,8 +40,11 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
    - `05-Vue3-Tutorials-Soln`
    - `05-Vue3-Activity-Soln`
    - `05-Vue3-Application-Starter`
-6. Attribute Binding / Computed Properties
-
+6. 06-Vue4: Attribute Binding / Computed Properties
+   - `06-Vue4-Tutorials-Soln`
+   - `06-Vue4-Activity-Soln`
+   - `06-Vue4-Application-Starter`
+   
 7. End-to-End Testing
 
 8. Reading Data in FarmData2 (APIs / async / then / Vue LifeCycle Hooks / fixing tests...)

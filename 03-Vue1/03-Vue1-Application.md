@@ -61,11 +61,9 @@ Similar to the list of crops that can be harvested, the data in the table showin
 
 ## Checklist
 
-- The "Date", "Crop", "Quantity", "Units" and "Comment box" inputs are bound to attributes in the Vue `data` and have the correct initial values.
 - The options in the "Crop" select are rendered from an array of strings in Vue `data` using `v-for`.
 - The rows in the "Plants" table are rendered from an array of objects in the Vue `data` using `v-for`.
 - The options in the "Units" select are rendered from an array of strings in the Vue `data` using `v-for`.
-- Optionally the index of the selected plant in the table is bound to an attribute in the Vue `data`.
 
 ## Turning In Your Work
 

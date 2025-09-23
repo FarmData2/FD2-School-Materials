@@ -1,6 +1,6 @@
 # 05 - Vue3 - Tutorials
 
-For this activity you will complete several more tutorials from Vue School that build on your Vue knowledge from the last topic. In these tutorials you'll learn...
+For this activity you will complete several more tutorials from Vue School that build on your Vue knowledge from the last topic. In these tutorials you'll learn how to add methods to your Vue instance and how to conditionally show or hide content on the page.
 
 ## Preliminaries
 

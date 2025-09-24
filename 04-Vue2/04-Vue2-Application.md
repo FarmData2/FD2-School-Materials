@@ -70,6 +70,8 @@ This type of output can be useful during the initial stages of development and i
 2. Add a `v-on` handler to the "Reset" button that displays the message "Reset was clicked" in the console. 
 4. Verify that your message is displayed when the "Reset" button is clicked.
 
+We'll learn how to do more complex things with `v-on` in the next topic.
+
 ## Checklist
 
 - The "Date" input is bound to Vue `data` with the initial date of June 15, 2019.

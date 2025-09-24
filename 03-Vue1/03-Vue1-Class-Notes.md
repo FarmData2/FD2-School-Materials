@@ -4,7 +4,7 @@
 
 - Merge 
   - `03-Vue1-Tutorial-Soln`
-  - `03-Vue-Activity-Soln`
+  - `03-Vue1-Activity-Soln`
   - `03-Vue1-Application-Starter`
 
 ## Synchronize with `upstream` `development`
@@ -157,10 +157,11 @@
   - Do the 03-Vue1-Application assignment.
     - Review and study the 03-Vue1-Tutorials as necessary.
   - Do the 04-Vue2-Tutorials assignment.
-  - These don't have to be perfect... 
-    - They don't have to be complete...
+  - The Application and Tutorials assignments...
+    - don't have to be perfect... 
+    - don't have to be complete...
     - But they do have to be submitted.
-    - Recommend that you time box them... 
+    - I recommend that you time box them... 
       - Work for 1-2 hours then make a PR for what you have.
       - Then if you have more time continue working.
     - Each week you'll get solutions to the prior week so you can start those assignments in a working state and keep moving forward.

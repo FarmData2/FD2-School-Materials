@@ -1,0 +1,4 @@
+- [x] - The `<input>` of type `text` is bound to `newItem` property in the `data` with `v-model`.
+- [x] - the `<input>` of type `checkbox` is bound to `newItemHighPriority` in the `data` with `v-model`.
+- [x] - `<form>` element added with `v-on:submit.prevent` to add `newitem` to the `items` array.
+- [x] - Work is spread across multiple commits.

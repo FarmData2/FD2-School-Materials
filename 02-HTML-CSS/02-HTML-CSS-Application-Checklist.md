@@ -1,0 +1,9 @@
+- [x] - The default date should be June 15, 2019.
+- [x] - The "Crop" options should be ARUGULA, ASPARAGUS, BEAN, and RADISH.
+- [x] - RADISH should be selected by default.
+- [x] - The table should contain the exact content shown.
+- [x] - The input for the "Quantity" should be of type of `number` with a default value of 1 and minimum value of 1.
+- [x] - The options next to the "Quantity" input should be BUNCH, EACH and POUND.
+- [x] - The "Comment Box" should be a `<textarea>` element.
+- [X] - Use CSS rules to style the page similar to the image above. The styling does not have to be exact, but the page should look reasonably nice. At a minimum you should demonstrate that you can use both class and id selectors to style some of the elements on the page.
+- [x] - Work is spread across multiple commits.

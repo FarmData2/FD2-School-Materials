@@ -1,0 +1,12 @@
+- [x] - The `shopping-list` `<div>` has been added.
+- [x] - `header` data is bound into `<h1>` using "double mustache."
+- [x] - Default "Welcome" messages added in header using `||` operator.
+- [x] - `<input>` field has been removed.
+- [x] - `v-for` is used to render the list of items with a `key`
+- [x] - `<script>` added to import the Vue CDN.
+- [x] - `<script>` added to instantiate Vue object.
+- [x] - Vue instance is assigned to `shoppingList` variable.
+- [x] - `data` method added to the Vue instance.
+- [x] - `header` is changed to "Shopping List App"
+- [x] - `items` are specified as an array of objects in `data`.
+- [x] - Work is spread across multiple commits.

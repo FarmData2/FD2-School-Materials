@@ -45,6 +45,9 @@ For this activity you will complete several more tutorials from Vue School that 
 ### Checklist
 
 - `<form>` element added with `v-on:submit.prevent` to add `newitem` to the `items` array.
+- And / or:
+  - `<button>` element contains `v-on:click` to add `newitem` to the `items` array.
+  - `<input>` element contain `v-on:keyup.enter` to add `newitem` to the `items` array.
 
 ## Turning In Your Work
 

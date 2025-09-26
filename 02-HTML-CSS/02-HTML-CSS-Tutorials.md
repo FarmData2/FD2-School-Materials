@@ -32,7 +32,7 @@ For this activity you will complete three tutorials from MDN (Mozilla Developer 
 
 - Page includes `<img>` element that displays a local image with appropriate `alt` text.
 - Page `<title>` element has been customized.
-- Page title appear in an `<h1>` element at the top of page.
+- Page title appears in an `<h1>` element at the top of page.
 - One or more `<p>` elements appear below the image.
 - An ordered (`<ol>`) or unordered (`<ul>`) list containing multiple list items (`<li>`).
 - Some text in one of the paragraphs (`<p>`) has been made into an active link (`<a>`).

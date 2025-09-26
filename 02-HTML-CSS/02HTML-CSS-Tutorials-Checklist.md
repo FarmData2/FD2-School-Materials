@@ -1,0 +1,15 @@
+- [x] - Page includes `<img>` element that displays a local image with appropriate `alt` text.
+- [x] - Page `<title>` element has been customized.
+- [x] - Page title appears in an `<h1>` element at the top of page.
+- [x] - One or more `<p>` elements appear below the image.
+- [x] - Page contains an ordered (`<ol>`) or unordered (`<ul>`) list containing multiple list items (`<li>`).
+- [x] - One of the paragraphs (`<p>`) contains an active link (`<a>`).
+- The `<head>` element in `index.html`:
+  - [x] - Sets the style sheet to `styles/style.css`
+  - [x] - Sets the font for the `<html>` element.
+- The `styles/style.css` style sheet has CSS rules that use element selectors to style the:
+  - [x] - `<h1>` element
+  - [x] - `<p>` and `<li>` elements
+  - [x] - `<body>` element
+  - [x] - `<img>` element
+- [x] - Work is spread across multiple commits.

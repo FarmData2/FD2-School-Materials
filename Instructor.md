@@ -31,7 +31,6 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
    - `03-Vue1-Application-Starter` (just before topic 03 class)
      - This is the instructor solution to the 02-HTML-CSS-Application assignment.
    - `03-Vue1-Activity-Soln` (just after topic 03 class)
-
 4. 04-Vue2: Vue Inputs and User Events
    - `04-Vue2-Tutorials-Soln`
    - `04-Vue2-Activity-Soln`

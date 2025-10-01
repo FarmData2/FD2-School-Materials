@@ -15,8 +15,8 @@
   - `git switch development`
   - `git pull upstream development`
 - Note the new directories that are added in `modules/farm_fd2_school`:
-  - `03-Vue1-Tutorials-Soln`
-  - `03-Vue1-Activity-Soln`
+  - `04-Vue1-Tutorials-Soln`
+  - `04-Vue1-Activity-Soln`
   - `src/entrypoints/04-Vue2`
 
 ## A Cautionary Note

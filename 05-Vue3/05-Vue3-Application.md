@@ -7,9 +7,9 @@ In this assignment you will modify the prototype Harvest form so that it's conte
 1. Restart your FarmData2 Development Environment.
 2. Synchronize your `development` branch with the upstream to add the starter code for this assignment to your repository.
 3. Rebuild the `fd2_school` module.
-4. Use the "FD2 School" menu to navigate to the "Vue2" page.
-   - This page will contain a working solution to the Vue1 Application assignment.
-   - If you do not see the "Vue2" menu or a working solution to the Vue1 Application assignment, check that you have performed steps 2 and 3 correctly and try again.
+4. Use the "FD2 School" menu to navigate to the "Vue3" page.
+   - This page will contain a working solution to the Vue2 Application assignment.
+   - If you do not see the "Vue3" menu or a working solution to the Vue2 Application assignment, check that you have performed steps 2 and 3 correctly and try again.
 5. Create a new feature branch from `development` and switch to it for your work on this assignment.
 6. Open the FarmData2 folder in VSCodium.
 7. Find the `modules/farm_fd2_school/src/entrypoints/Vue3/App.vue` file and open it.

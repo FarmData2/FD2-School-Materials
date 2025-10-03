@@ -80,6 +80,7 @@ We'll learn how to do more complex things with `v-on` in the next topic.
 - The "Units" select is bound to Vue `data` with "BUNCH" selected initially.
 - The "Comment Box" textarea is bound to Vue `data` and displays the placeholder text (i.e. is initially empty).
 - All of the radio buttons are bound to Vue `data` with no button selected initially.
+  - The value of the selected radio button gives its index in the array.
 - Clicking the "Submit" button displays the "Submit was clicked." message in the Devtools console.
 - Clicking the "Reset" button displays the "Reset was clicked." message in the Devtools console.
 

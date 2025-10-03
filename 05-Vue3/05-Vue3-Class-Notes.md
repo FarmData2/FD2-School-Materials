@@ -25,8 +25,13 @@ They have seen this enough so can do it before class now.
 
 ## Homework 04 - Inputs and User Events
 
+- Log into farmOS
+- Visit "FD2 School" -> "Vue3"
+  - This is the provided solution to "04-Vue2-Application"
+
 ### Binding `<input>` values with `v-model`
 
+- Code is in `modules/farm_fd2_school/src/entrypoints/05-Vue3/App.vue`.
 - The `v-model` directive binds the value of an HTML `input` element to a property in the Vue `data`.
   - If the `input` element is changed by the user, the value in the `data` property changes.
   - If the `data` property is changed by code, the value displayed in the `input` element also changes.

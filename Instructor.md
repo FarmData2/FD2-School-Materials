@@ -43,19 +43,21 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
    - `06-Vue4-Tutorials-Soln`
    - `06-Vue4-Activity-Soln`
    - `06-Vue4-Application-Starter`
+7. 07-FD1: Fetching Data
+   - `07-FD1-Tutorials-Starter` (must push after 06!)
+   - 
+
+
    
 7. End-to-End Testing
 
-8. Reading Data in FarmData2 (APIs / async / then / Vue LifeCycle Hooks / fixing tests...)
-   - `0?-FD2-Data1-Tutorials-Soln`
-   - `0?-FD2-Data1-Activity-Soln`
-   - `0?-FD2-Data1-Application-Starter`
 
-9. Writing Data in FarmData2 / Unit Testing??
 
-10. Vue Components / FarmData2 Components
+8. Writing Data in FarmData2 / Unit Testing??
 
-11. FarmData2 Idioms & Practices?? 
+9. Vue Components / FarmData2 Components
+
+10. FarmData2 Idioms & Practices?? 
     - Roll into project work?
 
 ## Assignment Submission Logistics

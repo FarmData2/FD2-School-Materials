@@ -87,8 +87,10 @@ Complete the following tasks in the page to understand what it is doing.
 1. Notice that the "Users" select is initially empty.
 2. Click the "Fetch Users" button and notice that "Users" select is populated.
 3. Open the "Users" select and see that it now contains two names.
-4. Click the "Clear Users" button and notice that the "Users" select goes back to being empty.
-5. Click the "Fetch Users" button again to repopulate the "Users" select.
+4. Select one of the users.
+5. Notice that the header "Posts by ..." appears.
+6. Click the "Clear Users" button and notice that the "Users" select goes back to being empty and the "Posts by..." header disappears.
+7. Click the "Fetch Users" button again to repopulate the "Users" select.
 
 #### Studying the Implementation
 
@@ -98,9 +100,10 @@ Now open the `FarmData2/modules/farm_fd2_school/07-FD1/index.html` file in VSCod
 2. Why does the "Users" select appear empty on the page when it is loaded?
 3. What Vue `method` is called when the "Fetch Users" button is clicked?
 4. Why does the "Users" select contain two users after the "Fetch Users" button is clicked?
-5. What Vue `method` is called when the "Clear Users" button is clicked?
-6. Why does the "Users" select appear empty after clicking the "Clear Users" button?
-7. What Vue `data` property will contain the name of the user that is selected.
+5. Why does the "Posts by ..." header appear?
+6. Why does the "Posts by ..." header contain the selected user's name?
+7. What Vue `method` is called when the "Clear Users" button is clicked?
+8. Why does the "Users" select appear empty after clicking the "Clear Users" button?
 
 ### Fetching User Data from the {JSON}Placeholder API
 

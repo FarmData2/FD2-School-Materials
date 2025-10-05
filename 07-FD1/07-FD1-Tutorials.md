@@ -109,7 +109,7 @@ Now open the `FarmData2/modules/farm_fd2_school/07-FD1/index.html` file in VSCod
 
 Having two users hard-coded into the program is no way to run a social media site, even a really bad one.  So let's make use of the `users` endpoint of the {JSON}Placeholder API to populate the "Users" select with the names of all of our site's users.
 
-### Fetching the `users`
+#### Fetching the `users`
 
 JavaScript's provides a built in `fetch` function that is used to make requests of APIs.  We will use this `fetch` function to request the `users` data from the {JSON}Placeholder API.
 
@@ -138,7 +138,7 @@ JavaScript's provides a built in `fetch` function that is used to make requests 
    - Look at enough of the data to convince yourself that we have now used JavaScript's `fetch` function to retrieve the same information that you saw earlier.
 10. Commit the changes to your feature branch with a meaningful commit message.
 
-#### Understanding the `fetchUsers` Method
+##### Understanding the `fetchUsers` Method
 
 You have seen that the code you added above fetched the data from the `users` endpoint. Let's now go through that code line-by-line to understand how it works.
 
@@ -178,7 +178,7 @@ You have seen that the code you added above fetched the data from the `users` en
 - [Master Async Await Javascript in an easy way](https://www.youtube.com/watch?v=H9nFFE5_VS4) from Nova Designs.
   - You can stop at 3:50, just before the advertisement begins.
 
-#### Accessing User Data
+### Accessing User Data
 
 Let's get a little practice accessing the response data that we have received.
 1. Comment out the `console.log(users)` line in the `fetchUsers` function.

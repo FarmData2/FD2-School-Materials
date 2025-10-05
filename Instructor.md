@@ -20,17 +20,13 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
 
 1. 01-Introduction
 2. 02-HTML/CSS
-   - `02-HTML-CSS-Tutorials-Soln` (just before topic 02 class)
-     - Adds `modules/farm_fd2_school/02-HTML-CSS-Tutorials-Soln`
-   - `02-HTML-CSS-Application-Starter` (just before topic 02 class)
-     - Adds `modules/farm_fd2_school/src/entrypoints/HTML-CSS` with placeholder.
-   - `02-HTML-CSS-Activity-Soln`  (just after topic 02 class)
-     - Adds `modules/farm_fd2_school/02-HTML-CSS-Activity-Soln`
+   - `02-HTML-CSS-Tutorials-Soln`
+   - `02-HTML-CSS-Application-Starter`
+   - `02-HTML-CSS-Activity-Soln`
 3. 03-Vue1: Vue Data Binding and List Rendering
-   - `03-Vue1-Tutorials-Soln` (just before topic 03 class)
-   - `03-Vue1-Application-Starter` (just before topic 03 class)
-     - This is the instructor solution to the 02-HTML-CSS-Application assignment.
-   - `03-Vue1-Activity-Soln` (just after topic 03 class)
+   - `03-Vue1-Tutorials-Soln`
+   - `03-Vue1-Application-Starter`
+   - `03-Vue1-Activity-Soln` 
 4. 04-Vue2: Vue Inputs and User Events
    - `04-Vue2-Tutorials-Soln`
    - `04-Vue2-Activity-Soln`
@@ -44,21 +40,18 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
    - `06-Vue4-Activity-Soln`
    - `06-Vue4-Application-Starter`
 7. 07-FD1: Fetching Data
-   - `07-FD1-Tutorials-Starter` (must push after 06!)
-   - 
+   - `07-FD1-Tutorials-Starter` (must push after 06 so ready for T07!)
+   - `07-FD1-Tutorials-Soln`
 
+8. Writing Data in FarmData2
 
-   
-7. End-to-End Testing
+9. End-to-End Testing
 
+10. Vue Components / FarmData2 Components
 
-
-8. Writing Data in FarmData2 / Unit Testing??
-
-9. Vue Components / FarmData2 Components
-
-10. FarmData2 Idioms & Practices?? 
+11. FarmData2 Idioms & Practices?? 
     - Roll into project work?
+    - Team organization and working with GitHub
 
 ## Assignment Submission Logistics
 

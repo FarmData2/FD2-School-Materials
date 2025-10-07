@@ -1,11 +1,38 @@
 
 
-- Cover from tutorial...
-  - v-bind for options to the to the user object and why it makes sense.
-    - avoids the search for the user's id.
-  - v-if="selectedUser"
-    - Truthiness in JavaScript.
+## The Tutorial
 
+- Cover from tutorial...
+  - v-bind of options to the full user object rather than id and why it makes sense.
+    - avoids the search for the user's id or other information.
+    - What changes needed to be made...
+      - `v-bind` in the option.
+      - change in the `v-if`
+        - v-if="selectedUser"
+          - Truthiness in JavaScript.
+            - Truthy values
+              - objects, arrays, non-empty strings, non-zero numbers, true
+            - Falsy values
+              - null, undefined, NaN, empty string, zero, false
+      - change in initial value?
+      - change in resets?
+
+## New Ideas...
+
+## Query Parameters in API Requests
+- Show `posts` API
+  - `https://jsonplaceholder.typicode.com/posts`
+    - All posts by all users...
+  - Could filter this by `userID` on the client
+  - Wasted time transmitting unnecessary data.
+- Introduce query parameters
+  - Show the query parameter
+    - General pattern with `?`
+      - `https://jsonplaceholder.typicode.com/posts?userId=1`
+    - Multiple query parameters with `&`
+      - `https://jsonplaceholder.typicode.com/posts?userId=1&id=2`
+
+  - You'll use in the hands on exercises.
 
 ## Watching Vue Properties
 
@@ -15,16 +42,22 @@
   - Show optional parameter for newValue
   - Show optional parameter for oldValue
 
-## Query Parameters in API Requests
-- Need introduce query parameters
-
-- Introduce try/catch for error handling.
-  - maybe? Or maybe add to application?
 
 
-Maybe move to Application?
+
+IF TIME PERMITS TRY TO SETUP THE APPLICATION A LITTLE BIT MORE.
 
 ## Exploring farmOS Data
+
+- If time permits...
+
+- Idea of crops vs plants again
+- Idea of log_categories and specifics
+  - seeding, seeding_direct, seeding_tray, seeding_cover_crop
+  - transplanting
+  - idea of plants in the ground vs in trays.
+
+
 
 - Sample data
   - installed by setup.bash when you created your codes space.
@@ -84,5 +117,3 @@ Maybe move to Application?
 - Can see all of the APIs offered by farmOS at:
   - http://farmos/api/
   - there you will see things like:
-
-  ## Introduce Plants API Endpoint

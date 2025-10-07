@@ -14,8 +14,8 @@
 When a user of our (really bad) social media site picks another user from the "Users" select the page should display the posts that have been made by the selected user.  To do so, we'll first need to be able to detect when the selected user is changed. We can use a Vue `watch` to do this.
 
 1. Add a `watch` that will execute when the `selectedUser` property in the Vue `data` changes.
-   - Hint: Ask your favorite AI for "a simple vue watch example using the options api" and then adapt it.
-2. Log the selected user's `name` to the console.
+   - Hint: Ask your favorite AI for "a simple example of a Vue watch using the options api" and then adapt it.
+2. Add code to the `watch` on `selectedUser` property that logs the selected user's `name` to the console.
 3. Change the selected user a few times to verify that the `watch` is working correctly.
 4. Commit the changes to your feature branch with a meaningful commit message. 
 

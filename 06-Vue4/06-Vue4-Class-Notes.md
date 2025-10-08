@@ -13,35 +13,39 @@
 Take questions and show solutions as is helpful for providing answers.
 
 - 05-Vue3-Application - Methods and Conditional Rendering
-  - added `resetForm` method.
-  - no crop or unit selected by default.
-    - set `crop` and `unit` to `''`
-  - hide form when no crop is selected.
-    - `v-if="crop != ''"`
+  - Solution is in the `06-Vue4-Application-Starter` branch
+    - added `resetForm` method.
+    - no crop or unit selected by default.
+      - `crop = '',`
+      - `unit = '',`
+    - hide form when no crop is selected.
+      - `v-if="crop != ''"`
 - 06-Vue4-Tutorials - Attribute Binding and Computed Properties
-  - `v-bind` to disable "Save" button.
+  - Solution is in the `06-Vue4-Tutorials-Solution` branch
+  - Disable "Save" button if item is too short.
     - `v-bind:disabled="newItem.length < 5"`
-  - `reversedItems` computed property
-    - Returns a reversed copy of the `items` array:
+  - Display the items with newest items at the top.
+    - `reversedItems` computed property returns a reversed copy of the `items` array:
       ```
       reversedItems() {
         return [...this.items].reverse();
       }
-      ```
-      - The _array spread_ operator.
-        - Used here as a shortcut for making a copy of an array.
-          - `[...[1,2,3]]` -> `[1,2,3]`
-        - More generally the spread operator breaks and array apart (i.e. spreads it) and replaces it with its individual elements.
-          - `['a',...['p','q'],'z']` -> ['a','p','q','z']
-      - Reversing the array.
-        - `.reverse()`
-          - Like Java/Python and many other languages there are lots of them.
-            - If you think what you need to do is something common that many other people will want to do, look it up in the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) or ask your favorite AI:
-              - Reversing
-              - Extracting a sub-array
-              - Removing elements
-              - Sorting
-              - ...
+      ``` 
+      - Let's pick apart how this works a little:
+        - The _array spread_ operator.
+          - Used here as a shortcut for making a copy of an array.
+            - `[...[1,2,3]]` -> `[1,2,3]`
+          - More generally the spread operator breaks and array apart (i.e. spreads it) and replaces it with its individual elements.
+            - `['a',...['p','q'],'z']` -> ['a','p','q','z']
+        - Reversing the array.
+          - `.reverse()`
+            - Like Java/Python and many other languages there are lots of methods that operate on arrays.
+              - If you think what you need to do is something common that many other people will want to do, look it up in the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) or ask your favorite AI:
+                - Reversing
+                - Extracting a sub-array
+                - Removing elements
+                - Sorting
+                - ...
     - Uses `reversedItems` to render the list instead of `items`
       - `v-for="item in reversedItems"`
         - Changed from `v-for="item in items"`
@@ -91,32 +95,37 @@ Take questions and show solutions as is helpful for providing answers.
   
 ### Computed Properties vs Methods
 
-- When do we want to use a _Computed Property_?
+- Use a computed property when you want to:
+  - Reconfigure existing data for display.
+    - `reversedList`
+    - A sorted list.
+  - Compute a new value from existing data.
+    - `formValid`
+    - `total`, `minimum`, `maximum`
+  - Avoid storing redundant data that will need to be updated in multiple places.
+  - Have the value update automatically when the associated `data` properties change.
+- Use a method when you want to:
+  - Modify `data` properties in the Vue instance.
+    - Add an item to the list.
+    - Empty the list.
+  - Execute the code on an event.
+    - `v-on:click`
+  - Explicitly call the method from another method.
+    - `this.resetForm()` 
 
-- How is a _Computed Property_ different than a _method_?
-
-
-- Computed properties are only for transforming existing data into a new representation of that data.
-  - E.g. the reversed list of items in the tutorial.
-
-- Methods vs Computed Properties
-  - Methods called explicitly on an event or from another method
-    - can change data
-  - Computed properties called implicitly when any data that it uses changes.
-    - cannot change data
-    - But can be used in template so presentation changes when computed property changes. 
-    - They generate new or transformed information from existing data.
-      - Sorted list, complex boolean condition, etc.
-
-An Example:
-- Use the example of factoring out repeated code:
-  - Earlier tutorial did it with the code to add an item.
-    - this modified the data `item` by pushing to it.
-    - so that was a `method`
-  - Now we might have repeated code to disable both the "Save" button and the "High Priority" checkbox.
-    - This could be a method... but then it wouldn't be recomputed automatically.
-    - This can be a computed property because it doesn't change any `data`
-    - It just computes a new value from the existing `data`.
+Some examples from the tutorials.
+- We factored out the code that adds a new item to the `items` list.
+  - This required:
+    - Modifying the `items` property by pushing to it.
+    - Needed to be called on an event.
+    - So this had to be a `method`
+- In the the hands on activity you will disable both the "Save" button and the "High Priority" checkbox.
+  - This computation:
+    - Is is a new value computed using existing data.
+      - `this.newItem.length > 5`
+    - It does not change any `data` properties.
+    - We want it to update automatically (i.e. reactively) when the associated `data` properties change.
+    - So this should be a `computed` property.
 
 ## Naming Conventions
 

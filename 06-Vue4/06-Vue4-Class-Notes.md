@@ -1,38 +1,103 @@
+# 06 - Vue4 - Class Notes
 
-- FD2 uses `v-bind` instead of `:` shorthand.
-  - less overhead for beginners.
-  - also uses `v-on` instead of `@` for the same reason.
+## Instructor ToDo Before Class
 
-- Javascript spread operator 
-  - Shortcut for making a copy of an array.
-    - Other ways...
-      - `copy = [...arr]`
-      - `copy = Array.from(arr)`
-      - `copy = arr.slice()`
-      - `copy = [].concat(arr)`
-    - Just one of the things that I don't like about Javascript...
+- Merge 
+  - `06-Vue4-Tutorial-Soln`
+  - `06-Vue4-Activity-Soln`
+  - `06-Vue4-Application-Starter`
+  - `07-FD1-Tutorials-Starter`
 
-- Javascript's array sort and sorting objects
-  - Making a sort comparator.
-  - Show a simple example... or show an ask AI?
+## Questions
+  
+Take questions and show solutions as is helpful for providing answers.
 
-  - Reference for Javascript Array class methods?
-    - Lots of them... 
-    - If you have to do something that seems common...
-      - Look at the reference
-      - Ask your favorite AI.
+- 05-Vue3-Application - Methods and Conditional Rendering
+  - added `resetForm` method.
+  - no crop or unit selected by default.
+    - set `crop` and `unit` to `''`
+  - hide form when no crop is selected.
+    - `v-if="crop != ''"`
+- 06-Vue4-Tutorials - Attribute Binding and Computed Properties
+  - `v-bind` to disable "Save" button.
+    - `v-bind:disabled="newItem.length < 5"`
+  - `reversedItems` computed property
+    - Returns a reversed copy of the `items` array:
+      ```
+      reversedItems() {
+        return [...this.items].reverse();
+      }
+      ```
+      - The _array spread_ operator.
+        - Used here as a shortcut for making a copy of an array.
+          - `[...[1,2,3]]` -> `[1,2,3]`
+        - More generally the spread operator breaks and array apart (i.e. spreads it) and replaces it with its individual elements.
+          - `['a',...['p','q'],'z']` -> ['a','p','q','z']
+      - Reversing the array.
+        - `.reverse()`
+          - Like Java/Python and many other languages there are lots of them.
+            - If you think what you need to do is something common that many other people will want to do, look it up in the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) or ask your favorite AI:
+              - Reversing
+              - Extracting a sub-array
+              - Removing elements
+              - Sorting
+              - ...
+    - Uses `reversedItems` to render the list instead of `items`
+      - `v-for="item in reversedItems"`
+        - Changed from `v-for="item in items"`
 
-- Computed properties automatically recompute when any data that they use changes.
+## Computed Properties and Reactivity
+
+- Computed Properties are used a lot like Vue `data` properties.
+  - `v-for="item in reversedItems"`
+  - `this.reversedItems.length`
+  - But because a computed property is a function that returns a value we can't assign to it like we can a `data` property.
+    - `this.reversedItems = []` will not work.
+- Computed properties automatically recompute anytime that any of the `data` that they use changes. For example:
+  - The `reversedItems` computed property uses `this.items`.
+  - So any time `this.items` is changed, `reversedItems` will be recomputed.
+  - Demo this:
+    - Use `06-Vue4-Tutorials-Solution/index.html`
+    - Open Vue Devtools
+    - Show `items` and `reversedItems` are `Array[0]`
+    - Add new item to the list.
+      - Show `items` contains the new item.
+        - Because our event handler put it into `this.items`.
+      - Show `reversedItems` has that item also.
+        - Because it is a computed property that uses `this.items`.
+        - So it was automatically recomputed when `this.items` was changed by the event handler.
+    - Add another new item to the list.
+      - Show it is at the end of the `items` Array (index `1`).
+      - Show that it is at the start of the `reversedItems` Array (index `0`).
+      - Again happened automatically because `reversedItems` is a computed property that uses `this.items` and `this.items` was changed.
+    - Also note that the list rendered in the page changed.
+      - This is because that list was rendered using the `reversedItems` computed property, which changed because `list.items` changed, which changed because the event handler added the new item.
+    - This is Vue's _Reactivity_ at work!
+      - When we modify data, Vue reacts by updating all of the things that depend upon the changed data.
+- Computed properties:
+  - Must return a value.
+  - Must not change any `data` properties.
+    - Careful with this... its a major source of bugs.
+    - Can create infinite loops.
+      - For example, if `reversedItems` actually reversed `items` then when it did so, it would be recomputed again because `items` changed. That would then change `items` which would cause it to recompute again...
+      - That one is pretty obvious, but this loop could ripple through many different computed properties and methods.
+        - For example, computed property `A` might use `data` property `X`, and computed property `B` might use computed property `A` and also calls method `C`. Now if method `C` changes `X` we can get a similar infinite loop.
+    - The linter in FarmData2 helps with this.
+      - Catches simple cases where a computed property directly changes a `data` property.
+        - Will be underlined in red.
+        - Will have the message "Unexpected side effect in ..."
+        - The `pre-commit` hook will prevent you from committing. 
+      - Won't catch more complex instances (e.g. calls to methods that change a `data` property).
+  
+### Computed Properties vs Methods
+
+- When do we want to use a _Computed Property_?
+
+- How is a _Computed Property_ different than a _method_?
+
+
 - Computed properties are only for transforming existing data into a new representation of that data.
   - E.g. the reversed list of items in the tutorial.
-- Computed properties must:
-  - not change data (huge source of bugs!!!)
-  - return a value
-- Computed properties can be used anywhere a data property is used with the exception that they cannot be changed.
-
-- Show computed property in the tutorial using the Vue Devtools!
-  - Show added items are added to items and the computed property.
-  - They do it in the tutorial... but you know.
 
 - Methods vs Computed Properties
   - Methods called explicitly on an event or from another method
@@ -43,7 +108,7 @@
     - They generate new or transformed information from existing data.
       - Sorted list, complex boolean condition, etc.
 
-Make this a question for them?
+An Example:
 - Use the example of factoring out repeated code:
   - Earlier tutorial did it with the code to add an item.
     - this modified the data `item` by pushing to it.
@@ -53,31 +118,87 @@ Make this a question for them?
     - This can be a computed property because it doesn't change any `data`
     - It just computes a new value from the existing `data`.
 
-- Naming computed properties
-  - state what it is not what it does.
-  - reversedItems
-  - newItemValid (implies true/false)
+## Naming Conventions
 
-- Vue Reactivity as a concept...
-  - Computed properties recompute
-  - Updates to {{ }} content
+Common naming conventions keep things consistent across large code bases. It is common to:
 
-- Why is the computed property nice?
-  - Can just change the data and know the view is going to be right.
+- Name `data` properties with nouns because they represent things.
+  - `date`, `cropList`, ...
+- Name computed properties with:
+  - Nouns when they represent things.
+    - `reversedList`
+  - Questions when they give the answer to a question.
+    - `newItemValid`, `formValid`
+      - Often but not always `boolean`
+- Name `methods` with verbs because they do things.
+  - `resetForm`
 
-- Mention JS logical, relational and arithmetic operators are largely the same as what they are in Java/C/C++
-  - `&&`, `||`, `!`
-  - `>`, `>=`, `<`, `<=`, `!=`, `==`, `===`
-  - `+`, `-`, `*`, `/`, `%`
+## Some Additional Commentary on JavaScript 
 
+### `v-bind` vs `:`
 
-  - I think watches are too much to throw in here...
-  - And `watches` run????
-    - Can we include `watch` here as well?
-      - Lots of tutorial pages discuss when to `watch` vs when to use `computed` property... so maybe it makes good sense to add it here?
-      - Use `watch` for `crop` change to update `plantList` with if/else?
-    - Watch can change data...
+Code in FarmData2 uses `v-bind` instead of the `:` shorthand.
+  - This results in less cognitive overhead for beginners.
+  - Similar to how it uses `v-on` instead of `@`.
+  - The Prettier plugin is configured to convert `:` to `v-on`.
+    - So you can write with `:` if you like.
+    - But when you commit the `pre-commit` hook will change `:` to `v-on`
 
+### Relational and Arithmetic Operators
+
+The logical, relational and arithmetic operators in JavaScript are largely the same as what they are in Java/C/C++ and many other languages.
+
+- `&&`, `||`, `!`
+- `>`, `>=`, `<`, `<=`, `!=`, `==`, `===`
+- `+`, `-`, `*`, `/`, `%`
+
+The `===` is unique to JavaScript as we discussed previously.
+
+### _Truthiness_ in JavaScript
+
+Because JavaScript is not _statically typed_ a variable can contain different values at different times.  Thus a a boolean expression like in `if (x && y)` might be performing the logical AND of two boolean values, an integer and an array, an object and a boolean, or any other combination. To deal with these scenarios JavaScript will convert all values in a boolean expression to be either _`truthy`_ or _`falsy`_.  Values that are `truthy` evaluate as `true` and values that are `falsy` evaluate as false.
+
+The `falsy` values include:
+- `false`, `0`, `''`, `""`, `null`, `undefined`, and `NaN`.
+The `truthy` values are everything else.
+- `true`, non-zero numbers, non-empty strings, Arrays, and Objects.
+  - Note: Arrays and Objects are `truthy`. even if they are empty (`[]` or `{}`).
+
+Some examples may help to clarify:
+- `0 && true` -> `falsy && truthy` -> `false`
+- `{} || 0` -> `truthy || falsy` -> `true`
+
+## Hands On Time
+
+Spend the the rest of the time working on 06-Vue4-Hands-On activities.
+- But save a few minutes for wrap up.
+
+## Wrapping Up
+
+Here's a preview of what you'll be doing in the application and the next tutorials.
+
+### 06-Vue4-Application
+
+You'll used what you've learned about attribute binding and computed properties to add some nice features for the user.
+
+- Demo from the `07-FD1-Application-Starter` branch
+  - `git switch 07-FD1-Application-Starter`
+  - `npm run build:school`
+  - `Shift+reload`
+  - Open "FD2 School" -> "FD1"
+    - Show that the "Submit" button is disabled unless the form is valid.
+    - Show that the table of plant is sorted from oldest to newest.
+      - Most likely to want to harvest from the oldest plants, so sorting this way makes things easier for the user.
+
+### 07-FD1-Tutorials
+
+- This tutorial: 
+  - Introduces Application Programming Interfaces (APIs).
+  - Shows how to use an API to fetch data from a server.
+  - Is not in Vue School.
+  - Is text based instead of following a video.
+    - So may take a little longer.
+    - Plan accordingly.
 
 ---
 

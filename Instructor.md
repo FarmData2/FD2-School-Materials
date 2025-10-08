@@ -40,7 +40,7 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
    - `06-Vue4-Activity-Soln`
    - `06-Vue4-Application-Starter`
 7. 07-FD1: Fetching Data
-   - `07-FD1-Tutorials-Starter` (must push after 06 so ready for T07!)
+   - `07-FD1-Tutorials-Starter` (must push with 06 so ready for T07!)
    - `07-FD1-Tutorials-Soln`
 
 8. Writing Data in FarmData2

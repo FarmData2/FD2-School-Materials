@@ -184,7 +184,6 @@ They have seen this enough so can do it before class now.
     - For example, when the tutorial added code to the `saveItem` method to clear the input after the new item was saved.
       - Because the code was factored out into a method the new code only needed to be added at one place instead of two.
 
-
 ## Extra Tips
 
 - When writing code in the Vue instance (e.g. a method), you are going to forget `this.`, when you do just remember that you need `this`.

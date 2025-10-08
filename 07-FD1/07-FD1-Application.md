@@ -52,7 +52,8 @@ Now let's see the same "Plant family" (i.e. crop) data through an API endpoint.
    - Click the triangle next to `data` to open it.
      - Notice that `data` is an array of 28 objects.
      - Each object represents one plant type (i.e. crop).
-4. Open the objects at indices 14 and 16.
+4. Open the objects at indices 14 and 16, which should look as follows:
+   ![The objects at indices 14 and 16.](images/FD2-Plant-Types-API-2.png)
    - Notice that each of the objects has properties for:
     - `type`: `taxonomy_term--plant_type`
       - This tells us that the object is a term in the "Plant type" "Taxonomy" in farmOS.

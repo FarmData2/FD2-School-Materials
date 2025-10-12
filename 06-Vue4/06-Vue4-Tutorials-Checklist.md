@@ -1,0 +1,3 @@
+- [x] - `v-bind` is used to disable the "Save" button when the input contains less than 5 characters.
+- [x] - The `reversedItems` computed property causes newly added items to appear at the top of the list.
+- [x] - Work is spread across multiple commits.

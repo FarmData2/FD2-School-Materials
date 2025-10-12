@@ -1,0 +1,17 @@
+- When the page is reloaded:
+  - [x] - No "Crop" is selected.
+  - [x] - The table, quantity, units and comment are hidden.
+- Selecting a "Crop" reveals the:
+  - [x] - "Plants" table with no row selected.
+  - [x] - "Quantity" input with value 1.
+  - [x] - "Unit" select with no unit selected.
+  - [x] - "Comment" box with the placeholder text.
+- Clicking "Reset":
+  - [x] - Sets the "Date" to June 15, 2019.
+  - [x] - Clears any selected "Crop".
+  - [x] - Clears any selected row in the "Plants" table.
+  - [x] - Sets the "Quantity" to 1.
+  - [x] - Clears any selected "Unit".
+  - [x] - Clears any entered "Comment"
+  - [x] - Hides the "Plants" table, "Quantity" input, "Unit" select and "Comment" box.
+- [x] - Work is spread across multiple commits.

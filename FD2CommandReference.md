@@ -54,6 +54,17 @@ Command              | Action
 `rm <file>`          | Delete file `<file>`
 `rmdir <dir>`        | Delete directory `<dir>` - must be empty
 
+## FarmData2 Development Environment Commands
+
+Command                   | Action
+--------------------------|------------------------------------
+`installDB.bash`          | Install the correct version of the sample database.
+`npm run build:school`    | Rebuild the FD2 School module.
+`npm run watch:school`    | Run a watcher that rebuilds the FD2 school module any time there is a change to one of its files.
+`npm run docs:gen`        | Rebuild the FD2 documentation.
+`npm run docs:view`       | Start the documentation server and open the docs in Firefox.
+`reinstallFD2Module.bash` | Reinstall the FarmData2 module into farmOS.
+
 ---
 
 ![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License") All textual materials used in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)

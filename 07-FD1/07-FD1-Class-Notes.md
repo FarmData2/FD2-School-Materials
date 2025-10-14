@@ -57,8 +57,6 @@ IF TIME PERMITS TRY TO SETUP THE APPLICATION A LITTLE BIT MORE.
   - transplanting
   - idea of plants in the ground vs in trays.
 
-
-
 - Sample data
   - installed by setup.bash when you created your codes space.
   - Limited data from Dickinson farm.

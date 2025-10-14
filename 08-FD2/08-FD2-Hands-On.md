@@ -1,9 +1,29 @@
 
 
+
+
+
 ## Convert fetching plants to library function
 
 - Show docs in class
 - Have them implement this one.
+
+
+
+PUT THIS IN HANDS ON
+## Using the FD2 Library Functions
+
+- convert the fetching of crops to use a library.
+
+<script>
+import * as farmosUtil from '@libs/farmosUtil/farmosUtil';
+
+export default {
+    ...
+}
+</script>
+
+
 
 ## Have them Do Units too?
 
@@ -45,3 +65,5 @@ MAKES GOOD ARGUMENT FOR FUNCTIONS TO ABSTRACT IT
 - Live code it...
 
 - Get to looking at library functions in the docs.
+  - Need to know that they have to provide the default parameter values.
+    - or used named parameters?

@@ -24,3 +24,11 @@ Need to give them a createHarvestLog function
 ##
 
 Have them convert the fetches in previous work to calls to functions from docs.
+- Address the fact that some crops were in trays
+  - use the inGround parameter of the function for fetching crops.
+
+
+## Extra
+
+- Fix issue with fetching plants that are in trays.
+- 

@@ -13,7 +13,7 @@ In this assignment you will modify the prototype Harvest form so that ...
    - This new step in necessary because additional functionality has been added to FarmData2 that is needed for this application.
 4. Use the "FD2 School" menu to navigate to the "FD1" page.
    - This page will contain a working solution to the Vue3 Application assignment.
-   - If you do not see the "FD1" menu or a working solution to the Vue3 Application assignment, check that you have performed steps 2, 3, and 4 correctly and try again.
+   - If you do not see the "FD1" menu or a working solution to the Vue4 Application assignment, check that you have performed steps 2, 3, and 4 correctly and try again.
 5. Create a new feature branch from `development` and switch to it for your work on this assignment.
 6. Open the FarmData2 folder in VSCodium.
 7. Find the `modules/farm_fd2_school/src/entrypoints/FD1/App.vue` file and open it.

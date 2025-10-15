@@ -68,7 +68,7 @@ Now that we understand some of the basics of using an API and accessing data in 
 4. Use the following commands to create the starter code for the tutorials:
    ```
    cd ~/FarmData2/modules/farm_fd2_school
-   cp -r 07-FD1-Tutorials-Starter 07-FD1
+   cp -r 07-FD1-Tutorial-Starter 07-FD1
    ```
 5. Open the `FarmData2/modules/farm_fd2_school/07-FD1/index.html` file in the browser.
 

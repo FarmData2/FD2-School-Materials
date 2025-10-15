@@ -19,11 +19,16 @@
 - you'll explore more of those in hands on and application.
 
 - Final goal is to create a harvest log
-- Need to know about farmOS objects/
+- Need to know about farmOS objects
 - Types of objects in farmOS
   - Logs - record actions
   - Assets - record things
+    - You worked with `asset--plant` objects in the last application.
   - Quantities - record amounts and units
+  - Taxonomy Terms
+    - You worked with `taxonomy_term--plant_type` in the last application.
+
+Show these in the UI also...
 
 ## Creating a Harvest Log in the UI
 

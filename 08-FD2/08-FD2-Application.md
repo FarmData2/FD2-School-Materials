@@ -8,6 +8,25 @@
 
 ## Creating the Harvest Log
 
+- console log the pickedPlant to see the json structure.
+
+They will need some help with this...
+
+
+```
+      console.log(this.pickedPlant);
+
+      const plantAsset = await farmosUtil.getPlantAsset(this.pickedPlant.uuid);
+
+      const harvestLog = await farmosUtil.createHarvestLog(
+        this.date,
+        this.pickedPlant.location,
+        this.pickedPlant.beds || [],
+        plantAsset,
+        quantity
+      );
+      console.log(harvestLog);
+```
 
 ## Extra
 

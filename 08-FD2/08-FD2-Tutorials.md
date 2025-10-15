@@ -28,8 +28,9 @@ Note that while previous tutorials were done in a simple `index.html` file, this
 4. Open farmOS in the browser.
 5. Go to the "FD2 School" -> "FD2-Tutorial" page.
    - The "FD2 School" menu now contains options for "FD2-Tutorial", "FD2-Activity" and "FD2-Application". Your work in this Tutorial will appear in the "FD2-Tutorial" page.
-6. Open the `FarmData2/modules/farm_fd2_school/src/entrypoints/FD2-Tutorials/App.vue` file file in VS Codium.
-7. Verify that everything works as expected. In particular, be sure that the "Crop" select is populated with the full list of crops.
+6. Verify that everything works as expected. In particular, be sure that the "Crop" select is populated with the full list of crops.
+7. Open the `FarmData2/modules/farm_fd2_school/src/entrypoints/FD2-Tutorials/App.vue` file file in VS Codium.
+   - You will complete the work for this Tutorial by editing this `App.vue` file.
 
 ## The `farmosUtil` Library Documentation
 

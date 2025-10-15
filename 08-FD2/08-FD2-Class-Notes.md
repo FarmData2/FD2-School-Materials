@@ -1,32 +1,76 @@
 
-- Value of architecture in big projects
-  - modularization
-  - independent changes
-  - independent testing
+- Converted `fetch` of crops to use `farmosUtil` function.
+  - Typical of FD2 Architecture
+  - Code for accessing farmOS is factored out into `farmosUtil`
+    - modularization
+    - independent changes
+    - independent testing
+    - reuse
+  - Handles
+    - caching of results
+    - authentication
 
-Ideas of 
-- Crops vs Plants (again)
-- Logs and Assets
-- Quantities
+- Functions exist for everything we need to record a harvest.
+  - Had you use `fetch` to understand what those functions are abstracting.
+  - inside every function we use
+    - it calls a function in a library named `farmos.js`
+    - that function then contains the `fetch` code.
+
+- you'll explore more of those in hands on and application.
+
+- Final goal is to create a harvest log
+- Need to know about farmOS objects/
+- Types of objects in farmOS
+  - Logs - record actions
+  - Assets - record things
+  - Quantities - record amounts and units
 
 ## Creating a Harvest Log in the UI
 
-- maybe just show them this?
-- Have them create a harvest log in UI
-  - Specify the plant, quantity, units etc..
-  - Have them look at it in the UI and the API
+- Demo this.
+  - Show the log
+  - Show the quantity
+    - Show it from the log
+    - Show it from the quantities menu item.
 
 ## Library Function Documentation
 
-- Cover
-  - how to read the docs.
-  - Show the createStandardQuantity function
-    - meaning of different parameters.
+- Needed to create a quantity and a log.
+  - was one step in the UI.
 
-  - Get to looking at library functions in the docs.
-  - Need to know that they have to provide the default parameter values.
-    - or used named parameters?
-  - Show createStandardQuantity function in docs.
+- Let's find the functions in the docs.
+  - Find `harvest`
+    - Find `createHarvestLog`
+      - Look at parameters
+      - need a plant asset
+      - need a quantity 
+    - Note these don't indicate `async`
+      - But any function that accesses farmOS is `async`.
+      - The docs just don't indicate it
+        - Not sure why... its on the list to be fixed.
+
+  - Find `quantity`
+    - find `createStandardQuantity` 
+    - meaning of different parameters.
+    
+## Calling JavaScript Functions
+
+- positional parameters
+- named parameters
+
+- Calling function with all required parameters
+  - required parameters come first.
+  - others have a default value `[ ]` 
+    - can be omitted.
+- Calling function using named parameters.
+  - If many default values and you only want to set a few
+  - Can provide defaults for positional arguments
+  - Can use a named parameter.
+    - example...
+
+
+
+PROBABLY SKIP FOR TIME
 
 - Maybe show the code in the function for creating a Quantity?
   - Good argument for abstraction

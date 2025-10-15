@@ -41,7 +41,7 @@ The data managed by farmOS and used by FarmData2 can be accessed through both th
 
 ### Seeing the Crops through a farmOS API Endpoint
 
-Now let's see the same "Plant family" (i.e. crop) data through an API endpoint.
+Now let's see the same "Plant type" (i.e. crop) data through an API endpoint.
 
 1. Ensure that you are logged into farmOS as `manager1`.
 2. Open another tab in the browser and visit the following URL:
@@ -89,7 +89,7 @@ Now let's use the farmOS API endpoints to make our Harvest form work with live d
 
 As you saw above, the API response that we will use to get the names of the crops is more complicated than the list of strings we had been using. This is also true of the API responses that we will use to get the list of plants that appear the table. To account for this added complexity, a few changes have been integrated into the starter code provided for this application assignment. 
 
-The overall structure of the code and the way in which it operates is largely the same as it was before. The significant difference is that the `cropList`, `plantList` and `unitList` have been modified so that their contents reflect the structure of the API responses that will provide the corresponding data. If you understand the operation of your solution to Application 07, adapting to these changes will be reasonably straight forward.  
+The overall structure of the code and the way in which it operates is largely the same as it was before. The significant difference is that the `cropList`, `plantList` and `unitList` have been modified so that their contents reflect the structure of the farmOS API responses that will provide the corresponding data. If you understand the operation of your solution to Application 07, adapting to these changes will be reasonably straight forward.  
 
 It is not necessary, but if you are interested in more detail about the changes that were made see the [Changes made to Match API Structure](#changes-made-to-match-api-structure) section at the end of this assignment.
 
@@ -100,7 +100,7 @@ It is not necessary, but if you are interested in more detail about the changes 
    - Tip: Have the `created` lifecycle hook just log the resulting object to the console so that you can check that it is working before going on.
      - **You should see the same `data` property that you saw earlier with "ARUGULA" at index 14 and "RADISH" at index 16.**
 2. Update the code in the `created` lifecycle hook so that **the `cropList` in the Vue data is initially an empty array but is then set to the `data` property of the API response, which contains the array of objects representing the crops.**
-     - Hint: This is similar to what you did with the `users` property in the tutorial.
+   - Hint: This is similar to what you did with the `users` property in the tutorial.
 3. Rebuild and reload the page.
 4. Confirm that the "Crop" select now contains the full list of crops.
 5. Commit the changes to your feature branch with a meaningful commit message. 

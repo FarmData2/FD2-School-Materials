@@ -4,49 +4,26 @@
 
 1. Restart your FarmData2 Development Environment in Codespaces.
 2. Synchronize the `development` branch in your clone with the upstream `development` branch.
-   - After you synchronize a solution to the tutorials will have been added to `development` in the directory `modules/farm_fd2_school/07-FD1-Tutorials-Soln`.
+   - After you synchronize a solution to the tutorials that also includes some code that was shown in class will have been added to `development` in the directory `modules/farm_fd2_school/07-FD1-Activity-Starter`.
 3. Create and switch to a new feature branch for your work on these activities.
-   - Create this feature branch from the branch you created for the tutorials to continue from your prior work.
-   - OR create this feature branch from `development` to work from the provided solution.
-
-## Reacting when the User Changes
-
-When a user of our (really bad) social media site picks another user from the "Users" select the page should display the posts that have been made by the selected user.  To do so, we'll first need to be able to detect when the selected user is changed. We can use a Vue `watch` to do this.
-
-1. Add a `watch` that will execute when the `selectedUser` property in the Vue `data` changes.
-   - Hint: Ask your favorite AI for "a simple example of a Vue watch using the options api" and then adapt it.
-2. Add code to the `watch` on `selectedUser` property that logs the selected user's `name` to the console.
-3. Change the selected user a few times to verify that the `watch` is working correctly.
-4. Commit the changes to your feature branch with a meaningful commit message. 
-
-## The `posts` API Endpoint
-
-The {JSON}Placeholder API provides a `posts` endpoint that returns posts that have been made. We'll use this endpoint with a query parameter to fetch the posts for the newly selected user.
-
-1. Visit the URL below in your browser to see the response that the `posts` endpoint generates.
-   - [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
-2. Notice the following:
-   - Each object in the returned array of posts includes the properties:
-     - `userID`: the id of the user that created the post.
-     - `id`: a unique id for the post.
-     - `title`: the title of the post.
-     - `body`: the text of the post.
-       - Note that the `title` and `text` fields are fake sentences or fragments in Latin.
-   - This endpoint, as we used it returned all of the posts made by all of the users.
-3. The `posts` endpoint accepts a `userID` query parameter that allows us to filter the results so that we get only the posts from a specific user.  Visit the URL below in your browser to see the posts that were made by the user with `id=1`.
-   - [https://jsonplaceholder.typicode.com/posts?userId=1](https://jsonplaceholder.typicode.com/posts?userId=1)
-4. Confirm that the response now contains only the posts for which the `userId` field is `1`.
+4. Open the `modules/farm_fd2_school/07-FD1-Activity-Starter/index.html` file in the browser and in VS Codium.
+   - You will use this file to complete these activities.
 
 ## Fetching the new User's Posts
 
-Now we need to use the `watch` to fetch the posts that were made by the selected user.
+In class we saw the `posts` endpoint and Vue's `watch` feature. Now we need to put those together and use the `watch` to fetch the posts that were made by the selected user.
 
-1. Modify the `watch` to use the `posts` endpoint with a query parameter to fetch the `selectedUser`'s posts.
+1. Modify the `watch` so that it uses the `posts` endpoint with a query parameter to fetch the `selectedUser`'s posts.
    - Hints:
+     - Recall that the `posts` endpoint can be used as follows to fetch a specific user's posts:
+       ```
+       `https://jsonplaceholder.typicode.com/posts?userId=1`
+       ```
+     - Be sure to add `async` to the `watch` on `selectedUser` because you will now be using `await` inside of it.
+     - Use the `userId` of the `selectedUser` to build the URL including the query parameter containing the users id that you need to use in `fetch`.
      - Use JavaScript's `fetch` and `json` methods with `await` like we did to fetch the users.
-     - Be sure to add `async` to the `watch` on `selectedUser` because you are using `await` inside of it.
-     - Use the `id` of the `selectedUser` to concatenate query parameter to the endpoint URL.
-       - Note: String concatenation in JavaScript uses the same `+` operator as Java and Python. For example `"test-" + 1 + "-" + 2` results in the string `"test-1-2"`.
+
+
 2. Log the object containing the posts to the console.
 3. Confirm that when you select a new user the object logged in the console contains only the posts for the user that you selected.
    - Note: The users appear in the "Users" select in order by their `id`.  So if you select the third user in the select (Clementine Bauch), the posts should all have `userID: 3`.

@@ -42,7 +42,8 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
 7. 07-FD1: Fetching Data
    - `07-FD1-Tutorials-Starter` (must push with 06 so ready for T07!)
    - `07-FD1-Tutorials-Soln`
-   - `07-FD2-Activity -Soln`
+   - `07-FD1-Activity-Soln`
+   - `07-FD1-Activity-Soln`
    - `07-FD1-Application-Starter`
 8. Writing Data in FarmData2
    - `08-FD2-Tutorial-Starter` (must push with 07 so ready for T08!)

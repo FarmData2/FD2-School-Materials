@@ -219,10 +219,11 @@ One of these lifecycle hooks is called `created`.  Code placed in the `created` 
    methods: {
     ...
    },
-   created() {
+   async created() {
     this.fetchUsers();
    },
    ```
+   - Question: Why is the `created` lifecycle hook declared as `async`?
 2. Save the file and reload the page.
 3. The "Users" select should not be populated with all of the users automatically when the page loads.
 5. Commit the changes to your feature branch with a meaningful commit message.

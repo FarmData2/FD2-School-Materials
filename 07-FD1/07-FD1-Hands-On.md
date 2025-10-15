@@ -22,8 +22,6 @@ In class we saw the `posts` endpoint and Vue's `watch` feature. Now we need to p
      - Be sure to add `async` to the `watch` on `selectedUser` because you will now be using `await` inside of it.
      - Use the `userId` of the `selectedUser` to build the URL including the query parameter containing the users id that you need to use in `fetch`.
      - Use JavaScript's `fetch` and `json` methods with `await` like we did to fetch the users.
-
-
 2. Log the object containing the posts to the console.
 3. Confirm that when you select a new user the object logged in the console contains only the posts for the user that you selected.
    - Note: The users appear in the "Users" select in order by their `id`.  So if you select the third user in the select (Clementine Bauch), the posts should all have `userID: 3`.

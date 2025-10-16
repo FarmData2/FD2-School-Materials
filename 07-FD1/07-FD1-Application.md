@@ -1,6 +1,6 @@
 # 07 - FD1 - Application
 
-In this assignment you will modify the prototype Harvest form so that ...
+In this assignment you will modify the prototype Harvest form so that (most of) the data displayed in the Harvest form is fetched from farmOS rather than being hard-coded into the Vue instance. This will include the crops displayed in the "Crop" select and the plants displayed in the table when a crop is selected.
 
 ## Preliminaries
 

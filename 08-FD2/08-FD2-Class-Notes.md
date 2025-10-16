@@ -47,9 +47,13 @@ Show these in the UI also...
   - Find `harvest`
     - Find `createHarvestLog`
       - Look at parameters
-      - need a plant asset
-      - need a quantity 
+      - **need a plant asset**
+        - Don't have one but we have the uuid of the plant we want.
+        - And theres a function to get a plant asset if we provide the id (uuid).
+      - **need a quantity**
+        - Don't have one but theres a function to get 
     - Note these don't indicate `async`
+      - Bug in the documentation system... 
       - But any function that accesses farmOS is `async`.
       - The docs just don't indicate it
         - Not sure why... its on the list to be fixed.
@@ -60,8 +64,19 @@ Show these in the UI also...
     
 ## Calling JavaScript Functions
 
-- positional parameters
-- named parameters
+- use getPlantAsset as example?
+  - call with just location
+  - call with location + beds
+  - call with location + beds + crops
+  - call with just crops
+    - providing positional parameters
+    - using a named parameter
+
+```
+this.plantList = await farmosUtil.getPlantAssets({
+  cropName: 'RADISH',
+});
+```
 
 - Calling function with all required parameters
   - required parameters come first.
@@ -71,8 +86,9 @@ Show these in the UI also...
   - If many default values and you only want to set a few
   - Can provide defaults for positional arguments
   - Can use a named parameter.
-    - example...
 
+Issue of needing plant asset for createHarvestLog
+ - we have the uuid of the plant asset.
 
 
 PROBABLY SKIP FOR TIME

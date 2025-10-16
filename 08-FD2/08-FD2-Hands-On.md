@@ -30,6 +30,7 @@ Recall that to create a `harvest_log` object requires a quantity to represent th
    ```
 2. Find the documentation for the `farmosUtil` library.
 3. Find the function for creating a standard quantity.
+   Hint: The function you want has to do with a quantity, so look in the "quantity" section.
 4. Add code to your `submitForm` method that creates a standard quantity with the following hard-coded values for testing:
    - `measure`:  `'weight'`
    - `value`: `7.5`
@@ -54,7 +55,7 @@ Recall that to create a `harvest_log` object requires a quantity to represent th
    - Hints: 
      - Use the values in the Vue `data` as parameters to the `createStandardQuantity` function.
      - The `unit` in the Vue `data` is a `unit` object so you need to access its `name` property.
-     - Continue to use `weight` as the `measure` (even though it may not be accurate).
+     - Continue to use `weight` as the `measure` (even though it may not be accurate for the selected unit - you'll have a chance to fix this later in the Application assignment).
      - Continue to use `'harvest'` as the `label`.
 2. Rebuild the `school` module and reload the "FD2-Activity" page.
 3. Fill out the form and click the "Submit" button to create the quantity.

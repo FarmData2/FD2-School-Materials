@@ -154,7 +154,7 @@ Now that the page is working again we can clean up a few things.
 - Thg `farmosUtil` library is imported.
 - The `created` lifecycle hook uses the `getCrops` function from the `farmosUtil` library to fetch the crops and set the `cropList`.
 - The `sortedCrops` computed property has been removed.
-- The original `created` lifecycle hook code has been removed.
+- The commented out code in the `created` lifecycle hook has been removed.
 - The `console.log` statement used for testing has been removed.
 - The "Crop" select is populated with the alphabetized list of crops.
 

@@ -66,22 +66,35 @@ In the class we looked at the documentation for the `createHarvestLog` function 
 
 ## Optional Challenge - Bug Fixes
 
-1. You may have noticed that the "Bed" column in the table now shows any beds as an array (`[ ... ]`, or `[]`).  This is because that is how the `fetchPlantAssets` function returns them. Modify the code in the `App.vue` so that the beds are again shown as a comma delimited list.
-  - Hint: Use a computed property.
-2. Plants that are in a greenhouse (e.g. "CHUAU", "GHANA", "JASIME") but do not have any beds are plants that are still in seeding trays. These plants are not ready to be harvested and shouldn't be listed in the table. Modify the code in `App.vue` so that only plants that are in the ground are shown.
-   - Hint: Look at the documentation for the `fetchPlantAssets` function.
-3. Unless you already fixed it, when the quantity is created for our harvest log it will always use `weight` as the `measure`.  But not all units are `weight`.  There are other measures such as `Count`, `Rate`, `Ratio`, `Length/depth` and others. Modify the code in the `App.vue` file so that the `measure` of the quantity is set according to the unit that is selected.
-   - Hint: Use `console.log` to look at the `unit` object, which will contain the proper `measure` to be used.
+1. Plants that are in a greenhouse (e.g. "CHUAU", "GHANA", "JASIME") may either be in seeding trays or in the ground. Plants that are in seeding trays are not ready to be harvested and shouldn't be listed in the table. Modify the code in `App.vue` so that only plants that are in the ground are shown.
+   - Hints:
+     - Look at the documentation for the `fetchPlantAssets` function.
+     - When this works plants in "CHUAU" or "GHANA" should only appear in the table if they have associated beds.
+2. Confirm that your fix works and commit the changes to your feature branch.
+3. You may have noticed that the "Bed" column in the table now shows any beds as an array (`[ ... ]`, or `[]`).  This is because that is how the `fetchPlantAssets` function returns them. Modify the code in the `App.vue` so that the beds are again shown as a comma delimited list.
+   - Hints: 
+     - You only need to change the template.
+     - JavaScript has an Array method that will turn an array into a a comma delimited string.
+4. Confirm that your fix works and commit the changes to your feature branch.
+5. (More Challenging) Unless you already fixed it, when the quantity is created for our harvest log it will always use `weight` as the `measure`.  But not all units are `weight`.  There are other measures such as `Count`, `Rate`, `Ratio`, `Length/depth` and others. Modify the code in the `App.vue` file so that the `measure` of the quantity is set according to the unit that is selected.
+   - Hints:
+     - Go to the "Setup" -> "Taxonomy" pages find the "Unit" taxonomy and and click on the button to "List terms". You'll notice that all of the units (e.g. "POUND", "HEAD", "EACH") have a parent term.  The parent terms indicated the "measure" for the unit.
+     - Given a unit, its `relationships.parent[0].id` gives the `id` of the parent unit object, which will contain the name of the measure.
+     - There is a function in the `farmosUtil` library that returns a `Map` object that allows you to get a unit object given its `id`.
+   - Note: Currently all of the units have a parent unit that gives its measure. But someone using farmOS someone could easily create a new unit that does not have a parent.  If a unit does not have a parent, you should set the measure to `''`.
+6. Confirm that your fix works and commit the changes to your feature branch.
 
 ## Optional Challenge - Improved User Efficiency
 
 1. A number of the crops have only one possible harvest unit.  When that is the case it seems wasteful to make the user pick it from the "Unit" select. Modify the code in `App.vue` so that the user does not need to select the unit if there is only one harvest unit for the selected crop.
    - Tip: There are a number of reasonable ways to do this!
+2. Confirm that your fix works and commit the changes to your feature branch.
 
 ### Checklist
 
 - Plants are fetched using the `getPlantAssets` function instead of using `fetch` directly.
 - The "Unit" select is populated for the selected crop using the `getHarvestUnits` function.
+  - The initial value of the `unitList` is an empty array.
 - Clicking submit with a completed Harvest form creates a harvest log with the form data.
 - Optional Bug Fixes
   - Beds are listed as a comma delimited list.
@@ -89,7 +102,7 @@ In the class we looked at the documentation for the `createHarvestLog` function 
   - The quantity in the harvest log has the correct `measure` based on the selected unit.
 - Optional User Efficiency Improvement
   - User is not forced to select a unit for the harvest if there is only one possible harvest unit for the selected crop.
-  
+
 ## Turning In Your Work
 
 1. Be sure all changes have been committed to your feature branch.

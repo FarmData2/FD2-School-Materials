@@ -69,23 +69,7 @@ Show these in the UI also...
   - call with location + beds
   - call with location + beds + crops
   - call with just crops
-    - providing positional parameters
-    - using a named parameter
-
-```
-this.plantList = await farmosUtil.getPlantAssets({
-  cropName: 'RADISH',
-});
-```
-
-- Calling function with all required parameters
-  - required parameters come first.
-  - others have a default value `[ ]` 
-    - can be omitted.
-- Calling function using named parameters.
-  - If many default values and you only want to set a few
-  - Can provide defaults for positional arguments
-  - Can use a named parameter.
+    - providing defaults for positional parameters
 
 Issue of needing plant asset for createHarvestLog
  - we have the uuid of the plant asset.

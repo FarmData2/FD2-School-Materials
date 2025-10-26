@@ -24,6 +24,7 @@ Note that while previous tutorials were done in a simple `index.html` file, this
    reinstallFD2Module.bash
    installDB.bash
    npm run docs:gen
+   npm run build:school
    ```
 4. Open farmOS in the browser.
 5. Go to the "FD2 School" -> "FD2-Tutorial" page.
@@ -151,7 +152,7 @@ Now that the page is working again we can clean up a few things.
 
 ## Checklist
 
-- Thg `farmosUtil` library is imported.
+- The `farmosUtil` library is imported.
 - The `created` lifecycle hook uses the `getCrops` function from the `farmosUtil` library to fetch the crops and set the `cropList`.
 - The `sortedCrops` computed property has been removed.
 - The commented out code in the `created` lifecycle hook has been removed.

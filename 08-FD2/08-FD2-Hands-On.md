@@ -4,11 +4,11 @@
 
 1. Restart your FarmData2 Development Environment in Codespaces.
 2. Synchronize the `development` branch in your clone with the upstream `development` branch.
-   - After you synchronize a solution to the tutorials will have been added to `development` in the directory `modules/farm_fd2_school/src/entrypoints/08-FD2-Activity`.
+   - After you synchronize a solution to the tutorials will have been added to `development` in the directory `modules/farm_fd2_school/src/entrypoints/FD2_Activity`.
    - This is also the starter code for the in class activity.
 3. Create and switch to a new feature branch for your work on these activities.
 4. Open the "FarmData2" -> "FD2 Activity" page in the browser.
-5. Open the `modules/farm_fd2_school/src/entrypoints/08-FD2-Activity/App.vue` file in VS Codium.
+5. Open the `modules/farm_fd2_school/src/entrypoints/FD2_Activity/App.vue` file in VS Codium.
 
 ## Making a Method for Submit
 

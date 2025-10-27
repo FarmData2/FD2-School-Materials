@@ -9,9 +9,9 @@ In this assignment you will modify the prototype Harvest form to make further us
 
 1. Restart your FarmData2 Development Environment.
 2. Synchronize your `development` branch with the upstream to add the starter code for this assignment to your repository.
-3. Use the "FD2 School" menu to navigate to the "FD2" page.
-   - This page will contain a working solution to the Vue3 Application assignment.
-   - If you do not see the "FD2" menu or a working solution to the Vue4 Application assignment, check that you have performed steps 2 and 3 correctly and try again.
+3. Use the "FD2 School" menu to navigate to the "FD2-Application" page.
+   - This page will contain a working solution to the FD2 Activity assignment, which is also the starter code for this assignment.
+   - If you do not see the "FD2" menu or a working solution to the FD2 Activity assignment, check that you have performed steps 2 and 3 correctly and try again.
 5. Create a new feature branch from `development` and switch to it for your work on this assignment.
 6. Open the FarmData2 folder in VSCodium.
 7. Find the `modules/farm_fd2_school/src/entrypoints/FD2-Application/App.vue` file and open it.
@@ -90,7 +90,7 @@ In the class we looked at the documentation for the `createHarvestLog` function 
    - Tip: There are a number of reasonable ways to do this!
 2. Confirm that your fix works and commit the changes to your feature branch.
 
-### Checklist
+## Checklist
 
 - Plants are fetched using the `getPlantAssets` function instead of using `fetch` directly.
 - The "Unit" select is populated for the selected crop using the `getHarvestUnits` function.

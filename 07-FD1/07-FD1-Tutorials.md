@@ -220,7 +220,7 @@ One of these lifecycle hooks is called `created`.  Code placed in the `created` 
     ...
    },
    async created() {
-    this.fetchUsers();
+    await this.fetchUsers();
    },
    ```
    - Question: Why is the `created` lifecycle hook declared as `async`?

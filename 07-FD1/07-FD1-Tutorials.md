@@ -190,7 +190,7 @@ Let's get a little practice accessing the response data that we have received.
    - The zip code where she lives.
    - The longitude (`lng`) of her home.
 4. Add a statement to the `fetchUsers` function that prints out the name of the user at index 8 in the array. Be sure to reload the page and click the "Fetch Users" button to check your work.
-5. Comment out (but do not delete) all of the `console.log` statements that you added.
+5. Comment out (but do not delete) all of the `console.log` and any other statements that you added for this section.
 6. Commit the changes to your feature branch with a meaningful commit message.
    - Note: You may need to add `zipcode` to the spelling dictionary before the commit will succeed. Point at the word "zipcode" with the blue squiggle under it and choose "Quick fix" and then "Add: "zipcode" to dictionary: fd2-cspell".
 

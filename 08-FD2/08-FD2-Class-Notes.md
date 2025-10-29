@@ -11,7 +11,7 @@
 
 Take questions on the Application and Tutorial that are coming in.
 - Application 07-FD1
-  - Solution is in `modules/farm_fd2_school/src/endpoints/08-FD2-Tutorial-Starter`
+  - Solution is in `modules/farm_fd2_school/src/endpoints/FD2-Tutorial`
   - Looks at crops through the:
     - farmOS User Interface (Taxonomy terms)
     - farmOS API `fd2_plant_assets` endpoint
@@ -21,7 +21,7 @@ Take questions on the Application and Tutorial that are coming in.
     - get the list of crops in the `created` lifecycle hook.
     - get the list of plants for the selected crop in a `watch`.
 - Tutorial 08-FD2
-  - Solution is in `module/farm_fd2_school/src/endpoints/08-FD2-Activity-Starter`
+  - Solution is in `module/farm_fd2_school/src/endpoints/FD2-Activity`
   - Introduces `farmosUtil` library
     - Functions for accessing farmOS is factored out into `farmosUtil`
     - Architected for large project with multiple developers.

@@ -5,7 +5,6 @@ In this assignment you will modify the prototype Harvest form to make further us
 - fetching the units that should appear in the "Unit" select for the selected crop.
 - have clicking the submit button use the data entered in the Harvest form to create a harvest log in farmOS.
 
-
 ## Preliminaries
 
 1. Restart your FarmData2 Development Environment.

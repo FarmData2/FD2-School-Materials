@@ -1,4 +1,4 @@
-# 08 - FDs - Class Notes
+# 08 - FD2 - Class Notes
 
 ## Instructor ToDo Before Class
 

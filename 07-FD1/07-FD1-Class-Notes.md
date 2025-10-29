@@ -30,7 +30,7 @@ Tutorial 07 introduced a few new ideas:
 - Vue's _`created`_ _lifecycle hook_.
   ```
   async created() {
-    this.fetchUsers();
+    await this.fetchUsers();
   },
   ```
   - The `created` lifecycle hook runs when the Vue app is "created".

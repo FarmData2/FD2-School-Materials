@@ -146,7 +146,7 @@ Now that the page is working again we can clean up a few things.
 
 1. The page contains a computed property `sortedCrops` that was used to ensure that the `<option>` elements in the "Crop" select appeared in alphabetical order.  But we now know that the crops in the result returned from the `getCrop` function are already sorted (how convenient :).  Remove the `sortedCrops` computed function and adjust the code so that the "Crops" select is still populated in alphabetical order.
 2. Rebuild the FD2 School module and reload the page.
-3. Confirm that the options in the "Crops" select are still in alphabetical order..
+3. Confirm that the options in the "Crops" select are still in alphabetical order.
 4. Commit your changes to your feature branch.
 5. Remove the commented out code and the `console.log` statement from the `created` lifecycle hook.
 6. Commit your changes to your feature branch.

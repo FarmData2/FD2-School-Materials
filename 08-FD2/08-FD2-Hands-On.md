@@ -20,9 +20,9 @@ Currently the "Submit" button has a `v-on:click` that just uses `console.log` to
 4. Use the Devtools to confirm that your `submitForm` method is being called when "Submit" is clicked.
 5. Commit your changes to your feature branch.
 
-## Creating a Quantity
+## Creating a Quantity Record
 
-Recall that to create a `harvest_log` object requires a quantity to represent the amount of the crop that was harvested. In this section you'll create a `standard_quantity` object that can be used when creating a `harvest_log`.
+Recall that to create a `harvest_log` record requires a quantity to represent the amount of the crop that was harvested. In this section you'll create a `standard_quantity` record that can be used when creating a `harvest_log`.
 
 1. Start the documentation server.
    ```
@@ -31,32 +31,31 @@ Recall that to create a `harvest_log` object requires a quantity to represent th
 2. Find the documentation for the `farmosUtil` library.
 3. Find the function for creating a standard quantity.
    Hint: The function you want has to do with a quantity, so look in the "quantity" section.
-4. Add code to your `submitForm` method that creates a standard quantity with the following hard-coded values for testing:
-   - `measure`:  `'weight'`
-   - `value`: `7.5`
-   - `label`: `'harvest'`
-   - `units`: `POUND`
-   - Omit the `inventoryAsset` and `inventoryAdjustment` parameters.
-   - Notes:
-     - The `createStandardQuantity` function is an `async`.
-     - So make your `submitForm` method `async`.
-     - Use `await` when you call `createStandardQuantity`.
+4. Add code to your `submitForm` method that creates a standard quantity with the following hard-coded argument values for testing:
+   - `measure` -> `'weight'`
+   - `value` -> `7.5`
+   - `label` -> `'harvest'`
+   - `units` -> `POUND`
+   - Omit the `inventoryAsset` and `inventoryAdjustment` arguments.
+   - Note that the `createStandardQuantity` function is an `async`.
+     - So you need to make your `submitForm` method `async`.
+     - And you need to use `await` when you call `createStandardQuantity`.
 5. Store the result in a `const` variable and log it to the console for testing.
 6. Rebuild the `school` module and reload the "FD2-Activity" page.
 7. Fill out the form and click the "Submit" button to create the quantity.
 8. Check the Devtools console to confirm that the quantity was created.
 9. Check "Records" -> "Quantities" in the farmOS UI to confirm that the quantity has been created.
    - Hint: You can click the "ID" column header to bring the newest quantities to the top.
-   - Note: Your new quantity will not have any values for the "Log..." columns because it is not yet associated with a log.
+   - Note: Your new quantity will not have any values for the "Log..." columns because we haven't created the harvest log yet. You'll do that in the Application assignment.
 
 ## Putting Real Data into the Quantity
 
 1. Change the code in your `submitForm` method so that the quantity is created using the values that you have entered in the form.
    - Hints: 
-     - Use the values in the Vue `data` as parameters to the `createStandardQuantity` function.
-     - The `unit` in the Vue `data` is a `unit` object so you need to access its `name` property.
-     - Continue to use `weight` as the `measure` (even though it may not be accurate for the selected unit - you'll have a chance to fix this later in the Application assignment).
-     - Continue to use `'harvest'` as the `label`.
+     - Use the values in the Vue `data` as arguments to the `createStandardQuantity` function.
+     - The `unit` in the Vue `data` is a `unit` object so you need to access its `attributes.name` property.
+     - Continue to hard-code `weight` as the `measure` argument (even though it may not be accurate for the selected unit - you'll have a chance to fix this later in the Application assignment).
+     - Continue to hard-code `'harvest'` as the `label` argument.
 2. Rebuild the `school` module and reload the "FD2-Activity" page.
 3. Fill out the form and click the "Submit" button to create the quantity.
 4. Check "Records" -> "Quantities" in the farmOS UI to confirm that the newest quantity was created with the values that you entered in the form.

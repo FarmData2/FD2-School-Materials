@@ -26,7 +26,11 @@ Currently the code in the `watch` for `crop` changes still uses `fetch` directly
 2. Find the function that will get all of the plant assets based on things like the location, beds, crop, etc.
    - Hint: The function has to do with plants.
 3. Modify the code in `App.vue` so that the pants for the selected crop are fetched using the `farmosUtil` function you found instead of by using `fetch`.
-   - Hint: Replace the code in the `watch` for `crop`.
+   - Hints: 
+     - Replace the code in the `watch` for `crop`.
+     - When calling the function you'll need to set the `cropName` parameter. However, because it is the third parameter you will need to provide the default values for the `locationName` and `checkedBeds` parameters and then provide the value for the `cropName`.
+     - The default values for the parameters are given in the documentation.
+     - The last two parameters `isInGround` and `isInTrays` can be omitted and their default values will be used.
 4. Rebuild the `school` module and confirm that the page still works as expected.
 5. Commit your changes to your feature branch.
 

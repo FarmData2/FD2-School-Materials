@@ -63,6 +63,7 @@ Command                   | Action
 `npm run watch:school`    | Run a watcher that rebuilds the FD2 school module any time there is a change to one of its files.
 `npm run docs:gen`        | Rebuild the FD2 documentation.
 `npm run docs:view`       | Start the documentation server and open the docs in Firefox.
+`npm run printlog`        | Display the JSON structures for farmOS taxonomy terms, logs and assets.
 `reinstallFD2Module.bash` | Reinstall the FarmData2 module into farmOS.
 
 ---

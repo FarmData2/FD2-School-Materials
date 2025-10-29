@@ -2,8 +2,9 @@
 
 In this assignment you will modify the prototype Harvest form to make further use of the `farmosUtil` library.  You will use `farmosUtil` functions to:
 - fetch the plants when a crop is selected.
+- fetching the units that should appear in the "Unit" select for the selected crop.
 - have clicking the submit button use the data entered in the Harvest form to create a harvest log in farmOS.
-- Optionally fetching the units that should appear in the "Unit" select for the selected crop.
+
 
 ## Preliminaries
 

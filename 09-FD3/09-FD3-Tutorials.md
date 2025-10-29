@@ -26,7 +26,7 @@ Like the previous tutorial this tutorial will be done using the Harvest Form tha
 2. Synchronize your `development` branch with the upstream `development` branch.
 3. Rebuild the `school` module.
 4. Open farmOS in the browser.
-5. Go to the "FD2 School" -> "FD2-Tutorial" page.
+5. Go to the "FD2 School" -> "FD3-Tutorial" page.
    - The "FD2 School" menu should now contain options for "FD3-Tutorial", "FD3-Activity" and "FD3-Application".
 6. Open the "FD3-Tutorial" page and verify that everything works as expected.
 
@@ -68,7 +68,7 @@ Now let's add our (almost empty) component to the Harvest form to confirm that w
 
 The first step in using a custom Vue component is to import it into the `.vue` file where it will be being used.  For us, that is the `App.vue` file that contains our Harvest form.
 
-1. Open the `FarmData2/modules/farm_fd2_school/src/entrypoints/FD3-Tutorials/App.vue` file file in VS Codium.
+1. Open the `FarmData2/modules/farm_fd2_school/src/entrypoints/FD3_Tutorials/App.vue` file file in VS Codium.
 2. Add the following line at the top of the `<script>` section of the `App.vue` as shown below. 
    ```
    <script>
@@ -78,11 +78,11 @@ The first step in using a custom Vue component is to import it into the `.vue` f
    - Notice that here we have used `@comps` instead of a relative path to the component's `.vue` file rather than a relative path as they did in the video. `@comps` is a shortcut to the `components` directory that is defined in FarmData2's build system to simplify importing components.
    - You might also notice that the import for the `farmosUtil.js` library uses a similar shortcut (`@libs`).
 
-#### Declaring the `DateInput` Component
+#### Registering the `DateInput` Component
 
-Before an imported component can be used in the `<template>` it must be declared in the Vue instance. 
+Before an imported component can be used in the `<template>` it must be _registered_ with the Vue instance. 
 
-1. Declare the `DateInput` component by adding the following `components` property at the top of the Vue instance in `App.vue`.
+1. Register the `DateInput` component by adding the following `components` property at the top of the Vue instance in `App.vue`.
    ```
    export default {
      components: {
@@ -95,7 +95,7 @@ Before an imported component can be used in the `<template>` it must be declared
 
 #### Using the Component in the `<template>`
 
-After a component is imported and declared it can be used in the `<template>` as if it is an HTML element. 
+After a component is imported and registered it can be used in the `<template>` as if it is an HTML element. 
 
 1. Add the `DateInput` component to the `<template>` at the top of the Harvest form in `App.vue`
    ```
@@ -309,7 +309,7 @@ Now, all of that may seem like a lot of work, particularly given that we had the
 3. Go to your origin repo on GitHub.
 4. Make a PR to the `development` branch in the upstream repository.
 5. In the body text of the PR include any comments you have on the assignment and an estimate of the amount of time that you spent on it.
-6. Examine the "Files Changed" tab on your PR to ensure that you have made only the necessary changes in the `components` directory and in your `FD3-Tutorial/App.vue` file.  Remove any unnecessary changes, commit them to your feature branch and push it again to update the PR.
+6. Examine the "Files Changed" tab on your PR to ensure that you have made only the necessary changes in the `components/DateInput/` directory and in your `FD3-Tutorial/App.vue` file.  Remove any unnecessary changes, commit them to your feature branch and push it again to update the PR.
 
 ---
 

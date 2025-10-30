@@ -24,11 +24,15 @@ Like the previous tutorial this tutorial will be done using the Harvest Form tha
 
 1. Restart your FarmData2 Development Environment in Codespaces.
 2. Synchronize your `development` branch with the upstream `development` branch.
-3. Rebuild the `school` module.
-4. Open farmOS in the browser.
-5. Go to the "FD2 School" -> "FD3-Tutorial" page.
+3. Rebuild the documentation.
+   ```
+   npm run build:docs
+   ```
+4. Rebuild the `school` module.
+5. Open farmOS in the browser.
+6. Go to the "FD2 School" -> "FD3-Tutorial" page.
    - The "FD2 School" menu should now contain options for "FD3-Tutorial", "FD3-Activity" and "FD3-Application".
-6. Open the "FD3-Tutorial" page and verify that everything works as expected.
+7. Open the "FD3-Tutorial" page and verify that everything works as expected.
 
 ## Building the Date Input Component
 

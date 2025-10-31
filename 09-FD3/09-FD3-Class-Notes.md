@@ -88,3 +88,10 @@ Each time there is a need for a new UI component in FarmData2 a new custom Vue c
       - We won't be using these right now.
 
     Source is the definitive doc.
+
+Look at the Example Page too.
+- Just a way to play around with the props and see how the component behaves.
+
+Look at `CropSelector`
+  - Idea that the component does the fetch of the content!
+  

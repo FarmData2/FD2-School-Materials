@@ -95,3 +95,5 @@ Look at the Example Page too.
 Look at `CropSelector`
   - Idea that the component does the fetch of the content!
   
+
+Maybe if there is time show them what Cypress is and what it does as a preview?

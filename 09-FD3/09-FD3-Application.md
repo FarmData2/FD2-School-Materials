@@ -15,7 +15,7 @@ In this assignment you will replace some additional components in the Harvest fo
 5. Create a new feature branch from `development` and switch to it for your work on this assignment.
 6. Open the FarmData2 folder in VSCodium.
 7. Find the `modules/farm_fd2_school/src/entrypoints/FD3_Application/App.vue` file and open it.
-   - You will modify the code in this file `App.vue` file to complete this assignment.
+   - You will modify the code in the `App.vue` file to complete this assignment.
 7. Start the documentation server as referencing the documentation for the components you will be using will be helpful.
 
 ## A Note

@@ -13,7 +13,7 @@ In this assignment you will refactor the prototype Harvest module to bind the va
 5. Create a new feature branch from `development` and switch to it for your work on this assignment.
 6. Open the FarmData2 folder in VSCodium.
 7. Find the `modules/farm_fd2_school/src/entrypoints/Vue2/App.vue` file and open it.
-   - You will modify the code in this file `App.vue` file to complete this assignment.
+   - You will modify the code in the `App.vue` file to complete this assignment.
 
 ## Binding `<input>` values with `v-model`
 

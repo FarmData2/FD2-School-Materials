@@ -268,7 +268,7 @@ We want to test that clicking the "Add Item" button has the intended effect. So 
 1. Visit the "Shopping List Application" page in the browser (reload it if it is already visible).
 2. Click the "Add Item" button.
 3. Think about:
-   - What 2 actions will you need to simulate in the test?
+   - What action will you need to simulate in the test?
    - What 6 assertions will you need to make to check that the actions had the intended effect?
 
 ### Adding a Failing Test

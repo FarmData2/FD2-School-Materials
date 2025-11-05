@@ -104,8 +104,22 @@ Implement a test that checks that the full Harvest form displays properly when a
 
 ## Checklist
 
+- Tests use `get` and `find` appropriately.
 - Test for the Initial State of the Harvest form:
-  - 
+  - Checks visibility and values for:
+    - Header, "Date", "Crop", "Submit/Reset" buttons.
+  - Checks "Submit" button is disabled.
+  - Checks non-existence of:
+    - "Plant" table, "Quantity", "Units", "Comment".
+- Test for Selecting a Crop with Harvestable Plants:
+  - Selects a crop with harvestable plants.
+  - Checks visibility and values for:
+    - "Plant" table, "Quantity", "Units", "Comment".
+- Test for Selecting a Crop without Harvestable Plants:
+  - Selects a crop without harvestable plants.
+  - Checks visibility and content of "no plants" message.
+  - Checks non-existence of:
+    - "Plant" table, "Quantity", "Units", "Comment".
 
 ## Turning In Your Work
 

@@ -42,6 +42,8 @@ Let's add a FarmData2 `DateSelector` component to the Harvest form. We'll leave 
 7. Remove all of the code from `App.vue` that used the `DateInput` component. But don't delete the `DateInput` from the `components` directory.
 8. Rebuild the `school` module and reload the page.
 9. Confirm that the Harvest form still works correctly by using it to create a new Harvest log and checking it in the farmOS user interface.
+10. Experiment with the `required` and `showValidity` styling properties to see if you can figure out what they do.
+    - Hint: Try binding them to `false` instead of `true`.
 
 ---
 

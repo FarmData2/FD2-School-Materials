@@ -26,7 +26,7 @@ Like the previous tutorial this tutorial will be done using the Harvest Form tha
 2. Synchronize your `development` branch with the upstream `development` branch.
 3. Rebuild the documentation.
    ```
-   npm run build:docs
+   npm run docs:gen
    ```
 4. Rebuild the `school` module.
 5. Open farmOS in the browser.

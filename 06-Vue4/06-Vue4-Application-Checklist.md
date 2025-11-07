@@ -1,5 +1,10 @@
-- [x] - A computed property is used to disable the "Submit" button any time the form data is not valid.
-- [x] - A computed property is used to display the plants in the table sorted from oldest to newest.
+- Computed properties are used to:
+  - Disable "Submit" button any time the form data is not valid.
+    - [x] - "Submit" button's `disabled` property in bound to computed property.
+    - [x] - Computed property correctly returns `true` when all data is valid and `false` when it is not.
+  - Sort plants in the table from oldest to newest in the table.
+    - [x] - `v-for` the `<tr>` element is bound to computed property.
+    - [x] - Computed property sorts objects by date from oldest to newest.
 - [x] - Work is spread across multiple commits.
 
 Common Feedback:

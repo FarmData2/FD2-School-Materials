@@ -22,7 +22,7 @@
   - In the `<script>`:
     - [x] - imports the `DateInput` component.
     - [x] - declares the `DateInput` component in `components`.
-    
+- [x] - Work is spread across multiple commits.
 
 ## Common Feedback
 

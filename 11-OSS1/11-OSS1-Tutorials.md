@@ -69,7 +69,9 @@ Now that you have discovered a bug as a user, we'll assume you'd like to see it 
    - **Additional Information:** Include any other information that you think may be useful to someone trying to fix the bug. For example, you might include:
      - A description of any work around you have been using.
      - Information about the operating system and browser you are using.
-8. This issue is related to the user interface, so add the "ui/ux" label to the new issue. 
+8. Adding labels to an issue makes it easier for contributors and maintainers to find particular types of issues. 
+   - This issue is related to the user interface. So add the "ui/ux" label to the new issue. 
+   - This issue also seems pretty approachable by new developers. So add the "good first issue" label as well.
 9. Click the "Create" button to create your bug report in the issue tracker.
 
 ## Turning in your Work

@@ -38,7 +38,7 @@ As you work through this Tutorial and the following Activity and Application ass
 
 The Harvest form as implemented in the current `development` branch contains at least one significant bug. Here is a vague description of the bug:
 
-> When the Harvest form is filled out the "Submit" button becomes enabled. If a different crop is then chosen, sometimes the "Submit" button remains enabled while other times it is correctly disabled.
+> When the Harvest form is filled out the "Submit" button becomes enabled. If a different crop is then chosen the enabled state of the submit button is inconsistent.
 
 1. Experiment with the Harvest form until you feel like you have a good enough feel for the bug to describe it. 
    - You are playing the role of the user, so you do not need to have any idea how to fix it at this point.

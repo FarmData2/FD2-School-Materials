@@ -65,6 +65,7 @@ Command                   | Action
 `npm run docs:view`       | Start the documentation server and open the docs in Firefox.
 `npm run printlog`        | Display the JSON structures for farmOS taxonomy terms, logs and assets.
 `reinstallFD2Module.bash` | Reinstall the FarmData2 module into farmOS.
+`test.bash --e2e --school --live --gui` | Run the tests in the school module in the Cypress Test Runner.
 
 ---
 

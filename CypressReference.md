@@ -11,7 +11,8 @@ More complete documentation can be found in the Cypress documentation for [`cy.v
 Command            | Meaning
 -------------------|---------
 `cy.visit(url)`    | Open the page at the specified URL for testing.
-`cy.get(selector)` | Get the selected element on the page. Element may be visible or not. Test will fail if the element does not exist.
+`cy.get(selector)` | Get the element matching selector. Element may be visible or not. Test will fail if the element does not exist.
+`cy.get(selector1).find(selector2)` | Get the component matching selector1 and the element within it matching selector2. Multiple levels of `find` may be used for nested components.
 
 ## Cypress Assertions
 
@@ -40,7 +41,9 @@ Assertion                   | Meaning
 `.should('be.visible')`     | Element is visible to the user.
 `.should('not.be.visible')` | Element is hidden from the user. Only elements that exist may be hidden.
 
-### Element Content and Values:
+### Element Content:
+
+The content of a normal (non-input) page element can be checked using the following assertions.
 
 Assertion                                 | Meaning
 ------------------------------------------|---------
@@ -48,7 +51,14 @@ Assertion                                 | Meaning
 `.should('contain', 'partial text')`      | Element contains a specific substring.
 `.should('be.empty')`                     | Element or collection of elements is empty. 
 `.should('have.length', number)`          | Collection of elements has a specific number of items. 
-`.should('have.value', 'expected value')` | Input or textarea has a specific value.
+
+### Input Element Values
+
+The value of an input element is checked using the following assertion.
+
+Assertion                                 | Meaning
+------------------------------------------|---------
+`.should('have.value', 'expected value')` | An `input`, `textarea`, or `select` has a specific value.
 
 ### Numeric Comparisons
 

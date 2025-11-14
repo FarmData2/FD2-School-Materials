@@ -1,4 +1,16 @@
 
+Before class
+- Assign an issue to each student for the hands-on part.
+- Only those having completed the assignment can complete this part.
+- Others will have to exchange later or just solve their own.
+
+After class
+- assign a different issue to each student for the bug fix part.
+- I don't know if this will work if some don't finish the hands on in class.
+- maybe just let them write the solution to the one they were assigned before class?
+
+
+
 - The hands-on is required for this assignment.
 
 - Discuss issue in small groups.
@@ -25,3 +37,14 @@ Add additional information in a comment.
 Discuss if time...
 - Discuss possible solutions.
   - What makes a good solution?
+
+ Evaluate each of your solutions to determine which to implement. Consider the following criteria when evaluating each of your possible solutions:
+   - Only changes addressing the bug are made.
+   - The changes should be as simple as possible.
+   - The changes should fit with the style and logic of the existing code such that it remains cohesive, readable and understandable to others.
+   - Changes do not introduce duplicate code.
+   - Changes are as small and localized as possible.
+3. Choose what you think is the best solution based on the above criteria.
+   - Note you may have to use your judgement as some criteria can conflict:
+     - Factoring out a method may avoid duplicate code, but may make the changes less localized.
+     - Making a one line change in one place may be simple, but it may not fit best with logic of the existing code.

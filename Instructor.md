@@ -8,6 +8,14 @@ The figure below illustrates visually how students progress through the introduc
 
 ![Diagram illustrating how students move through introductory tutorials, hands-on activities and homework applications.](AssignmentPipeline.png "The assignment pipeline.")
 
+### Prerequisites
+
+Students should have familiarity with:
+- Linux command line (`cd`, `ls`, `cp`, `mkdir`, etc).
+- Git and GitHub (The [GitKit](https://author.runestone.academy/ns/books/published/gitkit2ed/the-gitkit-book.html) is one option).
+- VSCode, VSCodium or another IDE.
+- ???
+
 ### Timing
 
 - The hands-on activities for each class are nominally targeted to take 30-45 minutes. These activities have some initial activities and then some additional challenges. This is designed to ensure everyone has something to do for the allotted time and to allow the time to be adjusted based on other classroom needs.
@@ -45,17 +53,15 @@ Below is the list of topics covered in FD2 School.  Below each topic is a list o
    - `07-FD1-Activity-Soln`
    - `07-FD1-Activity-Soln`
    - `07-FD1-Application-Starter`
-8. Writing Data in FarmData2
+8. 08-FD2: Libraries and Writing Data in FarmData2
    - `08-FD2-Tutorial-Starter` (must push with 07 so ready for T08!)
    - `08-FD2-Activity-Starter`
    - `08-FD2-Application-Starter`
-9. End-to-End Testing
-
-10. Vue Components / FarmData2 Components
-
-11. FarmData2 Idioms & Practices?? 
-    - Roll into project work?
-    - Team organization and working with GitHub
+9. 09-FD3: Vue Components / FarmData2 Components
+10. 10-FD4: End-to-End Testing with Cypress
+11. 11-OSS1 - Issue writing / Bug Fix / PR Writing
+12. 12-OSS2 - Project work on Issues/Features in Kit
+13. 13-OSS3 - Issues/Features in Live FD2
 
 ## Assignment Submission Logistics
 

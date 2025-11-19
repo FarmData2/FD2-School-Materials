@@ -22,7 +22,7 @@ Being able to reproduce an issue is an important first step in being able to sol
 4. If you answered:  
    a) React to the body of the issue with a 👍.  
    b) Add a comment to the issue that improves the "Steps to Reproduce" and/or the "Observed Behavior."
-      - This comment should not not be written as criticism of the original issue or its author. - It should be written in a constructive, helpful tone and targeted at a reader who had difficulty following the "Steps to Reproduce".
+      - This comment should not not be written as criticism of the original issue or its author. It should be written in a constructive, helpful tone and targeted at a reader who had difficulty following the "Steps to Reproduce".
 
 ## Adding Information to the Issue
 
@@ -39,8 +39,7 @@ As contributors and maintainers review issues, attempt to replicate them, and wo
        - describe the additional aspect(s) of the issue.
        - give "Steps to reproduce" that can be followed to observe the additional aspect(s) of the issue.
        - describe the "Observed behavior" that is expected when the the "Steps to reproduce" are followed.
-     - As before, this comment should not not be written as criticism of the original issue or its author. 
-     - It should be written in a constructive, helpful tone and targeted at a reader who had difficulty following the "Steps to Reproduce".
+     - As before, this comment should not not be written as criticism of the original issue or its author. It should be written in a constructive, helpful tone and targeted at a reader who had difficulty following the "Steps to Reproduce".
 
 ---
 

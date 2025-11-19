@@ -36,11 +36,11 @@ As you work through this Tutorial and the following Activity and Application ass
 
 ### User: Discovering a Bug
 
-The Harvest form as implemented in the current `development` branch contains at least one significant bug. Here is a vague description of the bug:
+The Harvest form as implemented in the current `development` branch contains at least one significant bug. Here is a vague description of this significant bug:
 
 > When the Harvest form is filled out the "Submit" button becomes enabled. If a different crop is then chosen the enabled state of the submit button is inconsistent.
 
-1. Experiment with the Harvest form until you feel like you have a good enough feel for the bug to describe it. 
+1. Experiment with the Harvest form until you feel like you have a good enough feel for the above bug to describe it in detail. 
    - You are playing the role of the user, so you do not need to have any idea how to fix it at this point.
 
 ### Requestor: Reporting a Bug
@@ -58,7 +58,7 @@ Now that you have discovered a bug as a user, we'll assume you'd like to see it 
 5. FarmData2 provides several different templates for creating different types of issue: 
    ![Templates to choose from when creating an issue in FarmData2.](./images/IssueTemplates.png)
 6. Choose the "Bug report" template.
-7. Use the advice from the above sources and the descriptions below to complete each of the following parts of the template to report the bug that you "found" earlier.
+7. Use the advice from the above sources and the descriptions below to complete each of the following parts of the template to report the bug that you were guided to find earlier.
    - **Title**: The title should be brief while also clearly indicating where the bug is occurring and what it is.
    - **Description:** Expand on the title to describe the bug, when and where it occurs and why it is a bug. Do not duplicate information here that appears in later sections.
    - **Steps to Reproduce**: Give numbered list of short, precise, step-by-step instructions that someone reasonably familiar with FarmData2 could follow to reproduce the bug. 
@@ -76,7 +76,7 @@ Now that you have discovered a bug as a user, we'll assume you'd like to see it 
 
 ## Turning in your Work
 
-The issue that you created and your comments on it are your submission for this Tutorials assignment.
+The issue that you created is your submission for this Tutorials assignment.
 
 ---
 

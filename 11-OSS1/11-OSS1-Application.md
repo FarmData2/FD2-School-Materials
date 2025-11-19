@@ -42,18 +42,21 @@ Note: The linter in VSCodium will indicate an issue on lines with the `.only`. B
 
 Now that you have automated tests that demonstrate that the bug exists and that should pass when it is fixed, its time to fix the bug.
 
-1. Study the code in the `App.vue` file to devise several possible solutions to the bug.
-2. Evaluate each of your solutions to determine which to implement. Consider the following criteria when evaluating each of your possible solutions:
+1. Study the code in the `App.vue` file to devise **several possible fixes** to the bug.
+   - Some fixes will be better than others.
+   - So avoid the urge to just start implementing the first thing that you think of.
+2. Evaluate each of your fixes to determine which to implement. Consider the following criteria when evaluating each of your possible fixes:
+   - It fixes the bug.
    - Only changes addressing the bug are made.
    - The changes should be as simple as possible.
    - The changes should fit with the style and logic of the existing code such that it remains cohesive, readable and understandable to others.
    - Changes do not introduce duplicate code.
    - Changes are as small and localized as possible.
-3. Choose what you think is the best solution based on the above criteria.
+3. Choose what you think is the best fix based on the above criteria.
    - Note you may have to use your judgement as some criteria can conflict. For example:
      - Factoring out a method may avoid duplicate code, but may make the changes less localized.
      - Making a one line change in one place may be simple, but it may not fit best with logic of the existing code.
-4. Implement the solution you have chosen.
+4. Implement the fix you have chosen.
    - Rebuild the `school` module and test the Harvest form manually as you go.
 5. When you believe you have a working fix, run the tests that you have written. If they do not pass:
    - Revisit your solution to ensure it generates the desired behavior.
@@ -71,12 +74,17 @@ As the pull requests you have made for earlier assignments have been just to tur
 
 1. Read the following source that provides some general advice on how to write a quality pull request:
    - [Writing A Great Pull Request Description](https://www.hackerone.com/blog/writing-great-pull-request-description) by Gonzalo Bañuelos for hackerone.
-2. Push your feature branch to your origin repo.
+2. Push your feature branch to your origin repo on GitHub.
 3. Go to your origin repo on GitHub.
 4. Start the process of creating a PR to the `development` branch in the upstream repository and fill in the following sections of the PR template that is used by the FarmData2 project:
     - **Purpose**: Give a concise high-level description of what the PR is trying to accomplish. Focus on the purpose of the PR and avoid discussing implementation details.
     - **Verification Steps**: Give a precise set of steps that the reviewer(s) of your PR can use to manually verify that the proposed changes achieve the purpose.
-    - **Approach**: Describe in words the way that you 
+    - **Approach**: Describe in words the cause(s) each of the "Observed Behavior(s)" and explain how you have addressed each of the causes. This description and explanation should not be a line-by-line description of the code. A competent maintainer will be able to read your code once they know what it is supposed to be doing. The goal of this section is to explain the **purpose** of the code changes that you have made and how they address the causes of the bug at a level of abstraction that is above line-by-line descriptions of the code.
+      - As examples, you might find yourself using language similar the following when explaining your approaches:
+        - The method `...` is now called from `...` in order to "...", which ensures that "..." when "...".
+        - The Vue `data` property `...` is set to `...` in the `...` method, which ensures that "..." when "...".
+        - The extra `if` statement was added on line `...`, which ensures that the code that "..." only executes when "...".
+        - Etc.
     - **Testing**: Describe the purpose of each automated test that is added or modified by the PR.
     - **Related Issues**: Link to any issues in the issue tracker that are related to this PR.  If the PR full addresses an issue include a line with "- Closes #123" or "- Relates to #123" where "123" is replaced by the number of the issue in the issue tracker. 
       - These lines will be automatically turned into links to the issue in the issue tracker.

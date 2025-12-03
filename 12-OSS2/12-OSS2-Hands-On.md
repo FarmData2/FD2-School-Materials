@@ -32,7 +32,7 @@ That's easy to say, but hard to follow, so let's do a practice run before taking
 
 Use the following steps to create a shared feature branch in GitHub:
 
-1. Visit your shared fork of FarmData2-Shool.
+1. Visit your shared fork of FarmData2-School.
 2. Click the `development` branch button
    - ![The `development` branch button.](./images/developmentbranch.png)
 3. Type `oss2-practice` into the "Find or create a branch..." box.
@@ -46,7 +46,7 @@ You that now have a shared feature branch, each partner needs to get a copy of t
 1. Start your development environment.
 2. Synchronize your `development` branch with the upstream `development` branch.
 3. `git fetch origin oss2-practice`
-4. `git switch origin oss2-practice`
+4. `git switch oss2-practice`
 5. `git status`
    - This should show that `oss2-practice` is now the active branch.
 

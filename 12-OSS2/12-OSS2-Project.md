@@ -43,7 +43,11 @@ Begin working on your issue using the collaborative workflow that you practiced 
 
 ## Turing in Your Work
 
-Turn in your work for OSS2 before the due date by having an up to date draft pull request to the upstream that contains at least one commit from each partner.
+Your effort on OSS2 will be assessed by:
+- The content of your draft pull request to the upstream. 
+  - This PR should show progress toward a solution to the issue on which you are working.
+  - This PR must contains at least one commit from each partner.
+- Comments/Questions/Responses posted to the issue or draft pull request.
 
 ---
 

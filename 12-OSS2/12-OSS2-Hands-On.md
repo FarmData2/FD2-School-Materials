@@ -12,10 +12,10 @@ To add a collaborator:
 1. Decide which partner's repository you will use.
 2. Go to that repository on GitHub.
 3. Go to the "Settings" for the repository (The _gear_ icon at the top).
-4. Click on "Collaborators and teams" (In the left panel).
+4. Click on "Collaborators" (In the left panel).
 5. Click the "Add people" button.
 6. Enter your partner's GitHub id.
-7. Invite them to your repo with "Write" access.
+7. Click the "Add ..." button.
 8. The invited partner will need to:
    - Accept the invitation (check your e-mail).
    - Run the FarmData2 Development Environment from the repo:
@@ -54,17 +54,21 @@ You that now have a shared feature branch, each partner needs to get a copy of t
 
 For practice, each partner should make a change to the `README.md` file as follows:
 
-1. Create a new feature branch from `oss2-practice` for your work.
-2. Open `README.md`.
-3. Add a line at the top of the file containing your name.
-4. Stage and commit your change.
-5. Push your feature branch to the `origin`.
-6. Visit the origin repository on GitHub and create a pull request making sure that the: 
+1. Switch to the `oss2-practice` branch.
+2. Create and switch to a new feature branch from `oss2-practice` for your work.
+3. Open `README.md`.
+4. Add a line at the top of the file containing your name.
+5. Stage and commit your change.
+6. This commit will fail due to a linter that checks for broken links.
+   - Remove the broken link.
+7. Stage and commit your change.
+8. Push your feature branch to the `origin`.
+9. Visit the origin repository on GitHub and create a pull request making sure that the: 
    - **base repository:** is set to your shared fork of the FarmData2-School repository and not the upstream.
    - **base:** is the `oss2-practice` feature branch where you want the changes to go.
    - **compare:** is the feature branch with your changes.
-7. Find the Pull Request in your FarmData2-School fork.
-8. Visit the "Files changed" tab and confirm that the change you made are there.
+10. Find the Pull Request in your FarmData2-School fork.
+11. Visit the "Files changed" tab and confirm that the change you made are there.
 
 #### Merging the Changes
 

@@ -57,7 +57,8 @@ For practice, each partner should make a change to the `README.md` file as follo
 1. Switch to the `oss2-practice` branch.
 2. Create and switch to a new feature branch from `oss2-practice` for your work.
 3. Open `README.md`.
-4. Add a line at the top of the file containing your name.
+4. Add a line at the very top of the file (above `# FarmData2`) containing your name.
+   - You may then need to add your name to the dictionary as well.
 5. Stage and commit your change.
 6. This commit will fail due to a linter that checks for broken links.
    - Remove the broken link.
@@ -80,7 +81,7 @@ One partner should merge these pull requests by as follows:
 2. Open the "Pull request" tab.
 3. Open one of the pull requests.
 4. Review the changes in the "Files changed" tab.
-5. Click the "Squash and merge" button.
+5. Click the "Merge" button.
 6. Return to the "Pull request" tab.
 7. Open the other pull request.
 8. Scroll down and notice that there is a message indicating "This branch has conflicts that must be resolved."

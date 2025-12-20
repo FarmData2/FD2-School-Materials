@@ -36,6 +36,7 @@ When the example page works as required by the issue you
    - **base:** is the **`development`** branch.
    - **compare:** is the feature branch with your changes.
 3. Complete the Pull Request template in detail.
+   - Be sure to use the "Co-authors" section at the bottom so that all teammates are noted when the PR is merged.
 4. Create the Pull Request.
 5. Check that you created the PR correctly by finding it in the Pull Requests section of the [live FarmData2 repository](https://github.com/FarmData2/FarmData2).
 6. Visit the "Files changed" tab and confirm that the changes that you made look correct.
